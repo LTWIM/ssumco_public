@@ -2,7 +2,16 @@ import React from 'react'
 import styles from '../styles/module_stylesheets/photobanner.module.scss'
 export default function PhotoBanner (props) {
     const typeHandle = () => {
-      
+    const block = (content) => {
+      return(
+        <div>
+            {content.title}
+          <div>
+            {content.body}
+          </div>
+        </div>
+      )
+    }
       switch (props.type) {
         case '1':
           return(
@@ -28,7 +37,7 @@ export default function PhotoBanner (props) {
               <div className={styles.PhotoBanner__header1}>
                 How to Choose your SSUM PLAN Plan?
               </div>
-              <div className={}>
+              <div className={styles.PhotoBanner__blockWrapper}>
 
               </div>
             </div>
@@ -51,10 +60,12 @@ export default function PhotoBanner (props) {
             }}/>
           </div>
           <div className={styles.PhotoBanner__cont} style={props.direction === 'reverse' ? {
-            flexDirection:'row-reverse'
+            flexDirection:'row-reverse',
+            marginRight:'0'
           }
           :
           {
+            marginLeft:'0'
           }}>
             <div className={styles.PhotoBanner__photo}>
 

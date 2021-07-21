@@ -38,7 +38,6 @@
     width: 85%;
     max-width: 1680px;
     margin: auto;
-    margin-right: 0;
     height: 100%;
     justify-content: space-between;
     // border: 1px solid;
@@ -64,7 +63,7 @@
     font-weight: bold;
     line-height: 1.42;
     color: #1f1f1f;
-    max-width: 380px;
+    max-width: 320px;
 
   }
   .PhotoBanner__header2{
@@ -94,14 +93,20 @@
   }
   .PhotoBanner__blockcont{
     border: 1px solid black;
+    width: fit-content;
     margin: auto;
+    margin-right: 0;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
   }
   .PhotoBanner__blockWrapper{
-  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 320px;
   }
 }
 @media screen and (max-width:1680px) {
