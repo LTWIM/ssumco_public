@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .page-break-point {
+    // max-width: 1680px;
+    width: 100vw;
+    height: 100vh;
+  }
+}
