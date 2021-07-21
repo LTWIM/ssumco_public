@@ -1,0 +1,121 @@
+.PhotoBanner{
+  margin-top: 30px;
+  // margin-bottom: 600px;
+  width: 100%;
+  padding-bottom: 60px;
+  // height: 400px;
+  // border: 1px solid black;
+  .PhotoBanner__background{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    // border: 1px solid;
+  }
+  .PhotoBanner__vawe1{
+    position: absolute;
+    width: calc(100vw + 1000px);
+    left: -1000px;
+    height: 100%;
+    top: 0px;
+    background-size:cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .PhotoBanner__vawe2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:-150px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .PhotoBanner__cont{
+    position: relative;
+    display: flex;
+    width: 85%;
+    max-width: 1680px;
+    margin: auto;
+    margin-right: 0;
+    height: 100%;
+    justify-content: space-between;
+    // border: 1px solid;
+    flex-wrap: wrap;
+  }
+  .PhotoBanner__photo{
+    background-color: lightgrey;
+    width: 45%;
+    max-width: 560px;
+    min-width: 400px;
+    height: 320px;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  .PhotoBanner__textcont{
+    // border: 1px solid black;
+    margin: auto;
+    margin-top: 140px;
+    // width: 50%;
+  }
+  .PhotoBanner__header1{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.42;
+    color: #1f1f1f;
+    max-width: 380px;
+
+  }
+  .PhotoBanner__header2{
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff3d00;
+    max-width: 400px;
+    margin-top: 5px;
+  }
+  .PhotoBanner__body{
+    font-size: 15px;
+    line-height: 1.63;
+    color: #747474;
+    max-width: 400px;
+    margin-top: 5px;
+  }
+  .PhotoBanner__btn{
+    margin-top: 15px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #3b00ad;
+    width: fit-content;
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .PhotoBanner__blockcont{
+    border: 1px solid black;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .PhotoBanner__blockWrapper{
+  
+  }
+}
+@media screen and (max-width:1680px) {
+  .PhotoBanner{
+    .PhotoBanner__vawe1{
+      background-size: contain;
+      background-position: top;
+      top:0px;
+      left: 0;
+      width: 100%;
+    }
+    .PhotoBanner__vawe2{
+      background-size: contain;
+      top:50px;
+    }
+  }
+}
