@@ -28,7 +28,7 @@ export default function Home() {
 
       <footer></footer> */}
 
-      <MainBanner/>
+      <MainBanner animation = {false} />
     </div>
   );
 }

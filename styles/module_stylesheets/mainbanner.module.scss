@@ -78,4 +78,53 @@
     font-size: 12px;
     cursor: pointer;
   }
+  .mainbanner__shape1{
+    position: absolute;
+    background-color: #f9faff;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    animation: morph1 8s ease-in-out infinite;
+    @keyframes morph1 {
+      0% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+      
+      100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+      } 
+    }
+  }
+  .mainbanner__shape2{
+
+    position: absolute;
+    background-color: #edf0ff;
+    border-radius: 25% 90% 25% 50% / 90% 40% 60% 40%;
+    height: 90%;
+    transition: all 1s ease-in-out;
+    width: 80%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    animation: morph2 5s ease-in-out reverse infinite;
+    @keyframes morph2 {
+      0% {
+          border-radius:  25% 90% 25% 50% / 90% 40% 60% 40%;
+      } 
+      
+      50% {
+          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+      
+      100% {
+        border-radius: 25% 90% 25% 50% / 90% 40% 60% 40%;
+      } 
+    }
+  }
+  
 }
