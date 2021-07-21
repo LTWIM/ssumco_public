@@ -3,7 +3,7 @@ import Head from "next/head"; // use this for heads/ leave it alone for pages
 import Image from "next/image"; // use this for images
 import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
-import { MainBanner } from "../components";
+import { MainBanner, PhotoBanner } from "../components/index";
 
 export default function Home() {
   return (
@@ -29,6 +29,14 @@ export default function Home() {
       <footer></footer> */}
 
       <MainBanner animation = {false} />
+      <PhotoBanner 
+        type = '1'
+      />
+
+      <PhotoBanner 
+        direction = "reverse"
+        type = '2'
+      />
     </div>
   );
 }

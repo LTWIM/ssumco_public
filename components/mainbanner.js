@@ -29,7 +29,6 @@ export default function MainBanner (props) {
         </div>
       )
     }
-
   }
     return(
         <div className={styles.mainbanner}>
