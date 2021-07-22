@@ -88,6 +88,8 @@ export default function PhotoBanner (props) {
     return(
         <div className={styles.PhotoBanner}>
           {background()}
+          <div className={styles.PhotoBanner__wrapper}>
+
           <div className={styles.PhotoBanner__cont} style={props.direction === 'reverse' ? {
             flexDirection:'row-reverse',
             marginRight:'0'
@@ -100,10 +102,11 @@ export default function PhotoBanner (props) {
               props.type === 1 ?{
                 marginBottom:'0'
               }: {}}>
-
             </div>
             {typeHandle()}
           </div>
+          </div>
+
         </div>
     )
 }
