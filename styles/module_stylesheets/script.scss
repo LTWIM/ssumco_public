@@ -1,0 +1,235 @@
+&.type4 {
+    width: 45%;
+    .PhotoBanner__blockWrapper {
+      max-width: 400px;
+      .PhotoBanner__block:last-child {
+        border-bottom: none;
+        padding-top: 40px;
+      }
+      .PhotoBanner__block {
+        font-size: 24px;
+        box-shadow: none;
+        border-bottom: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        padding-top: 10px;
+        max-height: 92px;
+        &:hover {
+          color: #ff3d00;
+          max-height: 400px;
+        }
+        .PhotoBanner__block__body {
+          font-style: normal;
+          line-height: 1.63;
+          font-size: 16px;
+          display: flex;
+          flex-direction: column;
+          span {
+            color: #3b00ad;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .PhotoBanner {
+    margin: auto;
+    margin-top: 30px;
+    // margin-bottom: 600px;
+    width: 100%;
+    padding-bottom: 60px;
+    // height: 400px;
+    // border: 1px solid black;
+    .PhotoBanner__background {
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      max-height: 600px;
+      // border: 1px solid;
+    }
+    .PhotoBanner__backgroundbg {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      max-height: 600px;
+      object-fit: fill;
+      // border: 1px solid;
+      overflow: hidden;
+    }
+    .PhotoBanner__vawe1 {
+      position: absolute;
+      width: calc(100vw + 1000px);
+      left: -1000px;
+      height: 100%;
+      top: 0px;
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .PhotoBanner__vawe2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -150px;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+    .PhotoBanner__bg {
+      position: absolute;
+      left: 0;
+      width: 100vw;
+      height: 600px;
+      background-size: contain;
+      // background-position: center;
+      background-repeat: no-repeat;
+    }
+    .PhotoBanner__wrapper {
+      margin: auto;
+      max-width: 1680px;
+      width: 100%;
+      // border: 1px solid;
+      display: flex;
+    }
+    .PhotoBanner__cont__type1 {
+      position: relative;
+      display: flex;
+      width: 85%;
+      height: 100%;
+      justify-content: space-between;
+      // border: 1px solid red;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .PhotoBanner__cont__type2 {
+      position: relative;
+      display: flex;
+      width: 85%;
+      height: 100%;
+      justify-content: space-between;
+      // border: 1px solid green;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: auto;
+      margin-right: 0;
+    }
+    .PhotoBanner__photo {
+      background-color: lightgrey;
+      width: 100%;
+      max-width: 680px;
+      min-width: 400px;
+      height: 440px;
+      margin: auto;
+    }
+    .PhotoBanner__textcont {
+      // border: 1px solid black;
+      // margin: auto;
+      margin-top: 140px;
+      // width: 50%;
+    }
+    .PhotoBanner__header1 {
+      font-size: 41px;
+      font-weight: bold;
+      line-height: 1.42;
+      color: #1f1f1f;
+      max-width: 400px;
+    }
+    .PhotoBanner__header2 {
+      font-size: 35px;
+      font-weight: bold;
+      color: #ff3d00;
+      max-width: 400px;
+      margin-top: 15px;
+    }
+  
+    .PhotoBanner__body {
+      font-size: 16px;
+      line-height: 1.63;
+      color: #747474;
+      max-width: 400px;
+      margin-top: 15px;
+    }
+  
+    .PhotoBanner__btn {
+      margin-top: 35px;
+      color: #ffffff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      background-color: #3b00ad;
+      width: fit-content;
+      padding: 10px 35px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      &.orange {
+        background-color: #ff3d00;
+      }
+    }
+    .PhotoBanner__blockcont {
+      // border: 1px solid black;
+      width: fit-content;
+      // margin: auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      .PhotoBanner__blockWrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // border: 1px solid black;
+        width: 100%;
+        max-width: 320px;
+      }
+      .PhotoBanner__block {
+        padding: 15px 0px;
+        box-sizing: border-box;
+        border-left: 21px solid rgba(0, 0, 0, 0);
+        border-right: 21px solid rgba(0, 0, 0, 0);
+        border-radius: 12px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+        background-color: #ffffff;
+        width: 100%;
+        margin-bottom: 20px;
+        cursor: pointer;
+        overflow: hidden;
+        max-height: 45px;
+        font-weight: bold;
+        &:hover {
+          max-height: 300px;
+        }
+        .PhotoBanner__block__body {
+          margin-top: 20px;
+          font-size: 16px;
+          line-height: 1.63;
+          color: #747474;
+        }
+      }
+      .PhotoBanner__footer {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        color: #3b00ad;
+        cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 1680px) {
+    .PhotoBanner {
+      .PhotoBanner__vawe1 {
+        background-size: contain;
+        background-position: top;
+        top: 0px;
+        left: 0;
+        width: 100%;
+      }
+      .PhotoBanner__vawe2 {
+        background-size: contain;
+        top: 50px;
+      }
+    }
+  }
+  

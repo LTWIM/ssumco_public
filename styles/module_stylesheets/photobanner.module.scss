@@ -58,7 +58,7 @@
     // border: 1px solid;
     display: flex;
   }
-  .PhotoBanner__cont__type1{
+  .PhotoBanner__cont__type1 {
     position: relative;
     display: flex;
     width: 85%;
@@ -68,7 +68,7 @@
     flex-wrap: wrap;
     align-items: center;
   }
-  .PhotoBanner__cont__type2{
+  .PhotoBanner__cont__type2 {
     position: relative;
     display: flex;
     width: 85%;
@@ -94,14 +94,14 @@
     margin-top: 140px;
     // width: 50%;
   }
-  .PhotoBanner__header1{
+  .PhotoBanner__header1 {
     font-size: 41px;
     font-weight: bold;
     line-height: 1.42;
     color: #1f1f1f;
     max-width: 400px;
   }
-  .PhotoBanner__header2{
+  .PhotoBanner__header2 {
     font-size: 35px;
     font-weight: bold;
     color: #ff3d00;
@@ -109,7 +109,7 @@
     margin-top: 15px;
   }
 
-  .PhotoBanner__body{
+  .PhotoBanner__body {
     font-size: 16px;
     line-height: 1.63;
     color: #747474;
@@ -117,7 +117,7 @@
     margin-top: 15px;
   }
 
-  .PhotoBanner__btn{
+  .PhotoBanner__btn {
     margin-top: 35px;
     color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -145,7 +145,7 @@
         max-width: 400px;
         .PhotoBanner__block:last-child {
           border-bottom: none;
-          padding-top:40px;
+          padding-top: 40px;
         }
         .PhotoBanner__block {
           font-size: 24px;
@@ -176,45 +176,46 @@
         }
       }
     }
-  }
-  .PhotoBanner__blockWrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    // border: 1px solid black;
-    width: 100%;
-    max-width: 320px;
-  }
-  .PhotoBanner__block {
-    padding: 15px 0px;
-    box-sizing: border-box;
-    border-left: 21px solid rgba(0, 0, 0, 0);
-    border-right: 21px solid rgba(0, 0, 0, 0);
-    border-radius: 12px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
-    background-color: #ffffff;
-    width: 100%;
-    margin-bottom: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    max-height: 45px;
-    font-weight: bold;
-    &:hover {
-      max-height: 300px;
+    .PhotoBanner__blockWrapper {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      // border: 1px solid black;
+      width: 100%;
+      max-width: 320px;
     }
-    .PhotoBanner__block__body {
-      margin-top: 20px;
+    .PhotoBanner__block {
+      padding: 15px 0px;
+      box-sizing: border-box;
+      border-left: 21px solid rgba(0, 0, 0, 0);
+      border-right: 21px solid rgba(0, 0, 0, 0);
+      border-radius: 12px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+      background-color: #ffffff;
+      width: 100%;
+      margin-bottom: 20px;
+      cursor: pointer;
+      overflow: hidden;
+      max-height: 45px;
+      font-weight: bold;
+      &:hover {
+        max-height: 300px;
+      }
+      .PhotoBanner__block__body {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.63;
+        color: #747474;
+      }
+    }
+    .PhotoBanner__footer {
       font-size: 16px;
-      line-height: 1.63;
-      color: #747474;
+      font-weight: bold;
+      text-align: left;
+      color: #3b00ad;
+      cursor: pointer;
     }
   }
-  .PhotoBanner__footer{
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    color: #3b00ad;
-    cursor: pointer;
-  }
+}
 @media screen and (max-width: 1680px) {
   .PhotoBanner {
     .PhotoBanner__vawe1 {
