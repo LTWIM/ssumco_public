@@ -54,26 +54,38 @@
   .PhotoBanner__wrapper {
     margin: auto;
     max-width: 1680px;
+    width: 100%;
     // border: 1px solid;
     display: flex;
   }
-  .PhotoBanner__cont {
+  .PhotoBanner__cont__type1{
     position: relative;
     display: flex;
-    width: 70%;
+    width: 85%;
     height: 100%;
     justify-content: space-between;
     // border: 1px solid red;
     flex-wrap: wrap;
     align-items: center;
+  }
+  .PhotoBanner__cont__type2{
+    position: relative;
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-between;
+    // border: 1px solid green;
+    flex-wrap: wrap;
+    align-items: center;
     margin: auto;
+    margin-right: 0;
   }
   .PhotoBanner__photo {
     background-color: lightgrey;
-    width: 45%;
-    max-width: 560px;
+    width: 100%;
+    max-width: 680px;
     min-width: 400px;
-    height: 320px;
+    height: 440px;
     margin: auto;
   }
   .PhotoBanner__textcont {
@@ -82,36 +94,38 @@
     margin-top: 140px;
     // width: 50%;
   }
-  .PhotoBanner__header1 {
-    font-size: 26px;
+  .PhotoBanner__header1{
+    font-size: 41px;
     font-weight: bold;
     line-height: 1.42;
     color: #1f1f1f;
-    max-width: 320px;
+    max-width: 400px;
   }
-  .PhotoBanner__header2 {
-    font-size: 26px;
+  .PhotoBanner__header2{
+    font-size: 35px;
     font-weight: bold;
     color: #ff3d00;
     max-width: 400px;
-    margin-top: 5px;
+    margin-top: 15px;
   }
-  .PhotoBanner__body {
-    font-size: 15px;
+
+  .PhotoBanner__body{
+    font-size: 16px;
     line-height: 1.63;
     color: #747474;
     max-width: 400px;
-    margin-top: 5px;
-  }
-  .PhotoBanner__btn {
     margin-top: 15px;
+  }
+
+  .PhotoBanner__btn{
+    margin-top: 35px;
     color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     background-color: #3b00ad;
     width: fit-content;
     padding: 10px 35px;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     &.orange {
       background-color: #ff3d00;
@@ -189,19 +203,18 @@
     }
     .PhotoBanner__block__body {
       margin-top: 20px;
-      font-size: 11px;
+      font-size: 16px;
       line-height: 1.63;
       color: #747474;
     }
   }
-  .PhotoBanner__footer {
-    font-size: 14px;
+  .PhotoBanner__footer{
+    font-size: 16px;
     font-weight: bold;
     text-align: left;
     color: #3b00ad;
     cursor: pointer;
   }
-}
 @media screen and (max-width: 1680px) {
   .PhotoBanner {
     .PhotoBanner__vawe1 {
