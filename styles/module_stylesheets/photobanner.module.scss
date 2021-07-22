@@ -1,4 +1,5 @@
 .PhotoBanner{
+  margin: auto;
   margin-top: 30px;
   // margin-bottom: 600px;
   width: 100%;
@@ -51,11 +52,17 @@
     background-repeat: no-repeat;
     
   }
+  .PhotoBanner__wrapper{
+    margin: auto;
+    max-width: 1680px;
+    max-width: 70%;
+    // border: 1px solid;
+  }
   .PhotoBanner__cont{
     position: relative;
     display: flex;
-    width: 85%;
-    max-width: 1680px;
+    width: 100%;
+    // max-width: 1680px;
     margin: auto;
     height: 100%;
     justify-content: space-between;
@@ -73,7 +80,7 @@
   }
   .PhotoBanner__textcont{
     // border: 1px solid black;
-    margin: auto;
+    // margin: auto;
     margin-top: 140px;
     // width: 50%;
   }
@@ -113,7 +120,7 @@
   .PhotoBanner__blockcont{
     // border: 1px solid black;
     width: fit-content;
-    margin: auto;
+    // margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -155,6 +162,7 @@
     font-weight: bold;
     text-align: left;
     color: #3b00ad;
+    cursor: pointer;
   }
 }
 @media screen and (max-width:1680px) {

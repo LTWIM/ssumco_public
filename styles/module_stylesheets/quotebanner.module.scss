@@ -1,0 +1,75 @@
+.QuoteBanner{
+  width: 100%;
+  max-width: 1680px;
+  // border: 1px solid;
+  // padding-top: 100px;
+  padding-bottom: 100px;
+  margin: auto;
+  .QuoteBanner__cont{
+    width: 70%;
+    margin: auto;
+    // border: 1px solid;
+  }
+  .QuoteBanner__top{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+  }
+  .QuoteBanner__left{
+    opacity: 0.5;
+    font-size: 18px;
+    color: #747474;
+    cursor: pointer;
+  }
+  .QuoteBanner__right{
+    opacity: 0.5;
+    font-size: 18px;
+    color: #747474;
+    cursor: pointer;
+  }
+  .QuoteBanner__current{
+    // border: 1px solid black;
+  }
+  .QuoteBanner__company{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #1f1f1f;
+  }
+  .QuoteBanner__position{
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #747474;
+  }
+  .QuoteBanner__bodycont{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #f9faff;
+    border-radius: 50%;
+    min-height: 70px;
+    align-items: center;
+  }
+  .QuoteBanner__text{
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    color: #1f1f1f;
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center;
+  }
+  .QuoteBanner__ratecont{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    // border: 1px solid;
+    width: fit-content;
+  }
+  .QuoteBanner__star{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
