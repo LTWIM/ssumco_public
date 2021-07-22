@@ -62,6 +62,9 @@
   margin-top: 35px;
   font-size: 18px;
   font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .icons__wrapper {
   position: absolute;
@@ -166,8 +169,8 @@
     width: 50px;
     height: 50px;
   }
-  .blueMsg{
-    background-image:url("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/blueMsg.png");
+  .blueMsg {
+    background-image: url("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/blueMsg.png");
     width: 40px;
     height: 34px;
   }

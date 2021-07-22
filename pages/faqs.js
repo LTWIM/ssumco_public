@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "../styles/faqs.module.scss";
-import Topbanner from "../components/top_banner";
-import QuestionForm from "../components/question_form";
+import styles from "../styles/Faqs.module.scss";
+import { TopBanner, QuestionForm } from "../components/index";
 
 export default function Home() {
   return (
     <div className={styles.faq__wrapper}>
-      <Topbanner title="FAQ" breadCrumb="FAQ" />
+      <TopBanner title="FAQ" breadCrumb="FAQ" />
       <div className={styles.contt__wrapper}>
         <QuestionForm />
       </div>

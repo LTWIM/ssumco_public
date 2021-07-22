@@ -1,9 +1,6 @@
 import React from "react";
-import Topbanner from "../components/top_banner";
-import Card from "../components/card";
-import QuestionForm from "../components/question_form";
+import { TopBanner, Card, QuestionForm } from "../components/index";
 import styles from "../styles/Contact_us.module.scss";
-// import Topbanner, Card, QuestionForm from "../components/index";
 import { location, phone, email } from "../components/svg";
 
 export default function Home() {
@@ -29,7 +26,7 @@ export default function Home() {
   ];
   return (
     <div className={styles.contactUs__wrapper}>
-      <Topbanner title="Contact Us" breadCrumb="Contact" />
+      <TopBanner title="Contact Us" breadCrumb="Contact" />
       <div className={styles.contactUs__contt__wrapper}>
         <Card
           title="Attention to Every Client"
