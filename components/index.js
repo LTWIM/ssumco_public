@@ -1,3 +1,4 @@
-export { default as Banner } from "./banner";
 export { default as TopBanner } from "./top_banner";
-export { default as Card } from "./card";
+export {default as Banner} from './banner'
+export {default as MainBanner} from './mainBanner'
+export {default as PhotoBanner } from './photoBanner'
