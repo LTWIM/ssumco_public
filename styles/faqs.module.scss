@@ -10,3 +10,14 @@
   flex-direction: column;
   align-items: center;
 }
+.questions__title__cont {
+  display: flex;
+  flex-direction: column;
+  font-size: 41px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  span:last-child {
+    color: #3b00ad;
+  }
+}
