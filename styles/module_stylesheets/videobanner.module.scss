@@ -1,0 +1,66 @@
+.videoBanner{
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  // border: 1px solid;
+  .videoBanner__title{
+  width: fit-content;
+  margin: auto;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  color: #1f1f1f;
+  }
+  .videoBanner__body{
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    color: #747474;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .videoBanner__cont{
+    max-width: 1680px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    // border: 1px solid black;
+  }
+  .videoBanner__videocont{
+    width: 70%;
+    margin: auto;
+    // border: 1px solid green;
+  }
+  .videoBanner__video{
+    margin: auto;
+    width: 100%;
+    max-width: 620px;
+    height: 340px;
+    mix-blend-mode: color;
+    border-radius: 12px;
+    background-blend-mode: color;
+    background-image: linear-gradient(to bottom, rgba(59, 0, 173, 0.89), rgba(59, 0, 173, 0.89));
+    display: flex;
+    align-items: center;
+  }
+  .videoBanner__btn{
+    margin: auto;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ff3d00;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .videoBanner__play{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-weight: 100;
+  }
+}
