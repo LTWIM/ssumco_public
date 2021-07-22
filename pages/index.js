@@ -3,7 +3,7 @@ import Head from "next/head"; // use this for heads/ leave it alone for pages
 import Image from "next/image"; // use this for images
 import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
-import { MainBanner, PhotoBanner } from "../components/index";
+import { MainBanner, PhotoBanner, VideoBanner } from "../components/index";
 
 export default function Home() {
   const contents = [
@@ -53,7 +53,10 @@ export default function Home() {
         header2 = 'for your technical and online needs?'
         body = 'Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci'
       />
-
+      <VideoBanner
+        header = "Our previous clients"
+        body = "Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
+      />
       <PhotoBanner 
         direction = "reverse"
         type = '2'
