@@ -11,7 +11,16 @@ export default function PhotoBanner (props) {
       </div>
     )
   }
-
+  const classNameType = () => {
+    switch (props.type) {
+      case '1':
+        return styles.PhotoBanner__cont__type1
+      case '2':
+        return styles.PhotoBanner__cont__type2
+      default:
+        break;
+    }
+  }
   const background = () => {
     switch (props.type) {
       case '1':
@@ -90,16 +99,10 @@ export default function PhotoBanner (props) {
           {background()}
           <div className={styles.PhotoBanner__wrapper}>
 
-          <div className={styles.PhotoBanner__cont} style={props.direction === 'reverse' ? {
-            flexDirection:'row-reverse',
-          }
-          :
-          {
-          }}>
-            <div className={styles.PhotoBanner__photo} style={
-              props.type === 1 ?{
-                marginBottom:'0'
-              }: {}}>
+          <div className={classNameType()} style={props.direction === 'reverse' ? {flexDirection:'row-reverse'}:{}}>
+            <div className={styles.PhotoBanner__photo} style={props.type === '1' ? {
+              marginBottom:'0'
+            }:{}}>
             </div>
             {typeHandle()}
           </div>

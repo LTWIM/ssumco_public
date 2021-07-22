@@ -14,17 +14,17 @@
   .PriceCardBanner__header{
     width: fit-content;
     margin: auto;
-    font-size: 28px;
+    font-size: 41px;
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;
   }
   .PriceCardBanner__body{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #747474;
-    max-width: 500px;
+    max-width: 550px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -43,14 +43,14 @@
     border-left: 15px solid rgba(0,0,0,0);
     border-right: 15px solid rgba(0,0,0,0);
     background-color: #edf0ff;
-    width: 260px;
+    width: 320px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    max-height: 414px;
+    max-height: 461px;
     margin-top: 0;
     .PriceCardBanner__card__tier{
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
       text-align: center;
       color: #1f1f1f;
@@ -75,13 +75,13 @@
     }
     .PriceCardBanner__card__price{
       text-align: center;
-      font-size: 40px;
+      font-size: 52px;
       letter-spacing: 0.05em;
       font-weight: bold;
       color: #1f1f1f;
     }
     .PriceCardBanner__card__per{
-      font-size: 13px;
+      font-size: 16px;
       line-height: 1.5;
       text-align: center;
       color: #747474;
@@ -99,13 +99,13 @@
   
     }
     .PriceCardBanner__check{
-      font-size: 13px;
+      font-size: 16px;
       color: #3b00ad;
       width: fit-content;
       margin-right: 10px;
     }
     .PriceCardBanner__list{
-      font-size: 13px;
+      font-size: 16px;
       color: #1f1f1f;
     }
     .PriceCardBanner__subscribe{
@@ -115,7 +115,7 @@
       background-color: #3b00ad;
       padding: 12px 35px;
       color: #ffffff;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: bold;
       border-radius: 8px;
       cursor: pointer;

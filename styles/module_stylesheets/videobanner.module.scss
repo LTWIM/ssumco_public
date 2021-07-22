@@ -6,20 +6,20 @@
   .videoBanner__title{
   width: fit-content;
   margin: auto;
-  font-size: 26px;
+  font-size: 41px;
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
   color: #1f1f1f;
   }
   .videoBanner__body{
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #747474;
-    max-width: 450px;
+    max-width: 550px;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .videoBanner__cont{
     max-width: 1680px;
@@ -36,8 +36,8 @@
   .videoBanner__video{
     margin: auto;
     width: 100%;
-    max-width: 620px;
-    height: 340px;
+    max-width: 650px;
+    height: 380px;
     mix-blend-mode: color;
     border-radius: 12px;
     background-blend-mode: color;
@@ -47,8 +47,8 @@
   }
   .videoBanner__btn{
     margin: auto;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background-color: #ff3d00;
@@ -62,5 +62,7 @@
     height: fit-content;
     color: white;
     font-weight: 100;
+    font-size: 24px;
+
   }
 }
