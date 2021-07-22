@@ -1,5 +1,5 @@
 import React from "react";
-import { TopBanner } from "../components/index";
+import { TopBanner,PhotoBanner } from "../components/index";
 import styles from "../styles/Cases.module.scss";
 
 export default function Home() {
@@ -138,6 +138,12 @@ export default function Home() {
       <div className={styles.cards__cont}>
         {cards.map((card) => mapCard(card))}
       </div>
+      <PhotoBanner
+        type="3"
+        direction="reverse"
+        header1="Our traffic for 2020"
+        body="Maecenas est arcu, sagittis eget ante semper, ornare rhoncus tellus. In ac arcu at velit sollicitudin ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam eu euismod quam. Vivamus commodo hendrerit est, sed vestibulum quam mollis semper. Etiam tristique rutrum lectus a consequat. Praesent tristique cursus tellus, in ultricies"
+      />
     </div>
   );
 }
