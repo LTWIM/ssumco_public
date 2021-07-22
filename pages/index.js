@@ -6,6 +6,24 @@ import Link from "next/link"; // use this for links
 import { MainBanner, PhotoBanner } from "../components/index";
 
 export default function Home() {
+  const contents = [
+    {
+      title : "Use Case and Solutions",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim"
+    },
+    {
+      title : "Budget",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim"
+    },
+    {
+      title : "Number of Users and Work Space",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim"
+    },
+    {
+      title : "Specific Functionality",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim"
+    }
+  ]
   return (
     <div>
       {/* <Head>
@@ -31,11 +49,17 @@ export default function Home() {
       <MainBanner animation = {false} />
       <PhotoBanner 
         type = '1'
+        header1 = 'Why work with us'
+        header2 = 'for your technical and online needs?'
+        body = 'Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci'
       />
 
       <PhotoBanner 
         direction = "reverse"
         type = '2'
+        header1 = 'How to Choose your SSUM PLAN Plan?'
+        contents = {contents}
+        footer = "Ready to choose a pricing plan"
       />
     </div>
   );

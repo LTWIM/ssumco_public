@@ -13,6 +13,15 @@
     max-height: 600px;
     // border: 1px solid;
   }
+  .PhotoBanner__backgroundbg{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    max-height: 600px;
+    object-fit: fill;
+    border: 1px solid;
+    overflow:hidden
+  }
   .PhotoBanner__vawe1{
     position: absolute;
     width: calc(100vw + 1000px);
@@ -32,6 +41,16 @@
     background-position: top;
     background-repeat: no-repeat;
   }
+  .PhotoBanner__bg{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 600px;
+    background-size: contain;
+    // background-position: center;
+    background-repeat: no-repeat;
+    
+  }
   .PhotoBanner__cont{
     position: relative;
     display: flex;
@@ -42,6 +61,7 @@
     justify-content: space-between;
     // border: 1px solid;
     flex-wrap: wrap;
+    align-items: center;
   }
   .PhotoBanner__photo{
     background-color: lightgrey;
@@ -50,7 +70,6 @@
     min-width: 400px;
     height: 320px;
     margin: auto;
-    margin-bottom: 0;
   }
   .PhotoBanner__textcont{
     // border: 1px solid black;
@@ -92,10 +111,9 @@
     cursor: pointer;
   }
   .PhotoBanner__blockcont{
-    border: 1px solid black;
+    // border: 1px solid black;
     width: fit-content;
     margin: auto;
-    margin-right: 0;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -104,9 +122,39 @@
   .PhotoBanner__blockWrapper{
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid black;
+  // border: 1px solid black;
   width: 100%;
   max-width: 320px;
+  }
+  .PhotoBanner__block{
+    padding: 15px 0px;
+    box-sizing: border-box;
+    border-left: 21px solid rgba(0,0,0,0);
+    border-right: 21px solid rgba(0,0,0,0);
+    border-radius: 12px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    max-height: 45px;
+    font-weight: bold;
+    &:hover{
+      max-height: 300px;
+    }
+    .PhotoBanner__block__body{
+      margin-top: 20px;
+      font-size: 11px;
+      line-height: 1.63;
+      color: #747474;
+    }
+  }
+  .PhotoBanner__footer{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #3b00ad;
   }
 }
 @media screen and (max-width:1680px) {
