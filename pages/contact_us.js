@@ -10,12 +10,15 @@ export default function Home() {
   let cards = [
     {
       title: "Office Address",
-      txt: "74 Highfield Road London NW59 0LU",
+      txt: "74 Highfield Road",
+      txt1: "London",
+      txt2: "NW59 0LU",
       svg: location("", "", "svg__outerLayer"),
     },
     {
       title: "Phone Numbers",
-      txt: `+44 20 7946 0380 +44 20 7946 0295`,
+      txt: `+44 20 7946 0380`,
+      txt1: "+44 20 7946 0295",
       svg: phone("", "", "svg__outerLayer"),
     },
     {

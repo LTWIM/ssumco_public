@@ -23,7 +23,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 16px;
   div:first-child {
     .card__img__cont {
       .color {
@@ -51,19 +51,19 @@
   flex-direction: column;
   position: relative;
   width: 300px;
-  height: 250px;
   align-items: center;
+  justify-content: flex-start;
 }
 .card__img__cont {
   position: relative;
-  width: 115px;
-  height: 100px;
+  width: 174px;
+  height: 143px;
   .svg {
-    width: 40px;
-    height: 49px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
-    left: 34px;
-    top: 10px;
+    left: 56px;
+    top: 27px;
     .svg__outerLayer {
       width: 100%;
       height: 100%;
@@ -71,8 +71,8 @@
   }
   div {
     position: absolute;
-    width: 112px;
-    height: 112px;
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -91,5 +91,8 @@
   line-height: 1.75;
   font-size: 16px;
   text-align: center;
-  width: 48%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

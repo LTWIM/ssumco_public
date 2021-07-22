@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/module_stylesheets/card.module.scss";
 
-export default function Card(props) {
+export default function card(props) {
   const mapCard = () => {
     return props.cards.map((card) => {
       return (
@@ -16,6 +16,8 @@ export default function Card(props) {
           </div>
           <div className={styles.card__txt__cont}>
             <span>{card.txt}</span>
+            <span>{card.txt1}</span>
+            <span>{card.txt2}</span>
           </div>
         </div>
       );
