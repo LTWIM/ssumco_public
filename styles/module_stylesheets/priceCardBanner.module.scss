@@ -2,13 +2,14 @@
   width: 100%;
   max-width: 1680px;
   margin: auto;
+  margin-bottom: 50px;
   padding-top: 40px;
   padding-bottom: 40px;
   // background-color: black;
   .PriceCardBanner__cont{
     width: 70%;
     margin: auto;
-    border: 1px solid;
+    // border: 1px solid;
   }
   .PriceCardBanner__header{
     width: fit-content;
@@ -23,5 +24,143 @@
     line-height: 1.5;
     text-align: center;
     color: #747474;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
+  .PriceCardBanner__cardcont{
+    width: 100%;
+    padding-top: 50px;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+  }
+  .PriceCardBanner__card{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    border-left: 15px solid rgba(0,0,0,0);
+    border-right: 15px solid rgba(0,0,0,0);
+    background-color: #edf0ff;
+    width: 260px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    max-height: 414px;
+    margin-top: 0;
+    .PriceCardBanner__card__tier{
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #1f1f1f;
+      width: 100%;
+    }
+    .PriceCardBanner__card__dashSmall{
+      border-bottom: 3px solid;
+      color: #3b00ad;
+      width: 10px;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .PriceCardBanner__card__dashBig{
+      border-bottom: 2px solid;
+      color: rgba(116, 116, 116, 0.5);
+      
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .PriceCardBanner__card__price{
+      text-align: center;
+      font-size: 40px;
+      letter-spacing: 0.05em;
+      font-weight: bold;
+      color: #1f1f1f;
+    }
+    .PriceCardBanner__card__per{
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: center;
+      color: #747474;
+    }
+    .PriceCardBanner__card__checkcont{
+      width: 80%;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 0;
+      // border: 1px solid;
+    }
+    .PriceCardBanner__checklist{
+      display: flex;
+      margin-top: 10px;
+  
+    }
+    .PriceCardBanner__check{
+      font-size: 13px;
+      color: #3b00ad;
+      width: fit-content;
+      margin-right: 10px;
+    }
+    .PriceCardBanner__list{
+      font-size: 13px;
+      color: #1f1f1f;
+    }
+    .PriceCardBanner__subscribe{
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      background-color: #3b00ad;
+      padding: 12px 35px;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover{
+        background-color: #501abd;
+      }
+    }
+    &:hover{
+      @keyframes cardhover {
+        0%{}
+        100%{
+          background-color:#3b00ad;
+          margin-top: -20px;
+        }
+      }
+      animation: cardhover 0.5s forwards;
+      .PriceCardBanner__subscribe{
+        background-color: #ff3d00;
+        transition: background-color 0.5s ease;
+      }
+      .PriceCardBanner__card__tier{
+        color: #ffffff;
+        transition: color 0.5s ease;
+      }
+      .PriceCardBanner__card__per{
+        color: rgba(255, 255, 255, 0.68);
+        transition: color 0.5s ease;
+      }
+      .PriceCardBanner__card__price{
+        color: #ffffff;
+        transition: color 0.5s ease;
+      }
+      .PriceCardBanner__check{
+        color: #ff3d00;
+        transition: color 0.5s ease;
+      }
+      .PriceCardBanner__list{
+        transition: color 0.5s ease;
+        color: #ffffff;
+      }
+      .PriceCardBanner__card__dashSmall{
+        transition: color 0.5s ease;
+        color: #ff3d00;
+      }
+    }
+  }
+ 
 }

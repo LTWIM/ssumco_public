@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {createRef} from 'react'
 import styles from '../styles/module_stylesheets/photobanner.module.scss'
 export default function PhotoBanner (props) {
   const block = (content) => {
     return(
-      <div className={styles.PhotoBanner__block}>
+      <div className={styles.PhotoBanner__block} >
           {content.title}
         <div className={styles.PhotoBanner__block__body}>
           {content.body}
@@ -92,11 +92,9 @@ export default function PhotoBanner (props) {
 
           <div className={styles.PhotoBanner__cont} style={props.direction === 'reverse' ? {
             flexDirection:'row-reverse',
-            marginRight:'0'
           }
           :
           {
-            marginLeft:'0'
           }}>
             <div className={styles.PhotoBanner__photo} style={
               props.type === 1 ?{
