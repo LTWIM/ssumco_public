@@ -1,0 +1,27 @@
+.PriceCardBanner{
+  width: 100%;
+  max-width: 1680px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  // background-color: black;
+  .PriceCardBanner__cont{
+    width: 70%;
+    margin: auto;
+    border: 1px solid;
+  }
+  .PriceCardBanner__header{
+    width: fit-content;
+    margin: auto;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #1f1f1f;
+  }
+  .PriceCardBanner__body{
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #747474;
+  }
+}

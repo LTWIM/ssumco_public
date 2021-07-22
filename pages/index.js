@@ -3,7 +3,7 @@ import Head from "next/head"; // use this for heads/ leave it alone for pages
 import Image from "next/image"; // use this for images
 import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
-import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner } from "../components/index";
+import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner } from "../components/index";
 
 export default function Home() {
   const contents = [
@@ -86,6 +86,10 @@ export default function Home() {
         header1 = 'How to Choose your SSUM PLAN Plan?'
         contents = {contents}
         footer = "Ready to choose a pricing plan"
+      />
+      <PriceCardBanner
+        header = "Our basic SEO management"
+        body = "Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
     </div>
   );
