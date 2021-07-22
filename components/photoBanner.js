@@ -14,14 +14,18 @@ export default function PhotoBanner(props) {
   };
   const classNameType = () => {
     switch (props.type) {
-      case '1':
-        return styles.PhotoBanner__cont__type1
-      case '2':
-        return styles.PhotoBanner__cont__type2
+      case "1":
+        return styles.PhotoBanner__cont__type1;
+      case "2":
+        return styles.PhotoBanner__cont__type2;
+      case "3":
+        return styles.PhotoBanner__cont__type1;
+      case "4":
+        return styles.PhotoBanner__cont__type1;
       default:
         break;
     }
-  }
+  };
   const background = () => {
     switch (props.type) {
       case "1":
@@ -114,10 +118,10 @@ export default function PhotoBanner(props) {
             <div className={styles.PhotoBanner__body}>{props.body}</div>
             <div className={`${styles.PhotoBanner__btn} ${styles.orange}`}>
               View Details
-           </div>
+            </div>
           </div>
         );
-     case "4":
+      case "4":
         return (
           <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
             <div className={styles.PhotoBanner__blockWrapper}>
@@ -130,15 +134,18 @@ export default function PhotoBanner(props) {
         break;
     }
   };
-    return(
-        <div className={styles.PhotoBanner}>
-          {background()}
-          <div className={styles.PhotoBanner__wrapper}>
-
-          <div className={classNameType()} style={props.direction === 'reverse' ? {flexDirection:'row-reverse'}:{}}>
-            <div className={styles.PhotoBanner__photo} style={props.type === '1' ? {
-              marginBottom:'0'
-            }:{}}>
+  return (
+    <div className={styles.PhotoBanner}>
+      {background()}
+      <div className={styles.PhotoBanner__wrapper}>
+        <div
+          className={classNameType()}
+          style={
+            props.direction === "reverse"
+              ? { flexDirection: "row-reverse" }
+              : {}
+          }
+        >
           <div
             className={styles.PhotoBanner__photo}
             style={
