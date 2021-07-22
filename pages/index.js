@@ -48,19 +48,19 @@ export default function Home() {
       companyName: 'JK',
       position:'CEO',
       body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:'4'
+      rate:5
     },
     {
       companyName: 'Aleve',
       position:'CEO',
       body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:'4'
+      rate:4
     },
     {
       companyName: 'CarMax',
       position:'Dealer',
       body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:'4'
+      rate:3
     },
   ]
   return (
