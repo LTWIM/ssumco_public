@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/module_stylesheets/top_banner.module.scss";
 
-export default function Topbanner(props) {
+export default function TopBanner(props) {
   return (
     <div className={styles.contt__wrapper}>
       <div className={styles.contt__cont}>
