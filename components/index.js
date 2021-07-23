@@ -8,3 +8,4 @@ export { default as PriceCardBanner } from "./priceCardBanner";
 export { default as QuestionForm } from "./question_form";
 export { default as Card } from "./card";
 export { default as IconCard } from './IconCard'
+export { default as IconBanner } from "./iconBanner"
