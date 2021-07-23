@@ -8,3 +8,5 @@ export { default as PriceCardBanner } from "./priceCardBanner";
 export { default as QuestionForm } from "./question_form";
 export { default as Card } from "./card";
 export { default as IconCard } from './IconCard'
+export { default as BlogCard } from "./blog_card";
+export {default as TrialForm} from './trial_form'

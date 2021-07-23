@@ -1,5 +1,5 @@
 import React from "react";
-import { TopBanner,PhotoBanner } from "../components/index";
+import { TopBanner, PhotoBanner, TrialForm } from "../components/index";
 import styles from "../styles/Cases.module.scss";
 
 export default function Home() {
@@ -105,15 +105,15 @@ export default function Home() {
     return (
       <div className={styles.card__cont}>
         <div className={styles.card__inner__cont}>
-        <div className={styles.card__front__cont}></div>
-        <div className={styles.card__back__cont}>
-          <div className={styles.card__img__cont}></div>
-          <div className={styles.card__txt__cont}>
-            <span>{card.title}</span>
-            <span>{card.txt}</span>
+          <div className={styles.card__front__cont}></div>
+          <div className={styles.card__back__cont}>
+            <div className={styles.card__img__cont}></div>
+            <div className={styles.card__txt__cont}>
+              <span>{card.title}</span>
+              <span>{card.txt}</span>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     );
   };
@@ -144,6 +144,17 @@ export default function Home() {
         header1="Our traffic for 2020"
         body="Maecenas est arcu, sagittis eget ante semper, ornare rhoncus tellus. In ac arcu at velit sollicitudin ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam eu euismod quam. Vivamus commodo hendrerit est, sed vestibulum quam mollis semper. Etiam tristique rutrum lectus a consequat. Praesent tristique cursus tellus, in ultricies"
       />
+      <PhotoBanner
+        type="1"
+        header1={
+          <span>
+            Why You Use a{" "}
+            <span style={{ color: "#ff3d00" }}>Enterprise Pricing Plan?</span>
+          </span>
+        }
+        body="Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci"
+      />
+      <TrialForm />
     </div>
   );
 }

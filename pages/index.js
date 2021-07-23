@@ -79,12 +79,15 @@ export default function Home() {
     {
       title: "24/7/365 Support",
       body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros",
-    },
+    }
   ];
   return (
     <div className={styles.home__wrapper}>
       <MainBanner animation={false} />
-      <div className={styles.cards__wrapper}> <Card title="Create and Track Content" cards={cards} txt="" /></div>
+      <div className={styles.cards__wrapper}>
+        {" "}
+        <Card title="Create and Track Content" cards={cards} txt="" />
+      </div>
       <PhotoBanner
         type="1"
         header1="Why work with us"
@@ -101,13 +104,11 @@ export default function Home() {
         header1="How to Choose your SSUM PLAN Plan?"
         contents={contents}
         footer="Ready to choose a pricing plan"
-/>
-      <QuoteBanner
-        contents = {QuoteContents}
       />
+      <QuoteBanner contents={QuoteContents} />
       <PriceCardBanner
-        header = "Our basic SEO management"
-        body = "Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
+        header="Our basic SEO management"
+        body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
       <div className={styles.home__wrapper__Questionform}>
         <QuestionForm type="subscribe1"/>
