@@ -5,7 +5,13 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
 import Card from "../components/card";
 import { desktop, pad, drone } from "../components/svg";
-import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner } from "../components/index";
+import {
+  MainBanner,
+  PhotoBanner,
+  VideoBanner,
+  QuoteBanner,
+  PriceCardBanner,
+} from "../components/index";
 
 export default function Home() {
   const contents = [
@@ -45,24 +51,24 @@ export default function Home() {
   ];
   const QuoteContents = [
     {
-      companyName: 'JK',
-      position:'CEO',
-      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:'4'
+      companyName: "JK",
+      position: "CEO",
+      body: "Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate: "4",
     },
     {
-      companyName: 'Aleve',
-      position:'CEO',
-      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:'4'
+      companyName: "Aleve",
+      position: "CEO",
+      body: "Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate: "4",
     },
     {
-      companyName: 'CarMax',
-      position:'Dealer',
-      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:'4'
+      companyName: "CarMax",
+      position: "Dealer",
+      body: "Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate: "4",
     },
-  ]
+  ];
   return (
     <div className={styles.home__wrapper}>
       {/* <Head>
@@ -86,7 +92,10 @@ export default function Home() {
       <footer></footer> */}
 
       <MainBanner animation={false} />
-      <div className={styles.cards__wrapper}> <Card title="Create and Track Content" cards={cards} txt="" /></div>
+      <div className={styles.cards__wrapper}>
+        {" "}
+        <Card title="Create and Track Content" cards={cards} txt="" />
+      </div>
       <PhotoBanner
         type="1"
         header1="Why work with us"
@@ -103,13 +112,11 @@ export default function Home() {
         header1="How to Choose your SSUM PLAN Plan?"
         contents={contents}
         footer="Ready to choose a pricing plan"
-/>
-      <QuoteBanner
-        contents = {QuoteContents}
       />
+      <QuoteBanner contents={QuoteContents} />
       <PriceCardBanner
-        header = "Our basic SEO management"
-        body = "Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
+        header="Our basic SEO management"
+        body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
     </div>
   );
