@@ -2,6 +2,19 @@ import React from "react";
 import styles from "../styles/module_stylesheets/top_banner.module.scss";
 
 export default function Topbanner(props) {
+
+
+  const pageConfig = () => {
+    if(props.pages === false){
+      return(
+        <span>Home / {props.breadCrumb}</span>
+      )
+    }
+    return(
+      <span>Home / Pages / {props.breadCrumb}</span>
+    )
+  }
+
   return (
     <div className={styles.contt__wrapper}>
       <div className={styles.contt__cont}>
@@ -10,7 +23,8 @@ export default function Topbanner(props) {
             <span>{props.title}</span>
           </div>
           <div className={styles.breadCrumb__cont}>
-            <span>Home / Pages / {props.breadCrumb}</span>
+
+            {pageConfig()}
           </div>
         </div>
         <div className={styles.img__cont}>

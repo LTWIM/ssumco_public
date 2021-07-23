@@ -1,0 +1,39 @@
+.iconCard{
+width: 220px;
+height: 260px;
+margin: 0 31px 0 0;
+padding: 27.4px 30px 42px 31px;
+border-radius: 12px;
+box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+background-color: #f9faff;
+  .iconCard__icon{
+    border: 1px solid black;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+  }
+  .iconCard__name{
+    margin-top: 15px;
+    border: 1px solid;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #1f1f1f;
+  }
+  .iconCard__dash{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 10px;
+    height: 4px;
+    background-color: #ff882e;
+  }
+  .iconCard__body{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #747474;
+    width: 70%;
+    margin: auto;
+  }
+}
