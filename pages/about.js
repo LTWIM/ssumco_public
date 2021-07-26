@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/About.module.scss";
-import {TopBanner, IconBanner, PhotoBanner, TeamBanner, VideoBanner, QuoteBanner} from '../components/index'
+import {TopBanner, IconBanner, PhotoBanner, TeamBanner, VideoBanner, QuoteBanner, BlogCard} from '../components/index'
 export default function Home() {
   const cardInfo = [
     {
@@ -115,6 +115,8 @@ export default function Home() {
     contents = {QuoteContents}
     backgroundColor = '#edf0ff'
     />
+    <BlogCard />
+
   </div>
   ) 
 }

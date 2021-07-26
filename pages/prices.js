@@ -1,7 +1,9 @@
 import React from "react";
-
-import styles from "../styles/Prices.module.css";
+import styles from "../styles/Prices.module.scss";
 
 export default function Home() {
-  return <div className=""></div>;
+  return (
+    <div>
+    </div>
+  )
 }
