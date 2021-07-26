@@ -1,0 +1,84 @@
+.teamBanner{
+  // border: 1px solid black;
+  width: 100%;
+  max-width: 1680px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  .teamBanner__Wrapper{
+    // border: 1px solid black;
+    width: 70%;
+    margin: auto;
+  }
+  .teamBanner__header{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: #1f1f1f;
+  }
+  .teamBanner__body{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #747474;
+    max-width: 560px;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .teamBanner__memberWrapper{
+    // border: 1px solid;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .teamBanner__memberCont{
+    // border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    max-width: 345px;
+    min-width: 270px;
+  }
+  .teamBanner__photo{
+    // border: 1px solid;
+    width: 100%;
+    height: 300px;
+    background-color: lightgrey;
+  }
+  .teamBanner__name{
+    // border: 1px solid;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f1f1f;
+    margin: auto;
+    margin-top: 15px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .teamBanner__position{
+    // border: 1px solid;
+    font-size: 18px;
+    color: #1f1f1f;
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .teamBanner__detail{
+    // border: 1px solid;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #747474;
+    margin: auto;
+    margin-top: 15px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

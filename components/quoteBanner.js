@@ -17,14 +17,18 @@ export default function QuoteBanner (props) {
       </div>
     )
   }
-
   const pageLimit = () => {
     if(page > 0){
       Setpage(page - 1)
     }
   }
     return(
-        <div className={styles.QuoteBanner}>
+        <div className={styles.QuoteBanner} style={props.backgroundColor ? 
+        {
+          backgroundColor: `${props.backgroundColor}`,
+          paddingTop:'100px',
+        } : {}} >
+          <div className={styles.QuoteBanner__wrapper}>
           <div className={styles.QuoteBanner__cont}>
             <div className={styles.QuoteBanner__top}>
               <div className={styles.QuoteBanner__left} onClick={()=>{pageLimit()}}>
@@ -50,7 +54,9 @@ export default function QuoteBanner (props) {
             <div className={styles.QuoteBanner__ratecont}>
               {starColor()}
             </div>
-          </div>  
+          </div>
+          
+          </div>
         </div>
     )
 }
