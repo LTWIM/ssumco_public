@@ -80,7 +80,7 @@ export default function Home() {
     {
       title: "24/7/365 Support",
       body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros",
-    },
+    }
   ];
   
   return (

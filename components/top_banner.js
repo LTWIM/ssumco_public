@@ -14,7 +14,6 @@ export default function Topbanner(props) {
       <span>Home / Pages / {props.breadCrumb}</span>
     )
   }
-
   return (
     <div className={styles.contt__wrapper}>
       <div className={styles.contt__cont}>
