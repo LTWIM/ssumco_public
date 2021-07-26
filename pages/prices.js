@@ -193,6 +193,14 @@ export default function Home() {
         </div>
       </div>
       <QuoteBanner contents={QuoteContents} />
+      <div className={styles.imgs__cont}>
+        <div className={styles.img__cont}></div>
+        <div className={styles.img__cont}></div>
+        <div className={styles.img__cont}></div>
+        <div className={styles.img__cont}></div>
+        <div className={styles.img__cont}></div>
+        <div className={styles.img__cont}></div>
+      </div>
     </div>
   );
 }

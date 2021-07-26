@@ -193,5 +193,18 @@
       }
     }
   }
+  .imgs__cont {
+    max-width: 1680px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    .img__cont {
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+    }
+  }
 }
-
