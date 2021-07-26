@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/About.module.scss";
-import {TopBanner, IconBanner, PhotoBanner, TeamBanner, VideoBanner} from '../components/index'
+import {TopBanner, IconBanner, PhotoBanner, TeamBanner, VideoBanner, QuoteBanner} from '../components/index'
 export default function Home() {
   const cardInfo = [
     {
@@ -56,6 +56,26 @@ export default function Home() {
     "video5",
     "video6",
   ]
+  const QuoteContents = [
+    {
+      companyName: 'JK',
+      position:'CEO',
+      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate:5
+    },
+    {
+      companyName: 'Aleve',
+      position:'CEO',
+      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate:4
+    },
+    {
+      companyName: 'CarMax',
+      position:'Dealer',
+      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate:3
+    },
+  ]
   return(
   <div className={styles.About}>
     <TopBanner 
@@ -90,6 +110,10 @@ export default function Home() {
       header="Attention to Every Client’s Succes"
       body="Integer mauris ipsum, consequat tincidunt orci eu, consectetur tempus est. Sed posuere sem a convallis maximus. Curabitur consequat dignissim nisl, at efficitur justo"
       slideShow={videolist}
+    />
+    <QuoteBanner
+    contents = {QuoteContents}
+    backgroundColor = '#edf0ff'
     />
   </div>
   ) 
