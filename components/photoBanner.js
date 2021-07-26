@@ -22,6 +22,8 @@ export default function PhotoBanner(props) {
         return styles.PhotoBanner__cont__type1;
       case "4":
         return styles.PhotoBanner__cont__type1;
+      case "5":
+        return styles.PhotoBanner__cont__type3;
       default:
         break;
     }
@@ -130,6 +132,33 @@ export default function PhotoBanner(props) {
             <div className={styles.PhotoBanner__footer}>{props.footer}</div>
           </div>
         );
+      case"5":
+          return(
+            <div className={styles.PhotoBanner__textcont} style={{marginTop:'0'}}>
+              <div className={styles.PhotoBanner__header1}>{props.header1}</div>
+              <div className={styles.PhotoBanner__header2}>{props.header2}</div>
+              <div className={styles.PhotoBanner__body}>{props.body}</div>
+              <div className={styles.PhotoBanner__type5__cont}>
+                <div className={styles.PhotoBanner__type5__col}>
+                  <div className={styles.PhotoBanner__type5__num}>
+                    {props.templates}
+                  </div>
+                  <div className={styles.PhotoBanner__type5__text}>
+                    Ready to Use Templates
+                  </div>
+                </div>
+                <div className={styles.PhotoBanner__type5__divider}/>
+                <div className={styles.PhotoBanner__type5__col}>
+                  <div className={styles.PhotoBanner__type5__num}>
+                    {props.websites} m
+                  </div>
+                  <div className={styles.PhotoBanner__type5__text}>
+                    Currently Hosted and Supported Websites
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
       default:
         break;
     }
