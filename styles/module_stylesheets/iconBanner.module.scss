@@ -1,0 +1,60 @@
+.iconBanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  .iconBanner__wrapper{
+    width: 100%;
+    max-width: 1680px;
+    margin: auto;
+    display: flex;
+  }
+  .iconBanner__cont{
+    width: 70%;
+    margin: auto;
+    // border: 1px solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .iconBanner__cardcont{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid;
+    .iconBanner__Card{
+      width: fit-content;
+      height: fit-content;
+      margin: auto;
+      margin-bottom: 20px;
+      // border: 1px solid;
+    }
+  }
+  .iconBanner__title{
+    width: 70%;
+    
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: #1f1f1f;
+  }
+  .iconBanner__body{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #747474;
+  }
+
+  @media screen and (max-width:1315px) {
+    .iconBanner__cardcont{
+      flex-wrap: wrap;
+    }
+  }
+}

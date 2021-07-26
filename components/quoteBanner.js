@@ -4,11 +4,16 @@ import styles from '../styles/module_stylesheets/quotebanner.module.scss'
 export default function QuoteBanner (props) {
   
   const [page,Setpage] = useState(0)
-
+  
   const starColor = (color = "#ffc107") => {
-    return(
+      let count = props.contents[page % props.contents.length].rate
+      let arr = []
+      for (let i = 0; i <count; i++){
+        arr.push(i)
+      }
+      return(
       <div className={styles.QuoteBanner__star}>
-        {star("30px",color)}
+        {arr.map(el => star("30px",color))}
       </div>
     )
   }
@@ -44,11 +49,6 @@ export default function QuoteBanner (props) {
             </div>
             <div className={styles.QuoteBanner__ratecont}>
               {starColor()}
-              {starColor()}
-              {starColor()}
-              {starColor()}
-              {starColor()}
-
             </div>
           </div>  
         </div>

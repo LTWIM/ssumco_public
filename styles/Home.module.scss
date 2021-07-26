@@ -18,6 +18,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .home__wrapper__Questionform{
+    margin: auto;
+    // border: 1px solid;
+    width: 100%;
+    max-width: 1680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
 }
 .cards__wrapper {
   width: 1680px;
