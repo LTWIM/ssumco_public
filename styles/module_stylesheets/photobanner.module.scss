@@ -128,6 +128,13 @@
     &.orange {
       background-color: #ff3d00;
     }
+    &.bg {
+      width: 358px;
+      padding: 17px 31px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    }
   }
   .PhotoBanner__blockcont {
     // border: 1px solid black;

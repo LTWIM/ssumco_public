@@ -52,13 +52,13 @@ export default function Home() {
         header2="Frequently Asked Questions"
         contents={questions}
       />
-        <PhotoBanner
+      <PhotoBanner
         direction="reverse"
         type="2"
         header1="How to Choose your SSUM PLAN Plan?"
         contents={contents}
         footer="Ready to choose a pricing plan"
-/>
+      />
       <div className={styles.contt__wrapper}>
         <QuestionForm />
       </div>

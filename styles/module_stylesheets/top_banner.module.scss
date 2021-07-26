@@ -38,7 +38,7 @@
   display: flex;
   justify-content: space-between;
   z-index: 3;
-  width: 1680px;
+  max-width: 1680px;
 }
 .txt__cont {
   display: flex;
@@ -54,7 +54,7 @@
 }
 .breadCrumb__cont {
   color: #747474;
-  line-height:1.63
+  line-height: 1.63;
 }
 .img__cont {
   width: 420px;
