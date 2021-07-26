@@ -12,3 +12,4 @@ export { default as IconBanner } from "./iconBanner"
 export { default as BlogCard } from "./blog_card";
 export {default as TrialForm} from './trial_form'
 export {default as TeamBanner} from './teamBanner'
+export { default as Nav } from './Nav'
