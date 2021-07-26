@@ -148,7 +148,9 @@ export default function PhotoBanner(props) {
             <div className={styles.PhotoBanner__blockWrapper}>
               {props.contents.map((content) => block(content))}
             </div>
-            <div className={styles.PhotoBanner__footer}>{props.footer}</div>
+          {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
+            {props.footer}
+          </div>}
           </div>
         );
       case"5":

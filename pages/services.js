@@ -1,8 +1,27 @@
 import React from "react";
 import styles from "../styles/Services.module.scss";
-import { TopBanner, PhotoBanner } from "../components/index";
+import { TopBanner, PhotoBanner, TrialForm } from "../components/index";
 
 export default function Home() {
+  const services = [
+    {
+      title: "Keeping track of Content. Regulary Updating",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+    {
+      title: "Unlimited User Groups and Permissions ",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+    {
+      title: "SEO link Building and Optimizing Tools for your website",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+    {
+      title:
+        "Review website analytics to see how many visitors your site is getting",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+  ];
   const questions = [
     {
       title: "Domain names. Data Safety and Added Security Services",
@@ -82,10 +101,20 @@ export default function Home() {
       </div>
       <PhotoBanner
         type="4"
-        header1="Easy to get started"
-        header2="Frequently Asked Questions"
         contents={questions}
+        footer="Explore Solutions and Prices"
       />
+      <div className={styles.seo__title__cont}>
+        <span>Content Management</span>
+        <span>SEO Services</span>
+      </div>
+      <PhotoBanner
+        type="4"
+        contents={questions}
+        direction="reverse"
+        footer="Explore Solutions and Prices"
+      />
+      <TrialForm />
     </div>
   );
 }
