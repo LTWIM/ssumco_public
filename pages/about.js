@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/About.module.scss";
-import {TopBanner, IconBanner, PhotoBanner, TeamBanner} from '../components/index'
+import {TopBanner, IconBanner, PhotoBanner, TeamBanner, VideoBanner} from '../components/index'
 export default function Home() {
   const cardInfo = [
     {
@@ -48,7 +48,14 @@ export default function Home() {
       photo:''
     }
   ]
-  
+  const videolist = [
+    "video1",
+    "video2",
+    "video3",
+    "video4",
+    "video5",
+    "video6",
+  ]
   return(
   <div className={styles.About}>
     <TopBanner 
@@ -78,6 +85,11 @@ export default function Home() {
       type="6"
       header1="Join Our Community"
       body="Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci"
+    />
+    <VideoBanner
+      header="Attention to Every Client’s Succes"
+      body="Integer mauris ipsum, consequat tincidunt orci eu, consectetur tempus est. Sed posuere sem a convallis maximus. Curabitur consequat dignissim nisl, at efficitur justo"
+      slideShow={videolist}
     />
   </div>
   ) 
