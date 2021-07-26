@@ -7,6 +7,7 @@ import Card from "../components/card";
 import { desktop, pad, drone } from "../components/svg";
 import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner,QuestionForm } from "../components/index";
 
+
 export default function Home() {
   const contents = [
     {
@@ -81,6 +82,7 @@ export default function Home() {
       body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros",
     }
   ];
+  
   return (
     <div className={styles.home__wrapper}>
       <MainBanner animation={false} />
