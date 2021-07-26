@@ -74,6 +74,11 @@ export default function Home() {
       body="Front end developer"
       member = {memberInfo}
     />
+    <PhotoBanner
+      type="6"
+      header1="Join Our Community"
+      body="Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci"
+    />
   </div>
   ) 
 }

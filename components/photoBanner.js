@@ -24,6 +24,8 @@ export default function PhotoBanner(props) {
         return styles.PhotoBanner__cont__type1;
       case "5":
         return styles.PhotoBanner__cont__type3;
+      case "6":
+        return styles.PhotoBanner__cont__type4;
       default:
         break;
     }
@@ -87,6 +89,23 @@ export default function PhotoBanner(props) {
             />
           </div>
         );
+        case "6":
+          return (
+            <div className={styles.PhotoBanner__background}>
+              <div
+                className={styles.PhotoBanner__vawe2}
+                style={{
+                  backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe2.png")`,
+                }}
+              />
+              <div
+                className={styles.PhotoBanner__vawe1}
+                style={{
+                  backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe1.png")`,
+                }}
+              />
+            </div>
+          );
       default:
         break;
     }
@@ -159,6 +178,15 @@ export default function PhotoBanner(props) {
               </div>
             </div>
           )
+      case"6":
+        return(
+          <div className={styles.PhotoBanner__textcont}>
+            <div className={styles.PhotoBanner__header1}>{props.header1}</div>
+            <div className={styles.PhotoBanner__header2}><div style={{fontWeight:'100'}}>M</div>ore News and Discounts</div>
+            <div className={styles.PhotoBanner__body}>{props.body}</div>
+            <div className={styles.PhotoBanner__btn}>Read more</div>
+          </div>
+        )
       default:
         break;
     }
