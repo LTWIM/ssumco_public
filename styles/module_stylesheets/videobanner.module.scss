@@ -63,6 +63,19 @@
     color: white;
     font-weight: 100;
     font-size: 24px;
-
+  }
+  .videoBanner__listWrapper{
+    // border: 1px solid;
+    width: 90%;
+    margin: auto;
+    margin-top:90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .videoBanner__preview{
+    background-color: lightgrey;
+    width: 10%;
+    height: 80px;
+    cursor: pointer;
   }
 }
