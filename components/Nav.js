@@ -54,6 +54,18 @@ export default function Nav (props) {
                     <div className={styles.Nav__currentPage}/>
                   </div>
                 </div>
+
+                <div className={styles.Nav__pageCont}>
+                  <div className={styles.Nav__Facebook}>
+                    Facebook
+                  </div>
+                </div>
+
+                <div className={styles.Nav__pageCont}>
+                  <div className={styles.Nav__search}>
+                    Search
+                  </div>
+                </div>
               </div>
               
 
