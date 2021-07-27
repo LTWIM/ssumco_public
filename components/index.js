@@ -7,8 +7,9 @@ export { default as QuoteBanner } from "./quoteBanner";
 export { default as PriceCardBanner } from "./priceCardBanner";
 export { default as QuestionForm } from "./question_form";
 export { default as Card } from "./card";
-export { default as IconCard } from './IconCard'
-export { default as IconBanner } from "./iconBanner"
+export { default as IconCard } from "./IconCard";
+export { default as IconBanner } from "./iconBanner";
 export { default as BlogCard } from "./blog_card";
-export {default as TrialForm} from './trial_form'
-export {default as TeamBanner} from './teamBanner'
+export { default as TrialForm } from "./trial_form";
+export { default as TeamBanner } from "./teamBanner";
+export { default as Footer } from "./footer";
