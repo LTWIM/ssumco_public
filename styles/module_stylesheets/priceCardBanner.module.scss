@@ -14,7 +14,7 @@
   .PriceCardBanner__header{
     width: fit-content;
     margin: auto;
-    font-size: 41px;
+    font-size: clamp(23px, 8vw, 41px);
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;

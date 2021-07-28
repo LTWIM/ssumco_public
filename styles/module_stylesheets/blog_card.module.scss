@@ -5,7 +5,7 @@
   flex-direction: column;
   margin-top: 80px;
   .title__cont {
-    font-size: 41px;
+    font-size: clamp(23px, 8vw, 41px);
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
@@ -33,19 +33,19 @@
         height: 50%;
         padding-left: 5px;
         .date__cont {
-          font-size: 20px;
+          font-size: clamp(13px, 5vw, 20px);
           color: #747474;
         }
         .card__title__cont {
           font-weight: bold;
-          font-size: 24px;
+          font-size: clamp(19px, 6vw, 24px);
         }
         .card__txt__cont {
-          font-size: 20px;
+          font-size: clamp(13px, 5vw, 20px);
           color: #747474;
         }
         .link__cont {
-          font-size: 20px;
+          font-size: clamp(13px, 5vw, 20px);
           color: #3b00ad;
           font-weight: bold;
         }
@@ -68,6 +68,21 @@
     width: 90%;
     .cards__cont {
       justify-content: center;
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  #mobile__card__cont {
+    .contt__cont {
+      justify-content: flex-start;
+      .date__cont {
+        margin-top: 4px;
+        margin-bottom: 11px;
+      }
+      .card__txt__cont {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
     }
   }
 }

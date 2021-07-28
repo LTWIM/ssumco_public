@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <div className="page-wrapper">
       <Nav/>
       <div className="page-break-point">
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
         <Footer />
       </div>
     </div>

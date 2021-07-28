@@ -124,7 +124,7 @@ export default function QuestionForm(props) {
           className={`${styles["input__cont"]} ${styles["sm"]}`}
           placeholder="Subject"
         />
-        <input
+        <textarea
           className={`${styles["input__cont"]} ${styles["big"]}`}
           placeholder="Your message"
         />
