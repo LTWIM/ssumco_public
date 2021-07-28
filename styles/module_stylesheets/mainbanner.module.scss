@@ -1,4 +1,4 @@
-.mainbanner{
+.mainbanner {
   width: 100%;
   max-width: 1680px;
   height: 630px;
@@ -8,27 +8,27 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  .mainbanner__background{
+  margin-top: 50px;
+  .mainbanner__background {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  .mainbanner__oval1{
-    top:-30px;
+  .mainbanner__oval1 {
+    top: -30px;
     width: 97%;
     height: 100%;
     position: absolute;
     // background-color: black;
   }
-  .mainbanner__oval2{
+  .mainbanner__oval2 {
     top: -50px;
     right: 0;
     width: 80%;
     height: 100%;
     position: absolute;
-    
   }
-  .mainbanner__textcont{
+  .mainbanner__textcont {
     position: relative;
     // border: 1px solid black;
     width: 70%;
@@ -37,12 +37,12 @@
     margin-top: 190px;
     display: flex;
   }
-  .mainbanner__Header1{
+  .mainbanner__Header1 {
     font-size: 41px;
     font-weight: bold;
     color: #ff3d00;
   }
-  .mainbanner__Header2{
+  .mainbanner__Header2 {
     margin-top: 5px;
     font-size: 41px;
     font-weight: bold;
@@ -51,7 +51,7 @@
     max-width: 300px;
     // border: 1px solid;
   }
-  .mainbanner__body{
+  .mainbanner__body {
     margin-top: 30px;
     max-width: 370px;
     // border: 1px solid;
@@ -60,7 +60,7 @@
     line-height: 1.63;
     color: #747474;
   }
-  .mainbanner__photo{
+  .mainbanner__photo {
     margin-left: 35px;
     width: 60%;
     max-width: 650px;
@@ -71,7 +71,7 @@
     margin-top: -40px;
     margin-right: 0;
   }
-  .mainbanner__btn{
+  .mainbanner__btn {
     margin-top: 20px;
     color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@
     font-size: 16px;
     cursor: pointer;
   }
-  .mainbanner__shape1{
+  .mainbanner__shape1 {
     position: absolute;
     background-color: #f9faff;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -92,20 +92,19 @@
     animation: morph1 8s ease-in-out infinite;
     @keyframes morph1 {
       0% {
-          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-      } 
-      
-      50% {
-          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       }
-      
+
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+
       100% {
-        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-      } 
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
     }
   }
-  .mainbanner__shape2{
-
+  .mainbanner__shape2 {
     position: absolute;
     background-color: #edf0ff;
     border-radius: 25% 90% 25% 50% / 90% 40% 60% 40%;
@@ -118,17 +117,16 @@
     animation: morph2 5s ease-in-out reverse infinite;
     @keyframes morph2 {
       0% {
-          border-radius:  25% 90% 25% 50% / 90% 40% 60% 40%;
-      } 
-      
-      50% {
-          border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+        border-radius: 25% 90% 25% 50% / 90% 40% 60% 40%;
       }
-      
+
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+
       100% {
         border-radius: 25% 90% 25% 50% / 90% 40% 60% 40%;
-      } 
+      }
     }
   }
-  
 }
