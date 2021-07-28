@@ -14,3 +14,4 @@ export { default as Footer } from "./footer";
 export {default as TrialForm} from './trial_form'
 export {default as TeamBanner} from './teamBanner'
 export { default as Nav } from './Nav'
+export {default as UseBackground } from './UseBackground'

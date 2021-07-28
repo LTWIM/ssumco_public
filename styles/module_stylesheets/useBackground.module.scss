@@ -1,0 +1,37 @@
+.UseBackground{
+  // border: 1px solid;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  width:'100%';
+
+  .UseBackground__container{
+    // border: 1px solid red;
+    margin: auto;
+    position: absolute;
+    width:100%;
+    // overflow: hidden;
+  }
+  .UseBackground__type1__outter{
+    background-repeat: no-repeat;
+    background-size: 2600px 400px;
+    background-position: 50% 30px;
+    
+  }
+  .UseBackground__type1__inner{
+    background-repeat: no-repeat;
+    background-size: 2600px 300px;
+  }
+  .UseBackground__type2__outter{
+    background-repeat: no-repeat;
+    background-size: 2600px 600px;
+    background-position: 50% 30%;
+    // transform: scaleY(-1);
+
+  }
+  .UseBackground__type2__inner{
+    background-repeat: no-repeat;
+    background-size: 2600px 550px;
+    background-position: 50% 40%;
+  }
+}

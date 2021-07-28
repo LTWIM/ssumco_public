@@ -3,7 +3,6 @@ import styles from '../styles/module_stylesheets/Nav.module.scss'
 export default function Nav (props) {
 
   const page = (name) => {
-    
     return(
       <div className={styles.Nav__pageCont}>
         <div className={styles.Nav__page}>
@@ -13,16 +12,22 @@ export default function Nav (props) {
       </div>
     )
   }
+
+  const logo = (name) => {
+    return(
+      <div className={styles.Nav__logoCont}>
+        <div className={styles.Nav__logo}>
+          {name}
+        </div>
+      </div>
+    )
+  }
     return(
         <div className={styles.Nav}>
           <div className={styles.Nav__wrapper}>
-            
-            <div className={styles.Nav__logoCont}>
-              <div className={styles.Nav__logo}>
-                SSUMCO
-              </div>
-            </div>
-            
+
+            {logo("SSUMCO")}
+
             <div className={styles.Nav__pageWrapper}>
               <div className={styles.Nav__pageSection}>
 

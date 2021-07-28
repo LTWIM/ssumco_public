@@ -1,5 +1,7 @@
 import React, { createRef } from "react";
 import styles from "../styles/module_stylesheets/photobanner.module.scss";
+import { UseBackground } from "./index";
+
 export default function PhotoBanner(props) {
   const block = (content) => {
     return (
@@ -34,40 +36,11 @@ export default function PhotoBanner(props) {
     switch (props.type) {
       case "1":
         return (
-          <div className={styles.PhotoBanner__background}>
-            <div
-              className={styles.PhotoBanner__vawe2}
-              style={{
-                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe2.png")`,
-              }}
-            />
-            <div
-              className={styles.PhotoBanner__vawe1}
-              style={{
-                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe1.png")`,
-              }}
-            />
-          </div>
+          <UseBackground type='1'/>
         );
       case "2":
         return (
-          <div className={styles.PhotoBanner__backgroundbg}>
-            <div
-              className={styles.PhotoBanner__bg}
-              style={{
-                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/bg.png")`,
-              }}
-            />
-            <div
-              className={styles.PhotoBanner__bg}
-              style={{
-                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/bg.png")`,
-                left: "1044px",
-                top: "195px",
-                height: "550px",
-              }}
-            />
-          </div>
+          <UseBackground type='2'/>
         );
       case "3":
         return (
@@ -196,6 +169,7 @@ export default function PhotoBanner(props) {
   return (
     <div className={styles.PhotoBanner}>
       {background()}
+      {props.background}
       <div className={styles.PhotoBanner__wrapper}>
         <div
           className={classNameType()}

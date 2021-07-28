@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
 import Card from "../components/card";
 import { desktop, pad, drone } from "../components/svg";
-import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner,QuestionForm } from "../components/index";
+import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner,QuestionForm, UseBackground } from "../components/index";
 
 
 export default function Home() {
