@@ -15,7 +15,7 @@ export default function Home(props) {
   return (
     <div className={styles.case__wrapper}>
       <TopBanner title="Case Details" breadCrumb="Case Detail" />
-      <div className={styles.contt__wrapper}>
+      <div className={styles.contt__wrapper} id={styles.mobile__contt__wrapper}>
         <div className={styles.detail__imgs__cont}>
           <div className={styles.img__cont}></div>
           <div className={styles.img__cont}></div>
@@ -56,7 +56,7 @@ export default function Home(props) {
           </div>
         </div>
       </div>
-      <div className={styles.cases__cont}>
+      <div className={styles.cases__cont} id={styles.mobile__cases__cont}>
         <div className={styles.title__cont}>
           <span>Recent Cases</span>
         </div>

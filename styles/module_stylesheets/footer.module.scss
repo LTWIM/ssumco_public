@@ -70,3 +70,33 @@
     }
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .footer__wrapper {
+    .footer__contt__cont {
+      justify-content: space-around;
+    }
+  }
+}
+@media only screen and (max-width: 580px) {
+  .footer__wrapper {
+    .footer__contt__cont {
+      flex-direction: column;
+      align-items: center;
+      .contacts__cont {
+        width: 90%;
+        align-items: center;
+        div {
+          text-align: center;
+          justify-content: center;
+        }
+        margin-bottom: 20px;
+      }
+      .infos__cont {
+       div {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
