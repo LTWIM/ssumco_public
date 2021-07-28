@@ -58,3 +58,32 @@
     background-color: lightgray;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .trialForm__wrapper {
+    width: 90%;
+    .contt__cont {
+      width: 48%;
+      .form__cont {
+        button {
+          font-size: 12px;
+          padding: 18px 0 17px 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 796px) {
+  .trialForm__wrapper {
+    flex-direction: column-reverse;
+    .contt__cont {
+      width: 100%;
+      .title__cont, .txt__cont {
+        width: 100%;
+      }
+    }
+    .img__cont {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

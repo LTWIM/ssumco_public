@@ -127,7 +127,7 @@ export default function Home() {
   ];
   const mapList = (list, idx) => {
     return (
-      <div className={styles.list__wrapper}>
+      <div className={styles.list__wrapper} id={styles.mobile__list__wrapper}>
         <div className={styles.title__cont}>
           <span>{list.title}</span>
           {idx !== 0 && <span>{list.subTitle}</span>}
@@ -179,7 +179,7 @@ export default function Home() {
         contents={plans}
         footer="Ready to choose a pricing plan"
       />
-      <div className={styles.solutions__contt__wrapper}>
+      <div className={styles.solutions__contt__wrapper} id={styles.mobile__solutions__contt__wrapper}>
         <div className={styles.solutions__title__cont}>
           <span>Our Additional Solutions</span>
           <span>

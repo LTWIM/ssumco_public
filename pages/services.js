@@ -61,7 +61,7 @@ export default function Home() {
     return (
       <div className={styles.card__cont}>
         <div className={styles.header__cont}>
-          <div className={styles.txt__cont}>
+          <div className={styles.subTxt__cont}>
             <span>{card.header}</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <div className={styles.services__wrapper}>
       <TopBanner title="Services" breadCrumb="Services" />
-      <div className={styles.contt__wrapper}>
+      <div className={styles.contt__wrapper} id={styles.mobile__contt__wrapper}>
         <div className={styles.title__cont}>
           <span>Services that Speed Up Success</span>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
             dignissim nisl, at efficitur justo
           </span>
         </div>
-        <div className={styles.cards__cont}>
+        <div className={styles.cards__cont} id={styles.mobile__cards__cont}>
           {cards.map((card) => mapCards(card))}
         </div>
       </div>

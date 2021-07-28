@@ -5,7 +5,8 @@
   align-items: center;
 }
 .contactUs__contt__wrapper {
-  width: 1680px;
+  max-width: 1680px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +17,11 @@
   background-color: gray;
   margin-bottom: 50px;
   margin-top: 50px;
-  background-image:url("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/ssumCoMap.png");
-  background-size:cover;
+  background-image: url("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/ssumCoMap.png");
+  background-size: cover;
+}
+@media only screen and (max-width: 1080px) {
+  .map__cont {
+    width: 90%;
+  }
 }

@@ -29,6 +29,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      flex-wrap: wrap;
       .card__cont {
         display: flex;
         flex-direction: column;
@@ -58,7 +59,7 @@
         background-color: #ffffff;
         position: relative;
         min-height: 50px;
-        .txt__cont {
+        .subTxt__cont {
           position: absolute;
           left: 0;
           margin-left: -45px;
@@ -111,5 +112,25 @@
     span:last-child {
       color: #ff3d00;
     }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #mobile__contt__wrapper {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1041px) {
+  #mobile__cards__cont {
+    .card__cont {
+      .title__cont,
+      .txt__cont {
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 782px) {
+  #mobile__cards__cont {
+    justify-content: center;
   }
 }

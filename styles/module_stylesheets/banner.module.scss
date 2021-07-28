@@ -1,0 +1,30 @@
+.banner__wrapper {
+  .background__top__cont {
+    position: relative;
+    height: 200px;
+    width: 100vw;
+    background: #e0efe3;
+  }
+  .background__top__cont:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 100vw;
+    height: 220px;
+    background-color: white;
+    right: -5px;
+    top: 40px;
+  }
+  .background__top__cont:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 100vw;
+    height: 200px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 27px;
+  }
+}

@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  &::-webkit-scrollbar{
+    display:none;
+  }
 }
 .page-wrapper {
   width: 100vw;
@@ -13,5 +16,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin-top:100px;
   }
 }

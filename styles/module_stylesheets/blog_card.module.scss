@@ -53,3 +53,21 @@
     }
   }
 }
+@media only screen and (max-width: 1200px) {
+  .blogCard__wrapper {
+    width: 90%;
+    .cards__cont {
+      .card__cont {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 825px) {
+  .blogCard__wrapper {
+    width: 90%;
+    .cards__cont {
+      justify-content: center;
+    }
+  }
+}
