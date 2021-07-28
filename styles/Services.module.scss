@@ -11,14 +11,14 @@
     max-width: 1176px;
     margin-bottom: 40px;
     .title__cont {
-      font-size: 41px;
+      font-size: clamp(23px, 6.7vw, 41px);
       font-weight: bold;
       line-height: 1.5;
       text-align: center;
     }
     .text__cont {
       color: #747474;
-      font-size: 18px;
+      font-size: clamp(15px, 2vw, 18px);
       line-height: 1.5;
       text-align: center;
       width: 55%;
@@ -92,7 +92,7 @@
   .fullService__title__cont {
     display: flex;
     flex-direction: column;
-    font-size: 41px;
+    font-size: clamp(23px, 8vw, 41px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
@@ -104,7 +104,7 @@
   .seo__title__cont {
     display: flex;
     flex-direction: column;
-    font-size: 41px;
+    font-size: clamp(23px, 8vw, 41px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
@@ -129,8 +129,34 @@
     }
   }
 }
+@media only screen and (max-width: 903px) {
+  #mobile__contt__wrapper {
+    .text__cont {
+      width: 72%;
+    }
+  }
+}
 @media only screen and (max-width: 782px) {
   #mobile__cards__cont {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 647px) {
+  #mobile__contt__wrapper {
+    .text__cont {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  #mobile__cards__cont {
+    .card__cont {
+      .title__cont {
+        font-size: 17px;
+      }
+      .txt__cont {
+        font-size: 12px;
+      }
+    }
   }
 }

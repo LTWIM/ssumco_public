@@ -9,13 +9,13 @@
     display: flex;
     flex-direction: column;
     .title__cont {
-      font-size: 50px;
-      width: 80%;
+      font-size: clamp(36px, 9vw, 50px);
+      width: 93%;
       font-weight: bold;
     }
     .txt__cont {
       color: #747474;
-      font-size: 18px;
+      font-size: clamp(13px, 4vw, 18px);
       line-height: 1.5;
       width: 85%;
       margin-top: 40px;
@@ -47,6 +47,7 @@
     .subText__cont {
       display: flex;
       color: #747474;
+      font-size: clamp(10px, 2.5vw, 16px);
       span:first-child {
         color: red;
       }
@@ -72,18 +73,43 @@
     }
   }
 }
-@media only screen and (max-width: 796px) {
+@media only screen and (max-width: 839px) {
   .trialForm__wrapper {
     flex-direction: column-reverse;
     .contt__cont {
       width: 100%;
-      .title__cont, .txt__cont {
+      .title__cont,
+      .txt__cont {
         width: 100%;
       }
     }
     .img__cont {
       width: 100%;
       margin-bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .trialForm__wrapper {
+    .img__cont {
+      height: 280px;
+    }
+    .contt__cont {
+      .txt__cont {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .trialForm__wrapper {
+    .contt__cont {
+      .form__cont {
+        button {
+          font-size: 10px;
+          padding: 11px 0 11px 0;
+        }
+      }
     }
   }
 }

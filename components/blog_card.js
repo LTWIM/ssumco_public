@@ -27,7 +27,7 @@ export default function BlogCard(props) {
   ];
   const mapCards = (card) => {
     return (
-      <div className={styles.card__cont}>
+      <div className={styles.card__cont} id={styles.mobile__card__cont}>
         <div className={styles.img__cont}></div>
         <div className={styles.contt__cont}>
           <div className={styles.date__cont}>
