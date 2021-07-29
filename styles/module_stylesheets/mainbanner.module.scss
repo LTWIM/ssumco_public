@@ -5,7 +5,7 @@
   background-color: white;
   // border: 1px solid black;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   margin-top: 0px;
@@ -19,6 +19,7 @@
     width: 97%;
     height: 100%;
     position: absolute;
+    // background-size: 2600px 600px;
     // background-color: black;
   }
   .mainbanner__oval2 {
