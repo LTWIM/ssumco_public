@@ -43,6 +43,14 @@ export default function UseBackground(props) {
             </div>
           </div>
         )
+      case '3':
+        return(
+          <div className={styles.UseBackground__container}>
+            <div className={styles.UseBackground__type3} style={{
+              backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/useBackground/type3-1.png")`,
+            }}/>
+          </div>
+        )
       default:
         break;
     }
