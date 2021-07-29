@@ -273,3 +273,36 @@
     }
   }
 }
+@media only screen and (max-width: 414px) {
+  .solutions__contt__cont {
+    #mobile__list__wrapper:first-child {
+      .contt__cont {
+        height: 813px;
+      }
+    }
+  }
+  #mobile__list__wrapper {
+    .title__cont {
+      span:first-child {
+        font-size: 14px;
+      }
+      span:nth-child(2) {
+        font-size: 16px;
+      }
+    }
+    .contt__cont {
+      .btn__cont {
+        margin: 20px 0px;
+      }
+      .list__cont {
+        span {
+          font-size: 12px;
+        }
+        .features__svg__outerLayer {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
