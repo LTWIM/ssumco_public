@@ -62,6 +62,10 @@ export default function PhotoBanner(props) {
             />
           </div>
         );
+        case "5":
+          return(
+            <UseBackground type='3'/>
+          )
         case "6":
           return (
             <div className={styles.PhotoBanner__background}>

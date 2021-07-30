@@ -61,47 +61,50 @@
   .PhotoBanner__cont__type1 {
     position: relative;
     display: flex;
-    width: 85%;
+    width: 70%;
     height: 100%;
     justify-content: space-between;
-    // border: 1px solid red;
+    margin: auto;
     flex-wrap: wrap;
     align-items: center;
   }
   .PhotoBanner__cont__type2 {
     position: relative;
     display: flex;
-    width: 85%;
+    width: 70%;
     height: 100%;
     justify-content: space-between;
     // border: 1px solid green;
     flex-wrap: wrap;
     align-items: center;
     margin: auto;
-    margin-right: 0;
   }
   .PhotoBanner__cont__type3 {
     position: relative;
     display: flex;
-    width: 85%;
+    width: 70%;
     height: 100%;
     justify-content: space-between;
     // border: 1px solid red;
     flex-wrap: wrap;
     align-items: center;
     margin: auto;
-    margin-right: 0;
+    // margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .PhotoBanner__cont__type4 {
     // border: 1px solid red;
     position: relative;
     display: flex;
-    width: 85%;
+    width: 70%;
     height: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin: auto;
     margin-top: 80px;
+
     .PhotoBanner__textcont{
       margin: auto;
     }
@@ -123,11 +126,11 @@
   }
   .PhotoBanner__photo {
     background-color: lightgrey;
-    width: 100%;
+    width: 80%;
     max-width: 680px;
     min-width: 400px;
     height: 440px;
-    margin: auto;
+    // margin: auto;
   }
   .PhotoBanner__textcont {
     // border: 1px solid black;
@@ -185,10 +188,15 @@
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    // margin-right: 0;
     &.type4 {
       width: 45%;
       .PhotoBanner__blockWrapper {
         max-width: 400px;
+        width: 100%;
+        margin: auto;
+        // margin-right: 0;
         .PhotoBanner__block:last-child {
           border-bottom: none;
           padding-top: 40px;
@@ -304,6 +312,21 @@
     .PhotoBanner__vawe2 {
       background-size: contain;
       top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .PhotoBanner {
+    .PhotoBanner__cont__type1,
+    .PhotoBanner__cont__type2,
+    .PhotoBanner__cont__type3,
+    .PhotoBanner__cont__type4,
+    .PhotoBanner__cont__type5,
+    .PhotoBanner__cont__type6{
+      width: 100%;
+    }
+    .PhotoBanner__blockcont {
+      margin: auto;
     }
   }
 }

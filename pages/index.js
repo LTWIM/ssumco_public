@@ -1,8 +1,11 @@
-import React from "react";
+import React,{Component, useState, useRef, createRef} from "react";
 import Head from "next/head"; // use this for heads/ leave it alone for pages
 import Image from "next/image"; // use this for images
 import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
+// import Card from "../components/card";
+// import { desktop, pad, drone } from "../components/svg";
+// import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner,QuestionForm } from "../components/index";
 import {
   desktop,
   pad,
@@ -25,7 +28,36 @@ import {
   IconCard,
 } from "../components/index";
 
-export default function Home() {
+export default function Home(props) {
+  const [blockSelected, setBlockSelected] = useState(null);
+
+  let reference = Array(4)
+    .fill(0)
+    .map(()=> createRef());
+  reference.map(()=> createRef());
+
+  const componentDidMount = () => {
+    window.addEventListener("click",this.handleEventListener)
+    window.scrollTo(0,0)
+  }
+ 
+  const componentWillUnmount = () => {
+    window.removeEventListener("click", this.handleEventListener);
+  }
+
+  const getOrCreateRef = (index) => {
+    if(!reference.hasOwnProperty(index)){
+      reference[index] = createRef();
+    }
+    return 
+  }
+  const handleChangeOnBlock = (value) => {
+    blockSelected === value
+      ? setBlockSelected(null)
+      : setBlockSelected({value})
+  }
+
+  // props.reference = Array(4)
   const contents = [
     {
       title: "Use Case and Solutions",
