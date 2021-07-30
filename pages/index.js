@@ -3,10 +3,27 @@ import Head from "next/head"; // use this for heads/ leave it alone for pages
 import Image from "next/image"; // use this for images
 import styles from "../styles/Home.module.scss";
 import Link from "next/link"; // use this for links
-import Card from "../components/card";
-import { desktop, pad, drone } from "../components/svg";
-import { MainBanner, PhotoBanner, VideoBanner, QuoteBanner, PriceCardBanner,QuestionForm, UseBackground } from "../components/index";
-
+import {
+  desktop,
+  pad,
+  drone,
+  printer,
+  projector,
+  keyboard,
+  smartPhone,
+  check,
+} from "../components/svg";
+import {
+  MainBanner,
+  PhotoBanner,
+  VideoBanner,
+  QuoteBanner,
+  PriceCardBanner,
+  QuestionForm,
+  IconBanner,
+  Card,
+  IconCard,
+} from "../components/index";
 
 export default function Home() {
   const contents = [
@@ -46,24 +63,24 @@ export default function Home() {
   ];
   const QuoteContents = [
     {
-      companyName: 'JK',
-      position:'CEO',
-      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:5
+      companyName: "JK",
+      position: "CEO",
+      body: "Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate: 5,
     },
     {
-      companyName: 'Aleve',
-      position:'CEO',
-      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:4
+      companyName: "Aleve",
+      position: "CEO",
+      body: "Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate: 4,
     },
     {
-      companyName: 'CarMax',
-      position:'Dealer',
-      body:"Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
-      rate:3
+      companyName: "CarMax",
+      position: "Dealer",
+      body: "Vitae nunc sed velit dignissim sodales ut eu. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Etiam sit amet nisl purus. Amet aliquam id diam maecenas ultricies",
+      rate: 3,
     },
-  ]
+  ];
   let questions = [
     {
       title: "Data Safety and Added Security Services",
@@ -80,9 +97,51 @@ export default function Home() {
     {
       title: "24/7/365 Support",
       body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros",
-    }
+    },
   ];
-  
+  const cardInfo = [
+    {
+      title: "Publishing",
+      body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
+      img: printer("", "", "home__svg__outerLayer"),
+      color: "orange",
+    },
+    {
+      title: "Version Controls",
+      body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
+      img: projector("", "", "home__svg__outerLayer"),
+      color: "red",
+    },
+    {
+      title: "Template Library",
+      body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
+      img: smartPhone("", "", "home__svg__outerLayer"),
+      color: "blue",
+    },
+    {
+      title: "Automation",
+      body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
+      img: keyboard("", "", "home__svg__outerLayer"),
+      color: "beige",
+    },
+  ];
+  const mapTexts = (title, txt) => {
+    return (
+      <div className={styles.txt__wrapper}>
+        <div className={styles.svg__cont}>
+          {check("", "", "home__svg__outerLayer")}
+        </div>
+        <div className={styles.txt__cont}>
+          <div className={styles.txt__title__cont}>
+            <span>{title}</span>
+          </div>
+          <div className={styles.txt__txt__cont}>
+            <span>{txt}</span>
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <div className={styles.home__wrapper}>
       <MainBanner animation={false} />
@@ -100,6 +159,43 @@ export default function Home() {
         header="Our previous clients"
         body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
+      <div className={styles.home__icons__wrapper}>
+        <div className={styles.contt__wrapper}>
+          <div className={styles.icons__contt__cont}>
+            <div className={styles.title__cont}>
+              <span>Your business,</span>
+            </div>
+            <div className={styles.subTxt__cont}>
+              <span>
+                Sed libero enim sed faucibus turpis in. Turpis massa sed
+                elementum tempus egestas sed sed
+              </span>
+            </div>
+            {mapTexts(
+              "User Groups and Permissions",
+              "Ultrices dui sapien eget mi proin. Aliquam malesuada bibendum arcu vitae elementum curabitur"
+            )}
+            {mapTexts(
+              "Integration with Existing Software",
+              "Aliquam malesuada bibendum arcu vitae elementum curabitur. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus"
+            )}
+            {mapTexts(
+              "Format and Indexing Management",
+              "Malesuada bibendum arcu vitae elementum curabitur. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus"
+            )}
+          </div>
+          <div className={styles.icons__cards__wrapper}>
+            <div className={styles.icons__cards__cont}>
+              <IconCard {...cardInfo[0]} />
+              <IconCard {...cardInfo[1]} />
+            </div>
+            <div className={styles.icons__cards__cont}>
+              <IconCard {...cardInfo[2]} />
+              <IconCard {...cardInfo[3]} />
+            </div>
+          </div>
+        </div>
+      </div>
       <PhotoBanner
         direction="reverse"
         type="2"
@@ -113,7 +209,7 @@ export default function Home() {
         body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
       <div className={styles.home__wrapper__Questionform}>
-        <QuestionForm type="subscribe1"/>
+        <QuestionForm type="subscribe1" />
       </div>
     </div>
   );
