@@ -277,7 +277,7 @@
   .solutions__contt__cont {
     #mobile__list__wrapper:first-child {
       .contt__cont {
-        height: 813px;
+        height: 796px;
       }
     }
   }
@@ -293,6 +293,9 @@
     .contt__cont {
       .btn__cont {
         margin: 20px 0px;
+        font-size: 11px;
+        padding: 10px 0px 10px 0px;
+        height: 37px;
       }
       .list__cont {
         span {
@@ -301,6 +304,19 @@
         .features__svg__outerLayer {
           width: 30px;
           height: 30px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 280px) {
+  #mobile__list__wrapper {
+    .contt__cont {
+      .list__cont {
+        padding: 4px 2px;
+        flex-direction: flex-start;
+        .features__svg__outerLayer {
+          margin-top: 46px;
         }
       }
     }

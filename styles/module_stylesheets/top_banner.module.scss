@@ -8,6 +8,7 @@
   background-size: cover;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 .contt__cont__top {
   width: 100%;
@@ -16,9 +17,9 @@
   z-index: 2;
   background-image: url(https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/topBanner/topBannerBackground1.png);
   // background-size: cover;
-  background-size: 3000px 600px;
+  background-size: 4000px 600px;
   background-position-x: center;
-  background-position-y: 150%;
+  background-position-y: 120%;
   background-repeat: no-repeat;
   display: flex;
   position: absolute;
@@ -29,11 +30,11 @@
   width: 100%;
   height: 100%;
   background-image: url(https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/topBanner/topBannerBackoground2.png);
-  background-size: 3000px 600px;
-  background-position-x: center;  
+  background-size: 4000px 600px;
+  background-position-x: center;
   background-repeat: no-repeat;
   position: absolute;
-  background-position-y: 150%;
+  background-position-y: 102%;
   top: 0;
   left: 0;
 }
@@ -43,12 +44,13 @@
   justify-content: space-between;
   z-index: 3;
   max-width: 1680px;
+  height: 314px;
 }
 .txt__cont {
   display: flex;
   flex-direction: column;
   margin-left: 252px;
-  padding-top: 11px;
+  margin-top: 31px;
 }
 .title__cont {
   font-size: 52px;
@@ -64,7 +66,7 @@
   width: 420px;
   height: 250px;
   position: relative;
-  margin-right: 100px;
+  margin-right: 40px;
   div {
     position: absolute;
     background-size: cover;
@@ -168,5 +170,26 @@
       bottom: 41px;
       left: 156px;
     }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .txt__cont {
+    margin-left: 137px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .txt__cont {
+    margin-left: 65px;
+  }
+  .img__cont {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .img__cont {
+    width: 262px;
+  }
+  .txt__cont {
+    margin-left: 35px;
   }
 }
