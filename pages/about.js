@@ -14,27 +14,27 @@ export default function Home() {
   const cardInfo = [
     {
       title: "Security",
+      color: "#f9faff;",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
       img: "",
-      color: "#ff882e",
     },
     {
-      title: "Security",
+      title: "Version Controls",
+      color: "#f9faff;",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
       img: "",
-      color: "#ff882e",
     },
     {
-      title: "Security",
+      title: "Research",
+      color: "#f9faff;",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
       img: "",
-      color: "#ff882e",
     },
     {
-      title: "Security",
+      title: "Automation",
+      color: "#f9faff;",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
       img: "",
-      color: "#ff882e",
     },
   ];
   const memberInfo = [
