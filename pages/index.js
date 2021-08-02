@@ -30,37 +30,37 @@ import {
 } from "../components/index";
 
 export default function Home(props) {
-  const [blockSelected, setBlockSelected] = useState(null);
+  // const [blockSelected, setBlockSelected] = useState(null);
 
-  let reference = Array(4)
-    .fill(0)
-    .map(()=> useRef());
+  // let reference = Array(4)
+  //   .fill(0)
+  //   .map(()=> useRef());
 
-  const componentDidMount = () => {
-    window.addEventListener("click",handleEventListener)
-    window.scrollTo(0,0)
-  }
+  // const componentDidMount = () => {
+  //   window.addEventListener("click",handleEventListener)
+  //   window.scrollTo(0,0)
+  // }
  
-  const componentWillUnmount = () => {
-    window.removeEventListener("click", handleEventListener);
-  }
+  // const componentWillUnmount = () => {
+  //   window.removeEventListener("click", handleEventListener);
+  // }
 
-  const getOrCreateRef = (index) => {
-    if (!reference.hasOwnProperty(index)) {
-      reference[index] = createRef();
-    }
-    return
-  };
-  const handleEventListener = (e) => {
-    if(reference.every((ref)=> !ref.current.contains(e.target))){
-      setBlockSelected(null);
-    }
-  }
-  const handleChangeOnBlock = (value) => {
-    blockSelected === value
-      ? setBlockSelected(null)
-      : setBlockSelected(value)
-  }
+  // const getOrCreateRef = (index) => {
+  //   if (!reference.hasOwnProperty(index)) {
+  //     reference[index] = createRef();
+  //   }
+  //   return
+  // };
+  // const handleEventListener = (e) => {
+  //   if(reference.every((ref)=> !ref.current.contains(e.target))){
+  //     setBlockSelected(null);
+  //   }
+  // }
+  // const handleChangeOnBlock = (value) => {
+  //   blockSelected === value
+  //     ? setBlockSelected(null)
+  //     : setBlockSelected(value)
+  // }
   // props.reference = Array(4)
   const contents = [
     {
@@ -241,10 +241,10 @@ export default function Home(props) {
         header1="How to Choose your SSUM PLAN Plan?"
         contents={contents}
         footer="Ready to choose a pricing plan"
-        selected={blockSelected}
+        // selected={blockSelected}
         // value={index}
         // blockref={getOrCreateRef(index)}
-        onChange={handleChangeOnBlock}
+        // onChange={handleChangeOnBlock}
       />
       <QuoteBanner contents={QuoteContents} />
       <PriceCardBanner

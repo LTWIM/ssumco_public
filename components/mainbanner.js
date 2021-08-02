@@ -35,7 +35,7 @@ export default function MainBanner (props) {
 
             {backgroundAnimation()}
           <div className={styles.mainbanner__textcont}>
-            <div>
+            <div style={{paddingRight:`50px`}}>
               <div className={styles.mainbanner__Header1}>
                 Hi!
               </div>

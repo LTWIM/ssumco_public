@@ -67,6 +67,8 @@
     margin: auto;
     flex-wrap: wrap;
     align-items: center;
+    // border: 1px solid;
+
   }
   .PhotoBanner__cont__type2 {
     position: relative;
@@ -117,6 +119,8 @@
       color: #3b00ad;
       margin-top: 0px;
       display: flex;
+      // border: 1px solid;
+      text-align: left;
     }
 
     .PhotoBanner__btn{
@@ -126,7 +130,7 @@
   }
   .PhotoBanner__photo {
     background-color: lightgrey;
-    width: 80%;
+    width: 45%;
     max-width: 680px;
     min-width: 400px;
     height: 440px;
@@ -174,8 +178,10 @@
       background-color: #ff3d00;
     }
     &.bg {
-      width: 358px;
-      padding: 17px 31px;
+      // width: 358px;
+      margin: auto;
+      
+      padding: 17px 70px;
       text-align: center;
       font-weight: bold;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
@@ -184,15 +190,14 @@
   .PhotoBanner__blockcont {
     // border: 1px solid black;
     width: fit-content;
-    // margin: auto;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     margin: auto;
-    // margin-right: 0;
     &.type4 {
       width: 45%;
+      // border: 1px solid red;
       .PhotoBanner__blockWrapper {
         max-width: 400px;
         width: 100%;
@@ -200,33 +205,28 @@
         // margin-right: 0;
         .PhotoBanner__block:last-child {
           border-bottom: none;
-          padding-top: 40px;
+          // padding-top: 40px;
         }
         .PhotoBanner__block {
-          font-size: 24px;
+          // font-size: 24px;
           box-shadow: none;
           border-bottom: 1px solid #f2f2f2;
           box-sizing: border-box;
           padding-top: 10px;
-          max-height: 92px;
-          &:hover {
-            color: #ff3d00;
-            max-height: 400px;
-          }
+          padding-bottom: 10px;
+          max-height: 30px;
+          
+          // &:hover {
+          //   color: #ff3d00;
+          //   max-height: 400px;
+          // }
           .PhotoBanner__block__body {
             font-style: normal;
             line-height: 1.63;
             font-size: 16px;
             display: flex;
             flex-direction: column;
-            span {
-              color: #3b00ad;
-              margin-top: 5px;
-              margin-bottom: 5px;
-              &:hover {
-                cursor: pointer;
-              }
-            }
+
           }
         }
       }
@@ -254,23 +254,30 @@
       max-height: 45px;
       font-weight: bold;
       transition: max-height 0.5s;
-      .PhotoBanner__bloc__active{
-        padding: 15px 0px;
-        box-sizing: border-box;
-        border-left: 21px solid rgba(0, 0, 0, 0);
-        border-right: 21px solid rgba(0, 0, 0, 0);
-        border-radius: 12px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
-        background-color: #ffffff;
-        width: 100%;
-        margin-bottom: 20px;
-        cursor: pointer;
-        overflow: hidden;
-        max-height: 45px;
-        font-weight: bold;
-        max-height: 300px;
-        transition: max-height 0.5s;
+      
+      .PhotoBanner__block__body {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.63;
+        color: #747474;
       }
+    }
+    .PhotoBanner__block__active{
+      padding: 15px 0px;
+      box-sizing: border-box;
+      border-left: 21px solid rgba(0, 0, 0, 0);
+      border-right: 21px solid rgba(0, 0, 0, 0);
+      border-radius: 12px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+      background-color: #ffffff;
+      width: 100%;
+      margin-bottom: 20px;
+      cursor: pointer;
+      overflow: hidden;
+      max-height: 45px;
+      font-weight: bold;
+      max-height: 300px;
+      transition: max-height 0.5s;
       .PhotoBanner__block__body {
         margin-top: 20px;
         font-size: 16px;
@@ -315,6 +322,12 @@
     font-weight: bold;
     text-align: center;
     color: #3b00ad;
+  }
+
+  .learnmore {
+    color: #3b00ad;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 1680px) {
