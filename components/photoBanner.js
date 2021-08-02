@@ -5,7 +5,16 @@ import { UseBackground } from "./index";
 export default function PhotoBanner(props) {
   const block = (content) => {
     return (
-      <div className={styles.PhotoBanner__block}>
+      <div className={props.selected === props.value 
+        ? styles.PhotoBanner__block__active
+        : styles.PhotoBanner__block
+      }
+      onClick={(e)=>{
+        e.preventDefault();
+        props.onChange(props.value);
+      }}
+      ref={props.blockref}
+      >
         {content.title}
         <div className={styles.PhotoBanner__block__body}>
           {content.body}
