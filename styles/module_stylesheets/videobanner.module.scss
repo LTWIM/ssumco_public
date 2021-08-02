@@ -81,3 +81,12 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width:1280px) {
+  .videoBanner{
+    .videoBanner__videocont{
+      width: 90%;
+
+    }
+  }
+}
