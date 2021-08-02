@@ -34,30 +34,33 @@ export default function Home(props) {
 
   let reference = Array(4)
     .fill(0)
-    .map(() => createRef());
-  reference.map(() => createRef());
+    .map(()=> useRef());
 
   const componentDidMount = () => {
-    window.addEventListener("click", this.handleEventListener);
-    window.scrollTo(0, 0);
-  };
-
+    window.addEventListener("click",handleEventListener)
+    window.scrollTo(0,0)
+  }
+ 
   const componentWillUnmount = () => {
-    window.removeEventListener("click", this.handleEventListener);
-  };
+    window.removeEventListener("click", handleEventListener);
+  }
 
   const getOrCreateRef = (index) => {
     if (!reference.hasOwnProperty(index)) {
       reference[index] = createRef();
     }
-    return;
+    return
   };
+  const handleEventListener = (e) => {
+    if(reference.every((ref)=> !ref.current.contains(e.target))){
+      setBlockSelected(null);
+    }
+  }
   const handleChangeOnBlock = (value) => {
     blockSelected === value
       ? setBlockSelected(null)
-      : setBlockSelected({ value });
-  };
-
+      : setBlockSelected(value)
+  }
   // props.reference = Array(4)
   const contents = [
     {
@@ -238,6 +241,10 @@ export default function Home(props) {
         header1="How to Choose your SSUM PLAN Plan?"
         contents={contents}
         footer="Ready to choose a pricing plan"
+        selected={blockSelected}
+        // value={index}
+        // blockref={getOrCreateRef(index)}
+        onChange={handleChangeOnBlock}
       />
       <QuoteBanner contents={QuoteContents} />
       <PriceCardBanner
