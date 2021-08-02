@@ -94,7 +94,7 @@
     margin-bottom: 30px;
   }
   .PhotoBanner__cont__type4 {
-    // border: 1px solid red;
+    border: 1px solid red;
     position: relative;
     display: flex;
     width: 70%;
@@ -117,6 +117,8 @@
       color: #3b00ad;
       margin-top: 0px;
       display: flex;
+      // border: 1px solid;
+      text-align: left;
     }
 
     .PhotoBanner__btn{
@@ -254,23 +256,30 @@
       max-height: 45px;
       font-weight: bold;
       transition: max-height 0.5s;
-      .PhotoBanner__bloc__active{
-        padding: 15px 0px;
-        box-sizing: border-box;
-        border-left: 21px solid rgba(0, 0, 0, 0);
-        border-right: 21px solid rgba(0, 0, 0, 0);
-        border-radius: 12px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
-        background-color: #ffffff;
-        width: 100%;
-        margin-bottom: 20px;
-        cursor: pointer;
-        overflow: hidden;
-        max-height: 45px;
-        font-weight: bold;
-        max-height: 300px;
-        transition: max-height 0.5s;
+      
+      .PhotoBanner__block__body {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.63;
+        color: #747474;
       }
+    }
+    .PhotoBanner__block__active{
+      padding: 15px 0px;
+      box-sizing: border-box;
+      border-left: 21px solid rgba(0, 0, 0, 0);
+      border-right: 21px solid rgba(0, 0, 0, 0);
+      border-radius: 12px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.22);
+      background-color: #ffffff;
+      width: 100%;
+      margin-bottom: 20px;
+      cursor: pointer;
+      overflow: hidden;
+      max-height: 45px;
+      font-weight: bold;
+      max-height: 300px;
+      transition: max-height 0.5s;
       .PhotoBanner__block__body {
         margin-top: 20px;
         font-size: 16px;
