@@ -3,7 +3,7 @@
   min-width: 160px;
   height: 260px;
   margin: 0 5px 30px 5px;
-  padding: 27.4px 30px 42px 31px;
+  padding: 45px 20px 0px 20px;
   border-radius: 12px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
   background-color: #f9faff;
@@ -34,7 +34,7 @@
     line-height: 1.5;
     text-align: center;
     color: #747474;
-    width: 70%;
+    width: 92%;
     margin: auto;
   }
   .background {
@@ -56,7 +56,7 @@
     &.orange {
       background-image: url("/ovalOrange.png");
     }
-    &.beige {
+    &.bisque {
       background-image: url("/ovalBeige.png");
     }
   }

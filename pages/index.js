@@ -1,4 +1,4 @@
-import React,{Component, useState, useRef, createRef} from "react";
+import React, { Component, useState, useRef, createRef } from "react";
 import Head from "next/head"; // use this for heads/ leave it alone for pages
 import Image from "next/image"; // use this for images
 import styles from "../styles/Home.module.scss";
@@ -26,6 +26,7 @@ import {
   IconBanner,
   Card,
   IconCard,
+  UseBackground,
 } from "../components/index";
 
 export default function Home(props) {
@@ -45,12 +46,11 @@ export default function Home(props) {
   }
 
   const getOrCreateRef = (index) => {
-    if(!reference.hasOwnProperty(index)){
+    if (!reference.hasOwnProperty(index)) {
       reference[index] = createRef();
     }
-    return 
-  }
-  
+    return
+  };
   const handleEventListener = (e) => {
     if(reference.every((ref)=> !ref.current.contains(e.target))){
       setBlockSelected(null);
@@ -158,7 +158,7 @@ export default function Home(props) {
       title: "Automation",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
       img: keyboard("", "", "home__svg__outerLayer"),
-      color: "beige",
+      color: "bisque",
     },
   ];
   const mapTexts = (title, txt) => {
@@ -196,7 +196,10 @@ export default function Home(props) {
         body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
       <div className={styles.home__icons__wrapper}>
-        <div className={styles.contt__wrapper}>
+        <div
+          className={styles.contt__wrapper}
+          id={styles.mobile__contt__wrapper}
+        >
           <div className={styles.icons__contt__cont}>
             <div className={styles.title__cont}>
               <span>Your business,</span>
