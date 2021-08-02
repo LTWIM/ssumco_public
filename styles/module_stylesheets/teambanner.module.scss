@@ -1,4 +1,4 @@
-.teamBanner{
+.teamBanner {
   // border: 1px solid black;
   width: 100%;
   max-width: 1680px;
@@ -6,20 +6,20 @@
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 100px;
-  .teamBanner__Wrapper{
+  .teamBanner__Wrapper {
     // border: 1px solid black;
     width: 70%;
     margin: auto;
   }
-  .teamBanner__header{
-    font-size: 36px;
+  .teamBanner__header {
+    font-size: clamp(23px, 7vw, 41px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
     color: #1f1f1f;
   }
-  .teamBanner__body{
-    font-size: 16px;
+  .teamBanner__body {
+    font-size: clamp(13px, 3vw, 18px);
     line-height: 1.5;
     text-align: center;
     color: #747474;
@@ -27,28 +27,30 @@
     margin: auto;
     margin-top: 15px;
   }
-  .teamBanner__memberWrapper{
+  .teamBanner__memberWrapper {
     // border: 1px solid;
     display: flex;
     width: 100%;
     margin-top: 50px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .teamBanner__memberCont{
+  .teamBanner__memberCont {
     // border: 1px solid;
     display: flex;
     flex-direction: column;
     width: 31%;
     max-width: 345px;
     min-width: 270px;
+    margin-bottom: 30px;
   }
-  .teamBanner__photo{
+  .teamBanner__photo {
     // border: 1px solid;
     width: 100%;
     height: 300px;
     background-color: lightgrey;
   }
-  .teamBanner__name{
+  .teamBanner__name {
     // border: 1px solid;
     font-size: 24px;
     font-weight: bold;
@@ -59,7 +61,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .teamBanner__position{
+  .teamBanner__position {
     // border: 1px solid;
     font-size: 18px;
     color: #1f1f1f;
@@ -69,7 +71,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .teamBanner__detail{
+  .teamBanner__detail {
     // border: 1px solid;
     font-size: 16px;
     line-height: 1.2;
@@ -80,5 +82,21 @@
     width: fit-content;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .teamBanner {
+    .teamBanner__Wrapper {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .teamBanner {
+    .teamBanner__Wrapper {
+      .teamBanner__memberWrapper {
+        justify-content: space-around;
+      }
+    }
   }
 }

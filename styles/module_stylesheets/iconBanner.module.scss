@@ -1,28 +1,32 @@
-.iconBanner{
+.iconBanner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  .iconBanner__wrapper{
+  .iconBanner__wrapper {
     width: 100%;
     max-width: 1680px;
     margin: auto;
     display: flex;
   }
-  .iconBanner__cont{
-    width: 70%;
+  .iconBanner__cont {
+    width: 100%;
+    max-width: 1176px;
     margin: auto;
     // border: 1px solid;
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .iconBanner__cardcont{
+  .iconBanner__cardcont {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: space-between;
     // border: 1px solid;
-    .iconBanner__Card{
+    .iconBanner__Card {
       width: fit-content;
       height: fit-content;
       margin: auto;
@@ -30,31 +34,43 @@
       // border: 1px solid;
     }
   }
-  .iconBanner__title{
-    width: 70%;
-    
+  .iconBanner__title {
+    width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 36px;
+    font-size: clamp(23px, 5vw, 41px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
     color: #1f1f1f;
   }
-  .iconBanner__body{
-    width: 70%;
+  .iconBanner__body {
+    width: 69%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 70px;
-    font-size: 16px;
+    font-size: clamp(15px, 2vw, 18px);
     line-height: 1.5;
     text-align: center;
     color: #747474;
   }
-
-  @media screen and (max-width:1315px) {
-    .iconBanner__cardcont{
-      flex-wrap: wrap;
+}
+@media screen and (max-width: 1315px) {
+  .iconBanner__cardcont {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 661px) {
+  .iconBanner__wrapper {
+    .iconBanner__body {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .iconBanner__wrapper {
+    .iconBanner__cardcont {
+      width: 90%;
     }
   }
 }

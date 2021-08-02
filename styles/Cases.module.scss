@@ -12,14 +12,14 @@
   align-items: center;
 }
 .title__cont {
-  font-size: clamp(23px, 8vw, 41px);
+  font-size: clamp(23px, 7vw, 41px);
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
 }
 .txt__cont {
   color: #747474;
-  font-size: 18px;
+  font-size: clamp(15px, 2vw, 18px);
   line-height: 1.5;
   width: 55%;
   text-align: center;

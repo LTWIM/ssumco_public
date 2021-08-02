@@ -9,32 +9,33 @@ import {
   QuoteBanner,
   BlogCard,
 } from "../components/index";
-import Banner from "../components/banner";
+import { securityCam, research, pad, keyboard } from "../components/svg";
+
 export default function Home() {
   const cardInfo = [
     {
       title: "Security",
-      color: "#f9faff;",
+      color: "orange",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
-      img: "",
+      img: securityCam("", "", "about__svg__outerLayer"),
     },
     {
       title: "Version Controls",
-      color: "#f9faff;",
+      color: "blue",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
-      img: "",
+      img: pad("", "", "about__svg__outerLayer"),
     },
     {
       title: "Research",
-      color: "#f9faff;",
+      color: "red",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
-      img: "",
+      img: research("", "", "about__svg__outerLayer"),
     },
     {
       title: "Automation",
-      color: "#f9faff;",
+      color: "bisque",
       body: "Aliquam vestibulum morbi blandit cursus risus at ultrices",
-      img: "",
+      img: keyboard("", "", "about__svg__outerLayer"),
     },
   ];
   const memberInfo = [
@@ -91,7 +92,6 @@ export default function Home() {
   return (
     <div className={styles.About}>
       {/* <TopBanner title="About Us" breadCrumb="About" pages={false} /> */}
-      <Banner />
       <IconBanner
         cardinfo={cardInfo}
         title="Strategic Innovations That Matters"
