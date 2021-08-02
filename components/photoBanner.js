@@ -106,6 +106,10 @@ export default function PhotoBanner(props) {
             />
           </div>
         );
+        case "4":
+          return(
+            <UseBackground type='3'/>
+          )
         case "5":
           return(
             <UseBackground type='3'/>
@@ -177,14 +181,6 @@ export default function PhotoBanner(props) {
         );
       case "4":
         return (
-          // <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
-          //   <div className={styles.PhotoBanner__blockWrapper}>
-          //     {props.contents.map((content) => block(content))}
-          //   </div>
-          // {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
-          //   {props.footer}
-          // </div>}
-          // </div>
           <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
           <div className={styles.PhotoBanner__blockWrapper}>
             {props.contents.map((block, index) => (
