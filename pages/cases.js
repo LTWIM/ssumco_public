@@ -1,5 +1,10 @@
 import React from "react";
-import { TopBanner, PhotoBanner, TrialForm } from "../components/index";
+import {
+  TopBanner,
+  PhotoBanner,
+  TrialForm,
+  WavyBanner,
+} from "../components/index";
 import styles from "../styles/Cases.module.scss";
 
 export default function Home() {
@@ -154,6 +159,7 @@ export default function Home() {
         }
         body="Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci"
       />
+      <WavyBanner type="2" />
       <TrialForm />
     </div>
   );

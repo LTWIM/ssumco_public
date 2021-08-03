@@ -1,0 +1,109 @@
+.wavyBanner__wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: midnightblue;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .contt__wrapper {
+    max-width: 1176px;
+    width: 100%;
+    display: flex;
+    &.col {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      .title__cont {
+        font-size: clamp(31px, 9vw, 50px);
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      .txt__cont {
+        font-size: clamp(13px, 4vw, 24px);
+        font-weight: bold;
+        color: #91e2f9;
+      }
+      .link__cont {
+        font-size: clamp(10px, 2.5vw, 16px);
+        color: #ff3d00;
+        font-weight: bold;
+      }
+      .contt__cont {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        div {
+          background-color: white;
+          width: 18%;
+          height: 50px;
+          &:last-child {
+            background-color: lightgray;
+            width: 15%;
+          }
+        }
+      }
+    }
+    &.row {
+      justify-content: space-around;
+      .contt__cont {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+        .title__cont {
+          font-size: clamp(19px, 6vw, 24px);
+          font-weight: bold;
+          color: #ffffff;
+          width: 96%;
+        }
+        .txt__cont {
+          color: rgba(255, 255, 255, 0.75);
+          font-size: clamp(10px, 4vw, 16px);
+          width: 85%;
+        }
+        .link__cont {
+          font-size: clamp(10px, 4vw, 18px);
+          font-weight: bold;
+          color: #ffffff;
+        }
+        div {
+          margin-bottom: 20px;
+        }
+        div:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding-left: 20px;
+  }
+  #mobile__wavyBanner__col {
+    .contt__cont {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  #mobile__wavyBanner__row {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    .contt__cont {
+      width: 80%;
+      text-align: center;
+      &:first-child {
+        margin-bottom: 30px;
+      }
+      .txt__cont {
+        width: 100%;
+      }
+    }
+  }
+}

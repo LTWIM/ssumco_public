@@ -1,4 +1,4 @@
-.QuoteBanner{
+.QuoteBanner {
   width: 100vw;
   // max-width: 1680px;
   // boxrder: 1px solid;
@@ -6,50 +6,53 @@
   padding-bottom: 100px;
   margin: auto;
   // background-color: #edf0ff;
-  .QuoteBanner__wrapper{
+  .QuoteBanner__wrapper {
     width: 100%;
     max-width: 1680px;
     margin: auto;
-    
   }
-  .QuoteBanner__cont{
+  .QuoteBanner__cont {
     width: 70%;
     margin: auto;
   }
-  .QuoteBanner__top{
+  .QuoteBanner__top {
     display: flex;
     justify-content: space-between;
     width: 70%;
     margin: auto;
+    text-align: center;
+    & > div {
+      width: 24%;
+    }
   }
-  .QuoteBanner__left{
+  .QuoteBanner__left {
     opacity: 0.5;
     font-size: 18px;
     color: #747474;
     cursor: pointer;
   }
-  .QuoteBanner__right{
+  .QuoteBanner__right {
     opacity: 0.5;
     font-size: 18px;
     color: #747474;
     cursor: pointer;
   }
-  .QuoteBanner__current{
+  .QuoteBanner__current {
     // border: 1px solid black;
   }
-  .QuoteBanner__company{
+  .QuoteBanner__company {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;
   }
-  .QuoteBanner__position{
+  .QuoteBanner__position {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: #747474;
   }
-  .QuoteBanner__bodycont{
+  .QuoteBanner__bodycont {
     margin-top: 15px;
     width: 100%;
     background-color: #f9faff;
@@ -57,7 +60,7 @@
     min-height: 70px;
     align-items: center;
   }
-  .QuoteBanner__text{
+  .QuoteBanner__text {
     width: 90%;
     max-width: 450px;
     margin: auto;
@@ -67,15 +70,45 @@
     font-style: italic;
     text-align: center;
   }
-  .QuoteBanner__ratecont{
+  .QuoteBanner__ratecont {
     display: flex;
     margin: auto;
     margin-top: 40px;
     // border: 1px solid;
     width: fit-content;
   }
-  .QuoteBanner__star{
+  .QuoteBanner__star {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .QuoteBanner__wrapper {
+    .QuoteBanner__cont {
+      width: 90%;
+      .QuoteBanner__top {
+        width: 100%;
+      }
+      .QuoteBanner__bodycont {
+        display: flex;
+        min-height: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .QuoteBanner__wrapper {
+    .QuoteBanner__cont {
+      .QuoteBanner__bodycont {
+        min-height: 225px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .QuoteBanner__bodycont {
+    .QuoteBanner__text {
+      font-size: 13px;
+    }
   }
 }
