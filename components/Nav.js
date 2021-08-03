@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/module_stylesheets/Nav.module.scss'
+import { Facebook } from './svg'
 export default function Nav (props) {
 
   const page = (name) => {
@@ -37,13 +38,16 @@ export default function Nav (props) {
                 {page("Pages")}
                 {page("Blog")}
                 {page("Contact")}
-                {page("Facebook")}
+                {page(Facebook("27px"))}
 
+                {/* 
                 <div className={styles.Nav__pageCont}>
                   <div className={styles.Nav__search}>
                     Search
                   </div>
                 </div>
+                 */}
+              
               </div>
               
 

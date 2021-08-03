@@ -131,3 +131,44 @@
     }
   }
 }
+@media screen and (max-width:1280px) {
+  .mainbanner{
+    .mainbanner__textcont{
+      width: 90%;
+    }
+    .mainbanner__Header2{
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:800px) {
+  .mainbanner{
+    height: fit-content;
+
+    .mainbanner__textcont{
+      flex-direction: column-reverse;
+      margin-top: 20px;
+    }
+    .mainbanner__photo{
+      margin: auto;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    .mainbanner__body{
+      max-width: 100%;
+    }
+    .mainbanner__btn{
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .mainbanner__oval1{
+      top:270px;
+    }
+    .mainbanner__oval2{
+      top:300px;
+
+    }
+  }
+}

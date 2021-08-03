@@ -1,28 +1,63 @@
-import React, { createRef } from "react";
+import React, { createRef, useState, useRef } from "react";
 import styles from "../styles/module_stylesheets/photobanner.module.scss";
-import { UseBackground } from "./index";
+import { UseBackground, CreateBlock } from "./index";
+
 
 export default function PhotoBanner(props) {
-  const block = (content) => {
-    return (
-      <div className={props.selected === props.value 
-        ? styles.PhotoBanner__block__active
-        : styles.PhotoBanner__block
-      }
-      onClick={(e)=>{
-        e.preventDefault();
-        props.onChange(props.value);
-      }}
-      ref={props.blockref}
-      >
-        {content.title}
-        <div className={styles.PhotoBanner__block__body}>
-          {content.body}
-          {props.type === "4" && <span>Learn More</span>}
-        </div>
-      </div>
-    );
+  const [blockSelected, setBlockSelected] = useState(null);
+
+  let reference = Array(4)
+    .fill(0)
+    .map(()=> useRef());
+
+  const componentDidMount = () => {
+    window.addEventListener("click",handleEventListener)
+    window.scrollTo(0,0)
+  }
+ 
+  const componentWillUnmount = () => {
+    window.removeEventListener("click", handleEventListener);
+  }
+
+  const getOrCreateRef = (index) => {
+    if (!reference.hasOwnProperty(index)) {
+      // reference[index] = createRef();
+      reference[index] = useRef();
+
+    }
+    return
   };
+  const handleEventListener = (e) => {
+    if(reference.every((ref)=> !ref.current.contains(e.target))){
+      setBlockSelected(null);
+    }
+  }
+  const handleChangeOnBlock = (value) => {
+    blockSelected === value
+      ? setBlockSelected(null)
+      : setBlockSelected(value)
+  }
+  
+  // const block = (content) => {
+  //   return (
+  //     <div className={props.selected === props.value 
+  //       ? styles.PhotoBanner__block__active
+  //       : styles.PhotoBanner__block
+  //     }
+  //     onClick={(e)=>{
+  //       e.preventDefault();
+  //       props.onChange(props.value);
+  //     }}
+  //     ref={props.blockref}
+  //     >
+  //       {content.title}
+  //       <div className={styles.PhotoBanner__block__body}>
+  //         {content.body}
+  //         {props.type === "4" && <span>Learn More</span>}
+  //       </div>
+  //     </div>
+  //   );
+  // };
   const classNameType = () => {
     switch (props.type) {
       case "1":
@@ -71,6 +106,10 @@ export default function PhotoBanner(props) {
             />
           </div>
         );
+        case "4":
+          return(
+            <UseBackground type='3'/>
+          )
         case "5":
           return(
             <UseBackground type='3'/>
@@ -112,7 +151,19 @@ export default function PhotoBanner(props) {
           <div className={styles.PhotoBanner__blockcont}>
             <div className={styles.PhotoBanner__header1}>{props.header1}</div>
             <div className={styles.PhotoBanner__blockWrapper}>
-              {props.contents.map((content) => block(content))}
+              {/* {props.contents.map((content) => block(content))} */}
+
+              {props.contents.map((block, index) => (
+              <CreateBlock
+                selected={blockSelected}
+                value={index}
+                blockref={getOrCreateRef(index)}
+                type={props.type}
+                onChange={handleChangeOnBlock}
+                title = {block.title}
+                body = {block.body}
+              />
+              ))}
             </div>
             <div className={styles.PhotoBanner__footer}>{props.footer}</div>
           </div>
@@ -131,13 +182,23 @@ export default function PhotoBanner(props) {
       case "4":
         return (
           <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
-            <div className={styles.PhotoBanner__blockWrapper}>
-              {props.contents.map((content) => block(content))}
-            </div>
-          {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
-            {props.footer}
-          </div>}
+          <div className={styles.PhotoBanner__blockWrapper}>
+            {props.contents.map((block, index) => (
+              <CreateBlock
+                selected={blockSelected}
+                value={index}
+                blockref={getOrCreateRef(index)}
+                type={props.type}
+                onChange={handleChangeOnBlock}
+                title = {block.title}
+                body = {block.body}
+              />
+            ))}
           </div>
+        {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
+          {props.footer}
+        </div>}
+        </div>
         );
       case"5":
           return(
@@ -170,7 +231,12 @@ export default function PhotoBanner(props) {
         return(
           <div className={styles.PhotoBanner__textcont}>
             <div className={styles.PhotoBanner__header1}>{props.header1}</div>
-            <div className={styles.PhotoBanner__header2}><div style={{fontWeight:'100'}}>M</div>ore News and Discounts</div>
+            <div className={styles.PhotoBanner__header2}>
+              <div style={{fontWeight:'100'}}>
+                M
+              </div>
+                ore News and Discounts
+              </div>
             <div className={styles.PhotoBanner__body}>{props.body}</div>
             <div className={styles.PhotoBanner__btn}>Read more</div>
           </div>
