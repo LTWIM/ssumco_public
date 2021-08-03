@@ -138,6 +138,16 @@
     }
   }
 }
+@media only screen and (max-width: 693px) {
+  .stat__cont {
+    .num__cont {
+      font-size: 46px;
+    }
+    .subText__cont {
+      font-size: 14px;
+    }
+  }
+}
 @media only screen and (max-width: 580px) {
   .stats__cont {
     flex-direction: column;
@@ -162,14 +172,6 @@
   }
 }
 @media only screen and (max-width: 360px) {
-  .stat__cont {
-    .num__cont {
-      font-size: 50px;
-    }
-    .subText__cont {
-      font-size: 15px;
-    }
-  }
   .card__back__cont {
     padding: 10px 30px 0px 30px;
     .card__img__cont {

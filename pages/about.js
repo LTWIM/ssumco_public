@@ -8,6 +8,7 @@ import {
   VideoBanner,
   QuoteBanner,
   BlogCard,
+  WavyBanner,
 } from "../components/index";
 import { securityCam, research, pad, keyboard } from "../components/svg";
 
@@ -122,6 +123,7 @@ export default function Home() {
       />
       <QuoteBanner contents={QuoteContents} backgroundColor="#edf0ff" />
       <BlogCard />
+      <WavyBanner type="1" />
     </div>
   );
 }

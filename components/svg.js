@@ -1052,7 +1052,7 @@ export const keyboard = (fill, className, outerLayer) => {
   return (
     <svg
       viewBox="0 0 512.001 512.001"
-      enableBackgound="new 0 0 512.001 512.001;"
+      enableBackground="new 0 0 512.001 512.001;"
       xmlSpace="preserve"
       className={outerLayer}
     >
