@@ -109,6 +109,7 @@
 
     .PhotoBanner__textcont{
       margin: auto;
+      
     }
     .PhotoBanner__header1{
       font-size: 36px;
@@ -353,10 +354,34 @@
     .PhotoBanner__cont__type4,
     .PhotoBanner__cont__type5,
     .PhotoBanner__cont__type6{
-      width: 100%;
+      width: 90%;
+      justify-content: space-between;
     }
     .PhotoBanner__blockcont {
       margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .PhotoBanner{
+    .PhotoBanner__cont__type1,
+    .PhotoBanner__cont__type2,
+    .PhotoBanner__cont__type3,
+    .PhotoBanner__cont__type4,
+    .PhotoBanner__cont__type5,
+    .PhotoBanner__cont__type6{
+      display: flex;
+      flex-direction: column;
+    }
+    .PhotoBanner__photo{
+      width: 100%;
+    }
+    .PhotoBanner__header2{
+      max-width: 1000px;
+    }
+    .PhotoBanner__body{
+      max-width: 1000px;
     }
   }
 }
