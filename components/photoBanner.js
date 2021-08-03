@@ -232,10 +232,7 @@ export default function PhotoBanner(props) {
           <div className={styles.PhotoBanner__textcont}>
             <div className={styles.PhotoBanner__header1}>{props.header1}</div>
             <div className={styles.PhotoBanner__header2}>
-              <div style={{fontWeight:'100'}}>
-                M
-              </div>
-                ore News and Discounts
+                More News and Discounts
               </div>
             <div className={styles.PhotoBanner__body}>{props.body}</div>
             <div className={styles.PhotoBanner__btn}>Read more</div>
