@@ -1,5 +1,5 @@
 import React from "react";
-import { TopBanner, BlogCard } from "../../components/index";
+import { TopBanner, BlogCard, QuestionForm } from "../../components/index";
 import styles from "../../styles/Cases_single.module.scss";
 
 export default function Home(props) {
@@ -68,6 +68,9 @@ export default function Home(props) {
         </div>
       </div>
       <BlogCard />
+      <div className={styles.questionForm__wrapper}>
+        <QuestionForm type="subscribe1" />
+      </div>
     </div>
   );
 }

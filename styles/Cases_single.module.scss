@@ -75,8 +75,21 @@
       }
     }
   }
+  .questionForm__wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1176px;
+    width: 100%;
+    margin-top: 100px;
+  }
 }
-
+@media only screen and (max-width: 1485px) {
+  .case__wrapper {
+    .questionForm__wrapper {
+      max-width: 810px;
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   #mobile__contt__wrapper,
   #mobile__cases__cont {

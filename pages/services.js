@@ -57,6 +57,24 @@ export default function Home() {
       header: "code",
     },
   ];
+  let appDevelopment = [
+    {
+      title: "Enterprise Management System a wide range of services and",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+    {
+      title: "Mobile Application Development. A Personal Digital Assistants",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+    {
+      title: "Desktop App Development. Solutions for eCommerce",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+    {
+      title: "Software Redevelopment Services",
+      body: "Cras lorem justo, pretium sit amet urna vitae, fermentum consectetur ante. Nunc accumsan sit amet nisl vulputate lobortis. Nullam egestas tortor quis pharetra tempus. Sed risus mauris, pulvinar quis laoreet quis, ornare quis eros. Nulla facilisis id ipsum id dignissim",
+    },
+  ];
   const mapCards = (card) => {
     return (
       <div className={styles.card__cont}>
@@ -112,6 +130,15 @@ export default function Home() {
         type="4"
         contents={questions}
         direction="reverse"
+        footer="Explore Solutions and Prices"
+      />
+      <div className={styles.fullService__title__cont}>
+        <span>Web and Software Development</span>
+        <span>Applications and Testing</span>
+      </div>
+      <PhotoBanner
+        type="4"
+        contents={appDevelopment}
         footer="Explore Solutions and Prices"
       />
       <TrialForm />
