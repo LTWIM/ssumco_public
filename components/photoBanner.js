@@ -72,6 +72,8 @@ export default function PhotoBanner(props) {
         return styles.PhotoBanner__cont__type3;
       case "6":
         return styles.PhotoBanner__cont__type4;
+      case "7":
+        return styles.PhotoBanner__cont__type1;
       default:
         break;
     }
@@ -131,6 +133,8 @@ export default function PhotoBanner(props) {
               />
             </div>
           );
+        case "7":
+          break;
       default:
         break;
     }
@@ -238,6 +242,27 @@ export default function PhotoBanner(props) {
             <div className={styles.PhotoBanner__btn}>Read more</div>
           </div>
         )
+      case"7":
+        return(
+          <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
+          <div className={styles.PhotoBanner__blockWrapper}>
+            {props.contents.map((block, index) => (
+              <CreateBlock
+                selected={blockSelected}
+                value={index}
+                blockref={getOrCreateRef(index)}
+                type={props.type}
+                onChange={handleChangeOnBlock}
+                title = {block.title}
+                body = {block.body}
+              />
+            ))}
+          </div>
+        {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
+          {props.footer}
+        </div>}
+        </div>
+        )
       default:
         break;
     }
@@ -263,8 +288,8 @@ export default function PhotoBanner(props) {
                     marginBottom: "0",
                   }
                 : {}
-            }
-          ></div>
+            }>
+          </div>
           {typeHandle()}
         </div>
       </div>

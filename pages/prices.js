@@ -166,7 +166,7 @@ export default function Home() {
           <span>Digital Innovation at Speed and Cost</span>
           <span>Our Additional Solutions</span>
         </div>
-        <PhotoBanner type="4" contents={solutions} />
+        <PhotoBanner type="7" contents={solutions} />
         <PriceCardBanner
           header="Our Basic and Additional Solutions"
           body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
