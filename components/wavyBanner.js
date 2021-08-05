@@ -9,6 +9,9 @@ export default function WavyBanner(props) {
           className={`${styles.contt__wrapper} ${styles.row}`}
           id={styles.mobile__wavyBanner__row}
         >
+          <div className={styles.wave__left}/>
+          <div className={styles.wave__right}/>
+
           <div className={styles.contt__cont}>
             <div className={styles.title__cont}>
               <span>Want to be part of the team?</span>
@@ -54,6 +57,9 @@ export default function WavyBanner(props) {
           className={`${styles.contt__wrapper} ${styles.col}`}
           id={styles.mobile__wavyBanner__col}
         >
+          <div className={styles.wave__left}/>
+          <div className={styles.wave__right}/>
+          
           <div className={styles.title__cont}>
             <span>One click Install</span>
           </div>
