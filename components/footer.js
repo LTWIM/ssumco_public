@@ -20,6 +20,12 @@ export default function Footer() {
   };
   return (
     <div className={styles.footer__wrapper}>
+      <div className={styles.footer__background1} style={{
+        backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/footer/footer1.png")`
+      }}/>
+            <div className={styles.footer__background2} style={{
+        backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/footer/footer2.png")`
+      }}/>
       <div className={styles.footer__contt__cont}>
         <div className={styles.contacts__cont}>
           <div className={styles.title__cont}>
