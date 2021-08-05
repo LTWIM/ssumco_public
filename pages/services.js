@@ -118,16 +118,17 @@ export default function Home() {
         <span>Domain and Hosting</span>
       </div>
       <PhotoBanner
-        type="4"
+        type="8"
         contents={questions}
         footer="Explore Solutions and Prices"
+        // direction="reverse"
       />
       <div className={styles.seo__title__cont}>
         <span>Content Management</span>
         <span>SEO Services</span>
       </div>
       <PhotoBanner
-        type="4"
+        type="7"
         contents={questions}
         direction="reverse"
         footer="Explore Solutions and Prices"
@@ -137,7 +138,7 @@ export default function Home() {
         <span>Applications and Testing</span>
       </div>
       <PhotoBanner
-        type="4"
+        type="8"
         contents={appDevelopment}
         footer="Explore Solutions and Prices"
       />
