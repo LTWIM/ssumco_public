@@ -26,7 +26,7 @@ export default function Home() {
   ];
   return (
     <div className={styles.contactUs__wrapper}>
-      <TopBanner title="Contact Us" breadCrumb="Contact" />
+      <TopBanner subTitle="Contact Us" breadCrumb="Contact" title="Today!" />
       <div className={styles.contactUs__contt__wrapper}>
         <Card
           title="Attention to Every Client"

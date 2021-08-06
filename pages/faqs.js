@@ -41,7 +41,7 @@ export default function Home() {
   ];
   return (
     <div className={styles.faq__wrapper}>
-      <TopBanner title="FAQ" breadCrumb="FAQ" />
+      <TopBanner title="Question?" breadCrumb="FAQ" subTitle="Have a"/>
       <div className={styles.questions__title__cont}>
         <span>Easy to get started</span>
         <span>Freqeuntly Asked Questions</span>

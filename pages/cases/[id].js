@@ -4,7 +4,7 @@ import styles from "../../styles/Cases_single.module.scss";
 
 export default function Home(props) {
   let client = {
-    name: "JK Construction",
+    name: "JK   Construction",
     date: "January-March, 2020",
     website: "jksomething.com",
     services:
@@ -14,7 +14,11 @@ export default function Home(props) {
   };
   return (
     <div className={styles.case__wrapper}>
-      <TopBanner title="Case Details" breadCrumb="Case Detail" />
+      <TopBanner
+        title="Case Details"
+        breadCrumb="Case Detail"
+        subTitle={client.name}
+      />
       <div className={styles.contt__wrapper} id={styles.mobile__contt__wrapper}>
         <div className={styles.detail__imgs__cont}>
           <div className={styles.img__cont}></div>

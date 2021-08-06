@@ -97,7 +97,11 @@ export default function Home() {
   };
   return (
     <div className={styles.services__wrapper}>
-      <TopBanner title="Services" breadCrumb="Services" />
+      <TopBanner
+        title="Services"
+        breadCrumb="Services"
+        subTitle="Here is Our"
+      />
       <div className={styles.contt__wrapper} id={styles.mobile__contt__wrapper}>
         <div className={styles.title__cont}>
           <span>Services that Speed Up Success</span>
