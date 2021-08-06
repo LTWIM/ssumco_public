@@ -93,10 +93,10 @@ export default function Home() {
   return (
     <div className={styles.About}>
       <TopBanner
-        title="Who We Are"
+        title="About Us"
         breadCrumb="About"
         pages={false}
-        subTitle="This is"
+        subTitle="Who We Are"
       />
       <IconBanner
         cardinfo={cardInfo}

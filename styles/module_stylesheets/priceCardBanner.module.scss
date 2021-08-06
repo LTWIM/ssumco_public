@@ -197,3 +197,12 @@
     }
   }
 }
+@media screen and (max-width: 280px) {
+  .PriceCardBanner__cardcont {
+    .PriceCardBanner__card {
+      .PriceCardBanner__subscribe {
+        margin-top: 20px;
+      }
+    }
+  }
+}

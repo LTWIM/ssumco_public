@@ -81,7 +81,7 @@
   }
 }
 .card__title__cont {
-  font-size: 24px;
+  font-size: clamp(18px, 9vw, 24px);
   font-weight: bold;
   text-align: center;
 }
@@ -89,7 +89,7 @@
   margin-top: 12px;
   color: #747474;
   line-height: 1.75;
-  font-size: 16px;
+  font-size: clamp(12px, 4vw, 16px);
   text-align: center;
   width: 100%;
   display: flex;
@@ -114,5 +114,10 @@
     .card__cont {
       margin-bottom: 10px;
     }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card__cont {
+    width: 100%;
   }
 }

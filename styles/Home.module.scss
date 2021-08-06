@@ -97,6 +97,7 @@
     .icons__cards__wrapper {
       width: 50%;
       display: flex;
+      justify-content: center;
       .icons__cards__cont {
         display: flex;
         flex-direction: column;
@@ -130,6 +131,11 @@
   }
 }
 @media only screen and (max-width: 414px) {
+  .home__wrapper {
+    .home__wrapper__Questionform {
+      width: 95%;
+    }
+  }
   #mobile__contt__wrapper {
     flex-direction: column;
     .icons__contt__cont {
@@ -149,11 +155,11 @@
 }
 @media only screen and (max-width: 360px) {
   #mobile__contt__wrapper {
-    .icons__contt__cont{
-      .txt__wrapper{
-        .svg__cont{
-          width:30px;
-          height:30px;
+    .icons__contt__cont {
+      .txt__wrapper {
+        .svg__cont {
+          width: 30px;
+          height: 30px;
         }
       }
     }
