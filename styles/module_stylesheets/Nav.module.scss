@@ -1,4 +1,7 @@
-.Nav {
+.Nav{
+
+}
+.Desktop__Nav {
   width: 100vw;
   height: 70px;
   // border: 1px solid;
@@ -12,14 +15,14 @@
   z-index: 999;
   box-sizing: border-box;
   display: flex;
-  .Nav__wrapper {
+  .Desktop__Nav__wrapper {
     width: 100%;
     height: 100%;
     max-width: 1680px;
     display: flex;
     margin: auto;
   }
-  .Nav__pageWrapper {
+  .Desktop__Nav__pageWrapper {
     // border: 1px solid;
     margin: auto;
     margin-left: 0;
@@ -27,7 +30,7 @@
     height: 100%;
     display: flex;
   }
-  .Nav__logoCont {
+  .Desktop__Nav__logoCont {
     height: 100%;
     width: 19%;
     // border: 1px solid;
@@ -36,7 +39,7 @@
     margin-left: 0;
     margin-right: auto;
   }
-  .Nav__logo {
+  .Desktop__Nav__logo {
     margin: auto;
     margin-right: 0;
     cursor: pointer;
@@ -44,7 +47,7 @@
     font-weight: bold;
     color: #1f1f1f;
   }
-  .Nav__pageCont {
+  .Desktop__Nav__pageCont {
     // border: 1px solid;
     height: 100%;
     width: fit-content;
@@ -53,33 +56,33 @@
     display: flex;
     flex-direction: column;
   }
-  .Nav__page {
+  .Desktop__Nav__page {
     margin: auto;
     font-size: 18px;
     cursor: pointer;
     &:hover {
       color: #3b00ad;
       transition: color 0.2s;
-      .Nav__currentPage {
+      .Desktop__Nav__currentPage {
         width: 10px;
         transition: width 0.2s;
       }
     }
   }
-  .Nav__Facebook {
+  .Desktop__Nav__Facebook {
     margin: auto;
     font-size: 18px;
     cursor: pointer;
     color: #3b00ad;
   }
-  .Nav__search {
+  .Desktop__Nav__search {
     margin: auto;
     font-size: 18px;
     cursor: pointer;
     color: #333333;
     opacity: 0.7;
   }
-  .Nav__pageSection {
+  .Desktop__Nav__pageSection {
     // border: 1px solid red;
     width: 70%;
     height: 100%;
@@ -88,18 +91,20 @@
     display: flex;
     justify-content: space-between;
   }
-  .Nav__currentPage {
+  .Desktop__Nav__currentPage {
     position: absolute;
     width: 0;
     height: 4px;
     background-color: #ff3d00;
   }
 }
+.Mobile__Nav{
+  width: 100%;
+  
+}
 
 @media screen and (max-width:780px) {
-  .Nav{
-    .Nav__pageWrapper{
-      width: 90%;
-    }
+  .Desktop__Nav{
+    display: none;
   }
 }
