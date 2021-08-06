@@ -92,7 +92,7 @@ export default function Home() {
   ];
   return (
     <div className={styles.About}>
-      {/* <TopBanner title="About Us" breadCrumb="About" pages={false} /> */}
+      <TopBanner title="About Us" breadCrumb="About" pages={false} />
       <IconBanner
         cardinfo={cardInfo}
         title="Strategic Innovations That Matters"
