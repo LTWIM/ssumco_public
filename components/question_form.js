@@ -11,18 +11,14 @@ export default function QuestionForm(props) {
         <div className={styles.title__cont}>
           <span>Are you ready to start?</span>
         </div>
-        <div
-          className={styles.txt__cont}
-        >
+        <div className={styles.txt__cont}>
           <span>
             Vivamus ultrices bibendum magna, ac volutpat nisi hendrerit eget.
             Aenean rhoncus ultricies semper. Mauris et cursus est. Maecenas
             cursus nibh vel ex faucibus consequat
           </span>
         </div>
-        <div
-          className={styles.form__cont}
-        >
+        <div className={styles.form__cont}>
           <input
             className={`${styles["input__cont"]} ${styles["sm"]}`}
             placeholder="Enter your e-mail"
@@ -84,7 +80,7 @@ export default function QuestionForm(props) {
   }
 
   return (
-    <div className={styles.questionForm__wrapper}>
+    <div className={`${styles.questionForm__wrapper} ${styles.type2}`}>
       <div className={styles.title__cont}>
         <span>Do you have any Question?</span>
       </div>
@@ -125,7 +121,9 @@ export default function QuestionForm(props) {
         </span>
       </div>
       <button className={styles.button__cont}>Send</button>
-      <div className={`${styles["icons__wrapper"]} ${styles["left"]}`}>
+      <div
+        className={`${styles["icons__wrapper"]} ${styles["left"]} ${styles["type2"]}`}
+      >
         <div className={styles.icons__cont}>
           <div className={`${styles["circle"]} ${styles["red"]}`}></div>
           <div className={`${styles["msg"]}`}></div>
@@ -142,7 +140,9 @@ export default function QuestionForm(props) {
           ></div>
         </div>
       </div>
-      <div className={`${styles["icons__wrapper"]} ${styles["right"]}`}>
+      <div
+        className={`${styles["icons__wrapper"]} ${styles["right"]} ${styles["type2"]}`}
+      >
         <div className={styles.icons__cont}>
           <div className={`${styles["check"]} ${styles["sm"]}`}></div>
           <div
