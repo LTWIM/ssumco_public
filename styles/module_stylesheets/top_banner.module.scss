@@ -51,12 +51,16 @@
   flex-direction: column;
   margin-left: 252px;
   margin-top: 31px;
+  width: 48%;
 }
 .title__cont {
   font-size: 52px;
   font-weight: bold;
   line-height: 1.27;
   margin-bottom: 15px;
+  .mobile__title__cont {
+    display: none;
+  }
 }
 .breadCrumb__cont {
   color: #747474;
@@ -172,7 +176,7 @@
     }
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1650px) {
   .txt__cont {
     margin-left: 137px;
   }
@@ -185,11 +189,98 @@
     margin-right: 5px;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 640px) {
   .img__cont {
-    width: 262px;
+    width: 48%;
   }
   .txt__cont {
     margin-left: 35px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .contt__wrapper {
+    height: calc(100vh - 70px);
+    .contt__cont__top,
+    .contt__cont__bot {
+      display: none;
+    }
+    .contt__cont {
+      justify-content: center;
+      .img__cont {
+        display: none;
+      }
+      .txt__cont {
+        margin-left: 0;
+        width: calc(100vw - 40px);
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        @keyframes showTopText {
+          0% {
+            transform: translate3d(0, 100%, 0);
+          }
+          40%,
+          60% {
+            transform: translate3d(0, 50%, 0);
+          }
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        @keyframes showBottomText {
+          0% {
+            transform: translate3d(0, -100%, 0);
+          }
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        .title__cont {
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          border-bottom: 1vmin solid #000;
+          width: 100%;
+          span:first-child {
+            display: none;
+          }
+          .mobile__title__cont {
+            position: absolute;
+            animation: showTopText 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            bottom: 0;
+            transform: translate(0, 100%);
+            display: block;
+            span {
+              display: block;
+              &:first-child {
+                color: #747474;
+              }
+            }
+          }
+        }
+        .breadCrumb__cont {
+          bottom: -5px;
+          height: 50%;
+          overflow: hidden;
+          position: absolute;
+          width: 100%;
+          span {
+            animation: showBottomText 0.5s;
+            animation-delay: 1.75s;
+            animation-fill-mode: forwards;
+            top: 0;
+            transform: translate(0, -100%);
+            position: absolute;
+          }
+        }
+      }
+    }
   }
 }

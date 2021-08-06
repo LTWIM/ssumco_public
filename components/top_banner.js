@@ -1,30 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/module_stylesheets/top_banner.module.scss";
 
 export default function Topbanner(props) {
-
-
   const pageConfig = () => {
-    if(props.pages === false){
-      return(
-        <span>Home / {props.breadCrumb}</span>
-      )
+    if (props.pages === false) {
+      return <span>Home / {props.breadCrumb}</span>;
     }
-    return(
-      <span>Home / Pages / {props.breadCrumb}</span>
-    )
-  }
+    return <span>Home / Pages / {props.breadCrumb}</span>;
+  };
+  useEffect(() => {
+    setTimeout(function(){
+      window.scrollTo(0,0)
+    })
+    setTimeout(function () {
+      window.scrollTo({ top: window.innerHeight - 100, behavior: "smooth" });
+    }, 2500);
+    console.log(window);
+  }, []);
+
   return (
     <div className={styles.contt__wrapper}>
       <div className={styles.contt__cont}>
         <div className={styles.txt__cont}>
           <div className={styles.title__cont}>
             <span>{props.title}</span>
+            <div className={styles.mobile__title__cont}>
+              <span>Here is Our</span>
+              <span>{props.title}</span>
+            </div>
           </div>
-          <div className={styles.breadCrumb__cont}>
-
-            {pageConfig()}
-          </div>
+          <div className={styles.breadCrumb__cont}>{pageConfig()}</div>
         </div>
         <div className={styles.img__cont}>
           <div className={`${styles["cube"]} ${styles["sm"]}`}></div>

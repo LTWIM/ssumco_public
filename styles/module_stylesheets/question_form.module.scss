@@ -10,11 +10,20 @@
     border: 30px solid rgba(0, 0, 0, 0);
     padding-bottom: 60px;
     border-radius: 12px;
+    .title__cont {
+      font-size: clamp(23px, 4.9vw, 41px);
+    }
     .txt__cont {
       width: 70%;
       max-width: 650px;
+      font-size: clamp(11px, 2vw, 18px);
     }
     .form__cont {
+      flex-wrap: nowrap;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 40px;
+      height: fit-content;
       button {
         margin: 0;
         padding: 0;
@@ -28,7 +37,7 @@
   }
 }
 .title__cont {
-  font-size: clamp(23px, 5vw, 41px);
+  font-size: clamp(23px, 7vw, 41px);
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
@@ -36,7 +45,7 @@
 }
 .txt__cont {
   color: #747474;
-  font-size: clamp(15px, 1.4vw, 18px);
+  font-size: clamp(13px, 1vw, 18px);
   line-height: 1.5;
   width: 56%;
   text-align: center;
@@ -331,6 +340,25 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 640px) {
+  .questionForm__wrapper {
+    &.type1 {
+      border: 20px solid rgba(0, 0, 0, 0);
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .questionForm__wrapper {
+    &.type1 {
+      .form__cont {
+        .button__cont {
+          font-size: 13px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 465px) {
   .txt__cont {
     width: 90%;
@@ -374,6 +402,16 @@
     }
   }
 }
+@media only screen and (max-width: 414px) {
+  .questionForm__wrapper {
+    &.type1 {
+      width: 100%;
+      .icons__wrapper {
+        display: none;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 396px) {
   .icons__wrapper {
     display: none;
@@ -381,10 +419,27 @@
   .form__cont {
     width: 90%;
   }
+  .questionForm__wrapper {
+    &.type1 {
+      border: 10px solid rgba(0, 0, 0, 0);
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 320px) {
   .button__cont {
     padding: 13px 67px 13px;
+  }
+  .questionForm__wrapper {
+    &.type1 {
+      .form__cont {
+        width: 100%;
+        .button__cont {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

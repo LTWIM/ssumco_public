@@ -22,14 +22,6 @@ export default function QuestionForm(props) {
         </div>
         <div
           className={styles.form__cont}
-          style={{
-            flexWrap: "nowrap",
-            width: "90%",
-            margin: "auto",
-            marginBottom: "40px",
-            height: "fit-contents",
-            // border:'1px solid'
-          }}
         >
           <input
             className={`${styles["input__cont"]} ${styles["sm"]}`}
