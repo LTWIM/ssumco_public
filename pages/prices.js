@@ -160,7 +160,7 @@ export default function Home() {
   };
   return (
     <div className={styles.price__wrapper}>
-      <TopBanner title="Prices" breadCrumb="Prices" />
+      <TopBanner title="Prices" breadCrumb="Prices" subTitle="Find Out Our" />
       <div className={styles.contt__wrapper}>
         <div className={styles.solutions__title__cont}>
           <span>Digital Innovation at Speed and Cost</span>
@@ -179,7 +179,10 @@ export default function Home() {
         contents={plans}
         footer="Ready to choose a pricing plan"
       />
-      <div className={styles.solutions__contt__wrapper} id={styles.mobile__solutions__contt__wrapper}>
+      <div
+        className={styles.solutions__contt__wrapper}
+        id={styles.mobile__solutions__contt__wrapper}
+      >
         <div className={styles.solutions__title__cont}>
           <span>Our Additional Solutions</span>
           <span>

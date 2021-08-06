@@ -9,11 +9,11 @@ export default function Topbanner(props) {
     return <span>Home / Pages / {props.breadCrumb}</span>;
   };
   useEffect(() => {
-    setTimeout(function(){
-      window.scrollTo(0,0)
-    })
     setTimeout(function () {
-      window.scrollTo({ top: window.innerHeight - 100, behavior: "smooth" });
+      window.scrollTo(0, 0);
+    });
+    setTimeout(function () {
+      window.scrollTo({ top: window.innerHeight - 75, behavior: "smooth" });
     }, 2500);
     console.log(window);
   }, []);
@@ -25,7 +25,7 @@ export default function Topbanner(props) {
           <div className={styles.title__cont}>
             <span>{props.title}</span>
             <div className={styles.mobile__title__cont}>
-              <span>Here is Our</span>
+              <span>{props.subTitle}</span>
               <span>{props.title}</span>
             </div>
           </div>
