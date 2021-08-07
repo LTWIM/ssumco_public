@@ -9,13 +9,11 @@ export default function Topbanner(props) {
     return <span>Home / Pages / {props.breadCrumb}</span>;
   };
   useEffect(() => {
-    setTimeout(function () {
-      window.scrollTo(0, 0);
-    });
-    setTimeout(function () {
-      window.scrollTo({ top: window.innerHeight - 75, behavior: "smooth" });
-    }, 2500);
-    console.log(window);
+    if (window.innerWidth < 414) {
+      setTimeout(function () {
+        window.scrollTo({ top: window.innerHeight - 75, behavior: "smooth" });
+      }, 2500);
+    }
   }, []);
 
   return (
