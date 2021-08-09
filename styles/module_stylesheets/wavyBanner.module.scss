@@ -90,7 +90,7 @@
       text-align: center;
       
       .title__cont {
-        font-size: clamp(31px, 9vw, 50px);
+        font-size: clamp(25px, 7vw, 41px);
         font-weight: bold;
         color: #ffffff;
         margin-bottom: 10px;
@@ -103,7 +103,7 @@
         z-index: 3;
       }
       .link__cont {
-        font-size: clamp(10px, 2.5vw, 16px);
+        font-size: clamp(12px, 2vw, 15px);
         color: #ff3d00;
         z-index: 3;
         font-weight: bold;
@@ -136,7 +136,7 @@
         width: 49%;
         z-index: 3; 
         .title__cont {
-          font-size: clamp(15px, 3vw, 22px);
+          font-size: clamp(14px, 4vw, 18px);
           font-weight: bold;
           color: #ffffff;
           width: 96%;
