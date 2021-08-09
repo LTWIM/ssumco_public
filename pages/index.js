@@ -180,7 +180,7 @@ export default function Home(props) {
   };
   return (
     <div className={styles.home__wrapper}>
-      <MainBanner animation={false} />
+      <MainBanner animation={true} />
       <div className={styles.cards__wrapper}>
         {" "}
         <Card title="Create and Track Content" cards={cards} txt="" />
