@@ -7,11 +7,15 @@ export default function Nav (props) {
 
   const [hamburgerClicked, setHamburherClicked] = useState(false)
 
-  const page = (name, link) => {
+  const page = (name) => {
+    let link = '/' + (typeof name === 'string' && name !== 'Home' ? name.toLowerCase() : '')
+    link = (link === '/contact' ? '/contact_us' : link)
     return(
       <div className={styles.Nav__pageCont}>
-        <div className={styles.Nav__page}>
-          {name} 
+        <div className={styles.Nav__page} onClick={()=>{setHamburherClicked(false)}}>
+          <Link href={link} >
+          {name}
+          </Link> 
           <div className={styles.Desktop__Nav__currentPage}/>
         </div>
       </div>
@@ -21,7 +25,11 @@ export default function Nav (props) {
   const logo = (name) => {  
     return(
       <div className={styles.Nav__logoCont}>
-        <div className={styles.Nav__logo}>{name}</div>
+        <div className={styles.Nav__logo}>
+        <Link href="/">
+          {name}
+        </Link>
+        </div>
       </div>
     )
   }
@@ -53,8 +61,9 @@ export default function Nav (props) {
           {page("Home")}
           {page("About")}
           {page("Prices")}
-          {page("Pages")}
-          {page("Blog")}
+          {page("Services")}
+          {page("Cases")}
+          {page("FAQS")}
           {page("Contact")}
         </div>  
       </div>
@@ -71,8 +80,9 @@ export default function Nav (props) {
               {page("Home")}
               {page("About")}
               {page("Prices")}
-              {page("Pages")}
-              {page("Blog")}
+              {page("Services")}
+              {page("Cases")}
+              {page("FAQS")}
               {page("Contact")}
               {page(Facebook("27px"))}
             </div>
