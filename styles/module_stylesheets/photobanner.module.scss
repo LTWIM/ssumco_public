@@ -265,6 +265,7 @@
     .PhotoBanner__block__type7 {
       box-sizing: border-box;
       padding-top: 9px;
+      padding-bottom: 19px;
       width: 92%;
       margin-bottom: 20px;
       cursor: pointer;
@@ -285,6 +286,7 @@
     .PhotoBanner__block__type7__active {
       box-sizing: border-box;
       padding-top: 9px;
+      padding-bottom: 19px;
       width: 92%;
       margin-bottom: 20px;
       cursor: pointer;
@@ -447,12 +449,19 @@
     .PhotoBanner__photo {
       width: 100%;
       margin: auto;
+      height: 300px;
+      margin-top: 30px;
     }
     .PhotoBanner__header2 {
       max-width: 1000px;
     }
     .PhotoBanner__body {
       max-width: 1000px;
+    }
+    .PhotoBanner__blockcont{
+      &.type4{
+        width: 100%;
+      }
     }
   }
 }
