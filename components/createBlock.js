@@ -56,7 +56,7 @@ export default function CreateBlock(props) {
             {props.title}
             <div className={styles.PhotoBanner__block__body}>
               {props.body}
-              {props.type === "4" && <div className={styles.learnmore}>Learn More</div>}
+              {props.type === "7" && <div className={styles.learnmore}>Learn More</div>}
             </div>
           </div>
         )

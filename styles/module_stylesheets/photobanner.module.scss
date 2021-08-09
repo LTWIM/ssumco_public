@@ -68,7 +68,6 @@
     flex-wrap: wrap;
     align-items: center;
     // border: 1px solid;
-
   }
   .PhotoBanner__cont__type2 {
     position: relative;
@@ -80,6 +79,23 @@
     flex-wrap: wrap;
     align-items: center;
     margin: auto;
+    .PhotoBanner__blockcont {
+      .PhotoBanner__header1 {
+        max-width: 555px;
+      }
+      .PhotoBanner__blockWrapper {
+        max-width: 555px;
+        .PhotoBanner__block {
+          padding: 20px 0px;
+          font-size: 20px;
+          max-height: 60px;
+        }
+        .PhotoBanner__block__active {
+          font-size: 20px;
+          color: #ff3d00;
+        }
+      }
+    }
   }
   .PhotoBanner__cont__type3 {
     position: relative;
@@ -107,11 +123,10 @@
     margin: auto;
     margin-top: 80px;
 
-    .PhotoBanner__textcont{
+    .PhotoBanner__textcont {
       margin: auto;
-      
     }
-    .PhotoBanner__header1{
+    .PhotoBanner__header1 {
       font-size: 36px;
     }
     .PhotoBanner__header2 {
@@ -124,7 +139,7 @@
       text-align: left;
     }
 
-    .PhotoBanner__btn{
+    .PhotoBanner__btn {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
       background-color: #ff3d00;
     }
@@ -136,7 +151,7 @@
     min-width: 220px;
     height: 440px;
     margin-bottom: auto;
-    margin-top: 80px;
+    margin-top: 111px;
   }
   .PhotoBanner__textcont {
     // border: 1px solid black;
@@ -145,7 +160,7 @@
     // width: 50%;
   }
   .PhotoBanner__header1 {
-    font-size: 41px;
+    font-size: clamp(23px, 7vw, 41px);
     font-weight: bold;
     line-height: 1.42;
     color: #1f1f1f;
@@ -181,7 +196,7 @@
     &.bg {
       // width: 358px;
       margin: auto;
-      
+
       padding: 17px 70px;
       text-align: center;
       font-weight: bold;
@@ -218,7 +233,7 @@
           padding-top: 10px;
           padding-bottom: 10px;
           max-height: 30px;
-          
+
           // &:hover {
           //   color: #ff3d00;
           //   max-height: 400px;
@@ -229,7 +244,6 @@
             font-size: 16px;
             display: flex;
             flex-direction: column;
-
           }
         }
       }
@@ -240,36 +254,45 @@
       // border: 1px solid black;
       width: 100%;
       max-width: 320px;
+      .PhotoBanner__block__type7:last-child {
+        border-bottom: none;
+        .PhotoBanner__block__body {
+          margin-top: 44px;
+        }
+      }
     }
-    .PhotoBanner__block__type7{
+    .PhotoBanner__block__type7 {
       box-sizing: border-box;
-      padding: 21px;
-      width: 100%;
+      padding-top: 9px;
+      width: 95%;
       margin-bottom: 20px;
       cursor: pointer;
       overflow: hidden;
-      max-height: 60px;
+      max-height: 70px;
       font-weight: bold;
+      font-size: 20px;
       transition: max-height 0.2s;
+      border-bottom: 1px solid lightgray;
       .PhotoBanner__block__body {
         margin-top: 20px;
         font-size: 16px;
         line-height: 1.63;
         color: #747474;
-
       }
     }
-    .PhotoBanner__block__type7__active{
+    .PhotoBanner__block__type7__active {
       box-sizing: border-box;
-      padding: 21px;
-      width: 100%;
+      padding-top: 9px;
+      width: 95%;
       margin-bottom: 20px;
       cursor: pointer;
       overflow: hidden;
       font-weight: bold;
       max-height: 300px;
       color: #ff3d00;
+      font-size: 20px;
       transition: max-height 0.5s;
+      border-bottom: 1px solid lightgray;
       .PhotoBanner__block__body {
         margin-top: 20px;
         font-size: 16px;
@@ -292,7 +315,7 @@
       max-height: 45px;
       font-weight: bold;
       transition: max-height 0.5s;
-      
+
       .PhotoBanner__block__body {
         margin-top: 20px;
         font-size: 16px;
@@ -300,7 +323,7 @@
         color: #747474;
       }
     }
-    .PhotoBanner__block__active{
+    .PhotoBanner__block__active {
       padding: 15px 0px;
       box-sizing: border-box;
       border-left: 21px solid rgba(0, 0, 0, 0);
@@ -331,31 +354,31 @@
       cursor: pointer;
     }
   }
-  .PhotoBanner__type5__cont{
+  .PhotoBanner__type5__cont {
     display: flex;
     margin-top: 30px;
     // border: 1px solid;
   }
-  .PhotoBanner__type5__col{
+  .PhotoBanner__type5__col {
     display: flex;
     flex-direction: column;
     max-width: 180px;
     // border: 1px solid;
   }
-  .PhotoBanner__type5__divider{
+  .PhotoBanner__type5__divider {
     width: 1px;
     height: 100px;
     background-color: #d8d8d8;
     // background-color: black;
     margin: auto;
   }
-  .PhotoBanner__type5__text{
+  .PhotoBanner__type5__text {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;
   }
-  .PhotoBanner__type5__num{
+  .PhotoBanner__type5__num {
     font-size: 52px;
     font-weight: bold;
     text-align: center;
@@ -390,7 +413,7 @@
     .PhotoBanner__cont__type3,
     .PhotoBanner__cont__type4,
     .PhotoBanner__cont__type5,
-    .PhotoBanner__cont__type6{
+    .PhotoBanner__cont__type6 {
       width: 90%;
       justify-content: space-between;
     }
@@ -401,29 +424,29 @@
 }
 
 @media screen and (max-width: 980px) {
-  .PhotoBanner{
+  .PhotoBanner {
     .PhotoBanner__cont__type1,
     .PhotoBanner__cont__type2,
     .PhotoBanner__cont__type3,
     .PhotoBanner__cont__type4,
     .PhotoBanner__cont__type5,
-    .PhotoBanner__cont__type6{
+    .PhotoBanner__cont__type6 {
       display: flex;
       flex-direction: column;
     }
-    .PhotoBanner__cont__type3{
-      .PhotoBanner__header1{
+    .PhotoBanner__cont__type3 {
+      .PhotoBanner__header1 {
         margin-top: 30px;
       }
     }
-    .PhotoBanner__photo{
+    .PhotoBanner__photo {
       width: 100%;
       margin: auto;
     }
-    .PhotoBanner__header2{
+    .PhotoBanner__header2 {
       max-width: 1000px;
     }
-    .PhotoBanner__body{
+    .PhotoBanner__body {
       max-width: 1000px;
     }
   }
