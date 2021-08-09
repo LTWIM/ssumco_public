@@ -16,7 +16,7 @@ export default function CreateBlock(props) {
         ref={props.blockref}
         >
           {props.title}
-          <div className={styles.PhotoBanner__block__body}>
+          <div className={styles.PhotoBanner__block__body} >
             {props.body}
             {props.type === "4" && <span>Learn More</span>}
           </div>
