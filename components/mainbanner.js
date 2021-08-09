@@ -8,6 +8,18 @@ export default function MainBanner (props) {
         <div className={styles.mainbanner__background}>
           <div className={styles.mainbanner__shape1}/>
           <div className={styles.mainbanner__shape2}/>
+          <div className={styles.mainbanner__oval1} style={{
+            backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-light.png")`,
+            backgroundPosition:"center",
+            backgroundSize:'contain',
+            backgroundRepeat:"no-repeat",
+          }}/>
+          <div className={styles.mainbanner__oval2} style={{
+            backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-dark.png")`,
+            backgroundPosition:"center",
+            backgroundSize:'contain',
+            backgroundRepeat:"no-repeat"
+          }}/>
         </div>
       )
     }
