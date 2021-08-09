@@ -1,16 +1,18 @@
 import React, {useState} from 'react'
 import styles from '../styles/module_stylesheets/Nav.module.scss'
 import { Facebook, Close } from './svg'
+import Link from "next/link"; // use this for links
+
 export default function Nav (props) {
 
   const [hamburgerClicked, setHamburherClicked] = useState(false)
 
-  const page = (name) => {
+  const page = (name, link) => {
     return(
       <div className={styles.Nav__pageCont}>
         <div className={styles.Nav__page}>
           {name} 
-          <div className={styles.Nav__currentPage}/>
+          <div className={styles.Desktop__Nav__currentPage}/>
         </div>
       </div>
     )
