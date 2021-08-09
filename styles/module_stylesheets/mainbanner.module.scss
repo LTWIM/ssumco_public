@@ -57,7 +57,7 @@
     max-width: 370px;
     // border: 1px solid;
     font-family: Verdana;
-    font-size: 16px;
+    font-size: clamp(12px,7vw,15px);
     line-height: 1.63;
     color: #747474;
   }
