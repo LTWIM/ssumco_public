@@ -44,7 +44,7 @@
   .num__cont {
     text-align: center;
     color: #3b00ad;
-    font-size: 55px;
+    font-size: clamp(25px, 7vw, 40px);
     font-weight: bold;
   }
   .subText__cont {
@@ -53,7 +53,7 @@
     color: #1f1f1f;
     width: 57%;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: clamp(12px, 2vw, 15px);
   }
 }
 .cards__cont {
@@ -113,7 +113,6 @@
   text-align: center;
   height: 50%;
   span:first-child {
-    
     font-weight: bold;
     color: #1f1f1f;
     margin-top: 5px;

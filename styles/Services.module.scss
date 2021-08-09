@@ -63,21 +63,21 @@
           position: absolute;
           left: 0;
           margin-left: -73px;
-          margin-top: 9px;
-          font-size: clamp(15px, 3vw, 22px);
+          margin-top: 12px;
+          font-size: clamp(15px, 4vw, 22px);
           color: #ff3d00;
           width: 200px;
         }
       }
       .title__cont {
         width: 75%;
-        font-size: 21px;
+        font-size: clamp(14px, 4vw, 18px);
         font-weight: bold;
         margin-top: 15px;
         margin-bottom: 20px;
       }
       .txt__cont {
-        font-size: 16px;
+        font-size: clamp(12px, 2vw, 15px);
         font-weight: normal;
         color: #747474;
         width: 68%;
@@ -86,6 +86,8 @@
       .link__cont {
         color: #3b00ad;
         display: none;
+        font-size: clamp(12px, 2vw, 15px);
+        font-weight: bold;
       }
     }
   }
