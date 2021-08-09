@@ -97,7 +97,7 @@
         z-index: 3;
       }
       .txt__cont {
-        font-size: clamp(13px, 4vw, 24px);
+        font-size: clamp(15px, 3vw, 22px);
         font-weight: bold;
         color: #91e2f9;
         z-index: 3;
@@ -136,7 +136,7 @@
         width: 49%;
         z-index: 3; 
         .title__cont {
-          font-size: clamp(19px, 6vw, 24px);
+          font-size: clamp(15px, 3vw, 22px);
           font-weight: bold;
           color: #ffffff;
           width: 96%;
@@ -147,7 +147,7 @@
           width: 85%;
         }
         .link__cont {
-          font-size: clamp(10px, 4vw, 18px);
+          font-size: clamp(12px, 2vw, 15px);
           font-weight: bold;
           color: #ffffff;
         }

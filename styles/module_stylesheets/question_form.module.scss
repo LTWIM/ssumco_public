@@ -11,12 +11,12 @@
     padding-bottom: 60px;
     border-radius: 12px;
     .title__cont {
-      font-size: clamp(23px, 7vw, 35px);
+      font-size: clamp(16px, 7vw, 31px);
     }
     .txt__cont {
       width: 70%;
       max-width: 650px;
-      font-size: clamp(11px, 2vw, 18px);
+      font-size: clamp(12px, 2vw, 15px);
     }
     .form__cont {
       flex-wrap: nowrap;
@@ -37,7 +37,7 @@
   }
 }
 .title__cont {
-  font-size: clamp(23px, 6.4vw, 41px);
+  font-size: clamp(16px, 7vw, 31px);
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
@@ -45,7 +45,7 @@
 }
 .txt__cont {
   color: #747474;
-  font-size: clamp(13px, 1vw, 18px);
+  font-size: clamp(12px, 2vw, 15px);
   line-height: 1.5;
   width: 56%;
   text-align: center;
@@ -92,7 +92,7 @@
   border: none;
   outline: none;
   margin-top: 35px;
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
   &:hover {
     cursor: pointer;

@@ -12,14 +12,14 @@
     margin: auto;
   }
   .teamBanner__header {
-    font-size: clamp(23px, 7vw, 35px);
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
     color: #1f1f1f;
   }
   .teamBanner__body {
-    font-size: clamp(13px, 3vw, 18px);
+    font-size: clamp(12px, 2vw, 15px);
     line-height: 1.5;
     text-align: center;
     color: #747474;
@@ -52,7 +52,7 @@
   }
   .teamBanner__name {
     // border: 1px solid;
-    font-size: 24px;
+    font-size: clamp(15px, 3vw, 22px);
     font-weight: bold;
     color: #1f1f1f;
     margin: auto;
@@ -63,7 +63,7 @@
   }
   .teamBanner__position {
     // border: 1px solid;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     color: #1f1f1f;
     margin: auto;
     margin-top: 10px;

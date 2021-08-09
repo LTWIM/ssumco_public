@@ -13,7 +13,7 @@
   .solutions__title__cont {
     display: flex;
     flex-direction: column;
-    font-size: clamp(23px, 7vw, 35px);
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
@@ -35,13 +35,13 @@
       align-items: center;
       margin-bottom: 20px;
       span:first-child {
-        font-size: clamp(23px, 7vw, 35px);
+        font-size: clamp(16px, 7vw, 31px);
         font-weight: bold;
         text-align: center;
         color: #1f1f1f;
       }
       span:last-child {
-        font-size: clamp(15px, 2vw, 18px);
+        font-size: clamp(12px, 2vw, 15px);
         line-height: 1.5;
         text-align: center;
         color: #747474;
@@ -68,7 +68,7 @@
           height: 950px;
           .list__cont {
             padding: 30px 60px;
-            font-size: 18px;
+            font-size: clamp(12px, 2vw, 15px);
             span:first-child {
               font-weight: bold;
             }
@@ -120,7 +120,7 @@
             }
             span {
               color: #747474;
-              font-size: 18px;
+              font-size: clamp(12px, 2vw, 15px);
             }
           }
         }
@@ -139,14 +139,14 @@
           height: 105px;
           box-shadow: -1px 1px 8px 0 rgba(0, 0, 0, 0.05);
           span:first-child {
-            font-size: 18px;
+            font-size: clamp(12px, 2vw, 15px);
             font-weight: bold;
             margin: auto;
             margin-bottom: 0;
             color: white;
           }
           span:nth-child(2) {
-            font-size: 24px;
+            font-size: clamp(15px, 3vw, 22px);
             margin: auto;
             margin-top: 0;
             color: white;
@@ -179,7 +179,7 @@
           border: solid 2px #3b00ad;
           outline: none;
           background-color: white;
-          font-size: 18px;
+          font-size: clamp(12px, 2vw, 15px);
           font-weight: bold;
           margin-bottom: 88px;
           span:after {
