@@ -27,13 +27,13 @@
   }
   .QuoteBanner__left {
     opacity: 0.5;
-    font-size: clamp(12px, 2vw, 15px);
+    font-size: clamp(14px, 4vw, 18px);
     color: #747474;
     cursor: pointer;
   }
   .QuoteBanner__right {
     opacity: 0.5;
-    font-size: clamp(12px, 2vw, 15px);
+    font-size: clamp(14px, 4vw, 18px);
     color: #747474;
     cursor: pointer;
   }
@@ -41,13 +41,13 @@
     // border: 1px solid black;
   }
   .QuoteBanner__company {
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 18px);
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;
   }
   .QuoteBanner__position {
-    font-size: 14px;
+    font-size: clamp(12px, 2vw, 15px);
     line-height: 1.5;
     text-align: center;
     color: #747474;
@@ -65,7 +65,7 @@
     max-width: 450px;
     margin: auto;
     color: #1f1f1f;
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 18px);
     line-height: 1.6;
     font-style: italic;
     text-align: center;
@@ -105,10 +105,10 @@
     }
   }
 }
-@media screen and (max-width: 320px) {
-  .QuoteBanner__bodycont {
-    .QuoteBanner__text {
-      font-size: 13px;
-    }
-  }
-}
+// @media screen and (max-width: 320px) {
+//   .QuoteBanner__bodycont {
+//     .QuoteBanner__text {
+//       font-size: 13px;
+//     }
+//   }
+// }

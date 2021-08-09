@@ -78,7 +78,7 @@
   }
 }
 .subText__cont {
-  font-size: clamp(10px, 1.3vw, 16px);
+  font-size: clamp(12px, 2vw, 15px);
   span:first-child {
     color: red;
     margin-right: 2px;
@@ -218,7 +218,13 @@
   .questionForm__wrapper {
     width: 75%;
     &.type1 {
-      width: 75%;
+      width: 100%;
+      .txt__cont {
+        width: 90%;
+      }
+      .subText__cont{
+        width:90%;
+      }
     }
     .form__cont {
       .input__cont {
@@ -228,7 +234,7 @@
     &.type1 {
       .form__cont {
         button {
-          font-size: 15px;
+          font-size: clamp(12px, 2vw, 15px);
         }
       }
     }
@@ -262,11 +268,11 @@
       .form__cont {
         button {
           padding: 20px 10px;
-          width: 55%;
+          width: 75%;
           margin-top: 17px;
         }
         input {
-          width: 75%;
+          width: 90%;
         }
       }
       .subText__cont {

@@ -65,7 +65,7 @@
 .breadCrumb__cont {
   color: #747474;
   line-height: 1.63;
-  font-size: 15px;
+  font-size: clamp(12px, 2vw, 15px);
 }
 .img__cont {
   width: 420px;

@@ -260,7 +260,7 @@
         margin-left: 0;
         margin-right: 0;
         span {
-          font-size: 15px;
+          // font-size: clamp(12px, 2vw, 15px);
         }
       }
     }
@@ -282,24 +282,24 @@
     }
   }
   #mobile__list__wrapper {
-    .title__cont {
-      span:first-child {
-        font-size: 14px;
-      }
-      span:nth-child(2) {
-        font-size: 16px;
-      }
-    }
+    // .title__cont {
+    //   span:first-child {
+    //     font-size: 14px;
+    //   }
+    //   span:nth-child(2) {
+    //     font-size: 16px;
+    //   }
+    // }
     .contt__cont {
       .btn__cont {
         margin: 20px 0px;
-        font-size: 11px;
+        // font-size: 11px;
         padding: 10px 0px 10px 0px;
         height: 37px;
       }
       .list__cont {
         span {
-          font-size: 12px;
+          // font-size: 12px;
         }
         .features__svg__outerLayer {
           width: 30px;
