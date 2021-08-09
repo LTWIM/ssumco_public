@@ -47,7 +47,7 @@ export default function Home() {
         <span>Freqeuntly Asked Questions</span>
       </div>
       <PhotoBanner
-        type="4"
+        type="8"
         header1="Easy to get started"
         header2="Frequently Asked Questions"
         contents={questions}

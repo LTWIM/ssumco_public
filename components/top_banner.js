@@ -9,7 +9,7 @@ export default function Topbanner(props) {
     return <span>Home / Pages / {props.breadCrumb}</span>;
   };
   useEffect(() => {
-    if (window.innerWidth < 414) {
+    if (window.innerWidth < 540) {
       setTimeout(function () {
         window.scrollTo({ top: window.innerHeight - 75, behavior: "smooth" });
       }, 2500);
