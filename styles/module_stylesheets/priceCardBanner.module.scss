@@ -14,13 +14,13 @@
   .PriceCardBanner__header {
     width: fit-content;
     margin: auto;
-    font-size: clamp(23px, 6vw, 41px);
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;
   }
   .PriceCardBanner__body {
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(12px, 2vw, 15px);
     line-height: 1.5;
     text-align: center;
     color: #747474;
@@ -49,12 +49,12 @@
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    height: 550px;
+    height: 595px;
     margin-top: 0;
     margin-bottom: 30px;
     .PriceCardBanner__card__tier {
       margin-top: 30px;
-      font-size: 24px;
+      font-size: clamp(15px, 3vw, 22px);
       font-weight: bold;
       text-align: center;
       color: #1f1f1f;
@@ -100,16 +100,21 @@
     .PriceCardBanner__checklist {
       display: flex;
       margin-top: 15px;
+      margin-left: 18px;
     }
     .PriceCardBanner__check {
-      font-size: 16px;
-      color: #3b00ad;
-      width: fit-content;
+      width: 30px;
+      height: 30px;
       margin-right: 10px;
+      .priceCardBanner__svg__outerLayer {
+        width: 100%;
+        height: 100%;
+      }
     }
     .PriceCardBanner__list {
       font-size: 16px;
       color: #1f1f1f;
+      margin-top: 6px;
     }
     .PriceCardBanner__subscribe {
       margin: auto;

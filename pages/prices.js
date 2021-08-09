@@ -82,7 +82,7 @@ export default function Home() {
           body: "Maecenas est arcu, sagittis eget ante semper",
         },
         {
-          title: "Bandwidth and Disk Space",
+          title: "Bandwidth and Disk Space",   
           body: "Maecenas est arcu, sagittis eget ante semper",
         },
         {

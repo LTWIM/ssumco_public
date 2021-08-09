@@ -11,14 +11,14 @@
     max-width: 1176px;
     margin-bottom: 40px;
     .title__cont {
-      font-size: clamp(23px, 6.7vw, 41px);
+      font-size: clamp(16px, 7vw, 31px);
       font-weight: bold;
       line-height: 1.5;
       text-align: center;
     }
     .text__cont {
       color: #747474;
-      font-size: clamp(15px, 2vw, 18px);
+      font-size: clamp(12px, 2vw, 15px);
       line-height: 1.5;
       text-align: center;
       width: 55%;
@@ -64,7 +64,7 @@
           left: 0;
           margin-left: -73px;
           margin-top: 9px;
-          font-size: 24px;
+          font-size: clamp(15px, 3vw, 22px);
           color: #ff3d00;
           width: 200px;
         }
@@ -92,7 +92,7 @@
   .fullService__title__cont {
     display: flex;
     flex-direction: column;
-    font-size: clamp(23px, 8vw, 41px);
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
@@ -104,7 +104,7 @@
   .seo__title__cont {
     display: flex;
     flex-direction: column;
-    font-size: clamp(23px, 7vw, 41px);
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     line-height: 1.5;
     text-align: center;

@@ -16,7 +16,7 @@
     margin: auto;
     margin-right: 0;
     cursor: pointer;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     font-weight: bold;
     color: #1f1f1f;
   }
@@ -31,7 +31,7 @@
   }
   .Nav__page {
     margin: auto;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     cursor: pointer;
     &:hover {
       color: #3b00ad;
@@ -44,7 +44,7 @@
   }
   .Nav__Facebook {
     margin: auto;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     cursor: pointer;
     color: #3b00ad;
   }
@@ -80,7 +80,7 @@
   }
   .Desktop__Nav__search {
     margin: auto;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     cursor: pointer;
     color: #333333;
     opacity: 0.7;

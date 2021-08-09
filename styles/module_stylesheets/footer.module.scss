@@ -42,17 +42,17 @@
       flex-direction: column;
       width: 50%;
       .title__cont {
-        font-size: 41px;
+        font-size: clamp(16px, 7vw, 31px);
         font-weight: bold;
         margin-bottom: 20px;
       }
       .txt__cont {
         line-height: 1.5;
-        font-size: 18px;
+         font-size: clamp(12px, 2vw, 15px);
         margin-bottom: 15px;
       }
       .phone__cont {
-        font-size: 18px;
+         font-size: clamp(12px, 2vw, 15px);
         margin-bottom: 15px;
         display: flex;
         .contacts__svg__outerLayer {
@@ -62,7 +62,7 @@
         }
       }
       .email__cont {
-        font-size: 18px;
+         font-size: clamp(12px, 2vw, 15px);
         margin-bottom: 15px;
         display: flex;
         .contacts__svg__outerLayer {
@@ -72,7 +72,7 @@
         }
       }
       .social__cont {
-        font-size: 18px;
+         font-size: clamp(12px, 2vw, 15px);
         display: flex;
         width: 200px;
         justify-content: space-between;
@@ -92,7 +92,7 @@
       }
       .contt__cont {
         line-height: 1.5;
-        font-size: 18px;
+         font-size: clamp(12px, 2vw, 15px);
         margin-bottom: 10px;
       }
     }

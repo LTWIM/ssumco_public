@@ -27,13 +27,13 @@
   }
   .QuoteBanner__left {
     opacity: 0.5;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     color: #747474;
     cursor: pointer;
   }
   .QuoteBanner__right {
     opacity: 0.5;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 15px);
     color: #747474;
     cursor: pointer;
   }

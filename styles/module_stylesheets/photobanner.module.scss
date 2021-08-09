@@ -91,6 +91,7 @@
           max-height: 60px;
         }
         .PhotoBanner__block__active {
+          padding: 20px 0px;
           font-size: 20px;
           color: #ff3d00;
         }
@@ -160,7 +161,7 @@
     // width: 50%;
   }
   .PhotoBanner__header1 {
-    font-size: clamp(23px, 7vw, 41px);
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     line-height: 1.42;
     color: #1f1f1f;
@@ -177,7 +178,7 @@
     font-size: 16px;
     line-height: 1.63;
     color: #747474;
-    max-width: 430px;
+    max-width: 465px;
     margin-top: 15px;
   }
   .PhotoBanner__btn {
@@ -379,7 +380,7 @@
     color: #1f1f1f;
   }
   .PhotoBanner__type5__num {
-    font-size: 52px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     color: #3b00ad;
