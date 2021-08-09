@@ -128,10 +128,10 @@
       margin: auto;
     }
     .PhotoBanner__header1 {
-      font-size: 36px;
+      font-size: clamp(16px, 7vw, 31px);
     }
     .PhotoBanner__header2 {
-      font-size: 35px;
+      font-size: clamp(16px, 7vw, 31px);
       font-weight: bold;
       color: #3b00ad;
       margin-top: 0px;
@@ -168,14 +168,14 @@
     max-width: 400px;
   }
   .PhotoBanner__header2 {
-    font-size: 35px;
+    font-size: clamp(16px, 7vw, 31px);
     font-weight: bold;
     color: #ff3d00;
     max-width: 400px;
     margin-top: 15px;
   }
   .PhotoBanner__body {
-    font-size: 16px;
+    font-size: clamp(12px, 2vw, 15px);
     line-height: 1.63;
     color: #747474;
     max-width: 465px;
@@ -380,7 +380,7 @@
     color: #1f1f1f;
   }
   .PhotoBanner__type5__num {
-    font-size: 40px;
+    font-size: clamp(25px, 8vw, 40px);
     font-weight: bold;
     text-align: center;
     color: #3b00ad;

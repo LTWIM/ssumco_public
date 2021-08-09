@@ -16,7 +16,7 @@
   .iconCard__name {
     margin-top: 15px;
     // border: 1px solid;
-    font-size: 15px;
+    font-size: clamp(12px, 2vw, 15px);
     font-weight: bold;
     text-align: center;
     color: #1f1f1f;
@@ -30,7 +30,7 @@
     opacity: 0.5;
   }
   .iconCard__body {
-    font-size: 15px;
+    font-size: clamp(12px, 2vw, 15px);
     line-height: 1.5;
     text-align: center;
     color: #747474;
@@ -69,5 +69,10 @@
       width: 100%;
       height: 100%;
     }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .iconCard {
+    height: 220px;
   }
 }

@@ -79,13 +79,13 @@
     }
     .PriceCardBanner__card__price {
       text-align: center;
-      font-size: 40px;
+      font-size: clamp(25px, 7vw, 40px);
       letter-spacing: 0.05em;
       font-weight: bold;
       color: #1f1f1f;
     }
     .PriceCardBanner__card__per {
-      font-size: 16px;
+      font-size: clamp(12px, 2vw, 15px);
       line-height: 1.5;
       text-align: center;
       color: #747474;
@@ -112,7 +112,7 @@
       }
     }
     .PriceCardBanner__list {
-      font-size: 16px;
+      font-size: clamp(12px, 2vw, 15px);
       color: #1f1f1f;
       margin-top: 6px;
     }
@@ -123,7 +123,7 @@
       background-color: #3b00ad;
       padding: 12px 35px;
       color: #ffffff;
-      font-size: 16px;
+      font-size: clamp(12px, 2vw, 15px);
       font-weight: bold;
       border-radius: 8px;
       cursor: pointer;
@@ -198,6 +198,17 @@
     .PriceCardBanner__cont {
       .PriceCardBanner__cardcont {
         justify-content: space-around;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .PriceCardBanner {
+    .PriceCardBanner__cont {
+      .PriceCardBanner__card {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 490px;
       }
     }
   }
