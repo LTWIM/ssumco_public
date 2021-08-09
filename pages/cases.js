@@ -150,7 +150,7 @@ export default function Home() {
         body="Maecenas est arcu, sagittis eget ante semper, ornare rhoncus tellus. In ac arcu at velit sollicitudin ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam eu euismod quam. Vivamus commodo hendrerit est, sed vestibulum quam mollis semper. Etiam tristique rutrum lectus a consequat. Praesent tristique cursus tellus, in ultricies"
       />
       <PhotoBanner
-        type="1"
+        type="9"
         header1={
           <span>
             Why You Use a{" "}

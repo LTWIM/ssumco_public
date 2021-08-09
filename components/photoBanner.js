@@ -76,6 +76,8 @@ export default function PhotoBanner(props) {
         return styles.PhotoBanner__cont__type1;
       case "8":
         return styles.PhotoBanner__cont__type1;
+      case "9":
+        return styles.PhotoBanner__cont__type1;
       default:
         break;
     }
@@ -92,23 +94,7 @@ export default function PhotoBanner(props) {
         );
       case "3":
         return (
-          <div className={styles.PhotoBanner__backgroundbg}>
-            <div
-              className={styles.PhotoBanner__bg}
-              style={{
-                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/bg.png")`,
-              }}
-            />
-            <div
-              className={styles.PhotoBanner__bg}
-              style={{
-                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/bg.png")`,
-                left: "1044px",
-                top: "195px",
-                height: "550px",
-              }}
-            />
-          </div>
+          <UseBackground type='3'/>
         );
         case "4":
           return(
@@ -142,6 +128,8 @@ export default function PhotoBanner(props) {
           return(
             <UseBackground type='3'/>
           )
+        case "9":
+          break
       default:
         break;
     }
@@ -291,6 +279,15 @@ export default function PhotoBanner(props) {
         </div>}
         </div>
         )
+        case "9":
+          return(
+            <div className={styles.PhotoBanner__textcont}>
+            <div className={styles.PhotoBanner__header1}>{props.header1}</div>
+            <div className={styles.PhotoBanner__header2}>{props.header2}</div>
+            <div className={styles.PhotoBanner__body}>{props.body}</div>
+            <div className={styles.PhotoBanner__btn}>Read more</div>
+          </div>
+          )
       default:
         break;
     }
