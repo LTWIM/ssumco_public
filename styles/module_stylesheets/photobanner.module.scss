@@ -128,10 +128,10 @@
       margin: auto;
     }
     .PhotoBanner__header1 {
-      font-size: clamp(16px, 7vw, 31px);
+      font-size: 36px;
     }
     .PhotoBanner__header2 {
-      font-size: clamp(16px, 7vw, 31px);
+      font-size: 35px;
       font-weight: bold;
       color: #3b00ad;
       margin-top: 0px;
@@ -168,14 +168,14 @@
     max-width: 400px;
   }
   .PhotoBanner__header2 {
-    font-size: clamp(16px, 7vw, 31px);
+    font-size: 35px;
     font-weight: bold;
     color: #ff3d00;
     max-width: 400px;
     margin-top: 15px;
   }
   .PhotoBanner__body {
-    font-size: clamp(12px, 2vw, 15px);
+    font-size: 16px;
     line-height: 1.63;
     color: #747474;
     max-width: 465px;
@@ -207,7 +207,6 @@
   .PhotoBanner__blockcont {
     // border: 1px solid black;
     width: fit-content;
-    // width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -218,7 +217,7 @@
       // border: 1px solid red;
       .PhotoBanner__blockWrapper {
         max-width: 400px;
-        // min-width: 320px;
+        min-width: 320px;
         width: 100%;
         margin: auto;
         // margin-right: 0;
@@ -235,6 +234,7 @@
           padding-top: 10px;
           padding-bottom: 10px;
           max-height: 30px;
+
           // &:hover {
           //   color: #ff3d00;
           //   max-height: 400px;
@@ -243,7 +243,7 @@
             font-style: normal;
             line-height: 1.63;
             font-size: clamp(12px, 2vw, 15px);
-            display: flex;
+            display: none;
             flex-direction: column;
           }
         }
@@ -264,7 +264,8 @@
     }
     .PhotoBanner__block__type7 {
       box-sizing: border-box;
-      // padding-top: 9px;
+      padding-top: 9px;
+      padding-bottom: 19px;
       width: 92%;
       margin-bottom: 20px;
       cursor: pointer;
@@ -279,11 +280,13 @@
         font-size: clamp(12px, 2vw, 15px);
         line-height: 1.63;
         color: #747474;
+        display: none;
       }
     }
     .PhotoBanner__block__type7__active {
       box-sizing: border-box;
       padding-top: 9px;
+      padding-bottom: 19px;
       width: 92%;
       margin-bottom: 20px;
       cursor: pointer;
@@ -299,6 +302,7 @@
         font-size: clamp(12px, 2vw, 15px);
         line-height: 1.63;
         color: #747474;
+        display: block;
       }
     }
     .PhotoBanner__block {
@@ -322,6 +326,7 @@
         font-size: clamp(12px, 2vw, 15px);
         line-height: 1.63;
         color: #747474;
+        display: none;
       }
     }
     .PhotoBanner__block__active {
@@ -345,6 +350,7 @@
         font-size: clamp(12px, 2vw, 15px);
         line-height: 1.63;
         color: #747474;
+        display: block;
       }
     }
     .PhotoBanner__footer {
@@ -380,7 +386,7 @@
     color: #1f1f1f;
   }
   .PhotoBanner__type5__num {
-    font-size: clamp(25px, 8vw, 40px);
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
     color: #3b00ad;
@@ -443,6 +449,8 @@
     .PhotoBanner__photo {
       width: 100%;
       margin: auto;
+      height: 300px;
+      margin-top: 30px;
     }
     .PhotoBanner__header2 {
       max-width: 1000px;
@@ -450,32 +458,10 @@
     .PhotoBanner__body {
       max-width: 1000px;
     }
-    .PhotoBanner__blockcont {
-      // border: 1px solid black;
-      // width: fit-content;
-      width: 100%;
-      padding-top: 100px;
-      padding-bottom: 100px;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-  
-      &.type4 {
-      width: 100%;
+    .PhotoBanner__blockcont{
+      &.type4{
+        width: 100%;
       }
-    }
-  }
-}
-@media screen and (max-width:900px) {
-  .PhotoBanner{
-    
-  }
-}
-@media screen and (max-width:500px) {
-  .PhotoBanner{
-    .PhotoBanner__photo{
-      margin-top: 30px;
-      height: 300px;
     }
   }
 }
