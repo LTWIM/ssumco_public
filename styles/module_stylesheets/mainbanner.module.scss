@@ -64,17 +64,17 @@
     display: flex;
   }
   .mainbanner__Header1 {
-    font-size: clamp(16px, 7vw, 31px);
+    font-size: clamp(25px, 8vw, 40px);
     font-weight: bold;
     color: #ff3d00;
   }
   .mainbanner__Header2 {
     margin-top: 5px;
-    font-size: clamp(16px, 7vw, 31px);
+    font-size: clamp(25px, 8vw, 40px);
     font-weight: bold;
     line-height: 1.27;
     color: #1f1f1f;
-    max-width: 300px;
+    // max-width: 300px;
     // border: 1px solid;
   }
   .mainbanner__body {
