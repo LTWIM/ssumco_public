@@ -20,6 +20,7 @@ export default function MainBanner (props) {
             backgroundSize:'contain',
             backgroundRepeat:"no-repeat"
           }}/>
+          <div className={styles.mainvanner__element} style={{}}/>
         </div>
       )
     }
