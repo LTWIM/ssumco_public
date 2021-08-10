@@ -6,8 +6,8 @@ export default function MainBanner (props) {
     if (props.animation){
       return(
         <div className={styles.mainbanner__background}>
-          <div className={styles.mainbanner__shape1}/>
-          <div className={styles.mainbanner__shape2}/>
+          {/* <div className={styles.mainbanner__shape1}/>
+          <div className={styles.mainbanner__shape2}/> */}
           <div className={styles.mainbanner__oval1} style={{
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-light.png")`,
             backgroundPosition:"center",
