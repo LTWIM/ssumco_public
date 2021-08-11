@@ -10,37 +10,29 @@
   flex-direction: column;
   margin-top: 0px;
   .mainvanner__element{
+    background-color: rgb(194, 203, 250);
     width: 40px;
     height: 40px;
-    border: 1px solid;
+    border-radius: 50%;
     position: absolute;
-    left: 0px;
-    top: 0px; 
-    bottom: auto; 
-    right: auto;
-    animation: element1 3s ease-in-out forwards;
-    @keyframes element1 {
+    margin: auto;
+    left: 0px;right: 0;
+    top: 0px; bottom: 0;
+    transform: scale(0.3);
+    
+  }
+  #element_animation1{
+    animation-delay: 2s;
+    animation: element1 1s ease-in-out forwards;
+    @keyframes element {
       0%{
-        // transform: translate3d(0px, 0px, 0px);
-        top: 0;
-        margin-left: 0;
-      }
-      25%{
-        // transform: translate3d(60px, 80px, 0px)
-        bottom: 0;
-      }
-      50%{
-        // transform: translate3d(40px, 60px, 0px)
-        margin-top: 2.5%;
       }
       100%{
-        // transform: translate3d(80px, 80px, 0px)
-        margin-top: 5%;
-        margin-left: 3%;
+        top: 0;
+        left: 0;
       }
     }
   }
-  
   .mainbanner__background {
     position: absolute;
     width: 100%;
@@ -73,7 +65,7 @@
     position: absolute;
     opacity: 0;
     animation: fade-in2 2s ease-in forwards;
-    // animation-delay: 4.2s;
+    animation-delay: 4.2s;
     // background-size: 2600px 600px;
     // background-color: black;
   }
@@ -85,16 +77,19 @@
     position: absolute;
     opacity: 0;
     animation: fade-in1 2s ease-in forwards;
-    // animation-delay: 4.2s;
+    animation-delay: 4.2s;
+  }
+  .mainbanner__text{
+    display: none;
   }
   .mainbanner__textcont {
     position: relative;
     // border: 1px solid black;
     width: 70%;
     margin: auto;
-    // margin-right: 0;
     margin-top: 190px;
     display: flex;
+    
   }
   .mainbanner__Header1 {
     font-size: clamp(25px, 8vw, 40px);
@@ -120,7 +115,6 @@
     color: #747474;
   }
   .mainbanner__photo {
-    margin-left: 35px;
     width: 60%;
     max-width: 650px;
     height: 380px;
@@ -128,7 +122,22 @@
     background-color: lightgrey;
     margin: auto;
     margin-top: -40px;
-    margin-right: 0;
+    // margin-right: 0;
+    animation: photo 3s forwards;
+    @keyframes photo {
+      0%{
+        transform: rotate(45deg);
+        width: 0px;
+        height: 0px;
+      }
+      10%{
+        transform: rotate(0deg);  
+      }
+      100%{
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
   .mainbanner__btn {
     margin-top: 20px;
