@@ -1,19 +1,19 @@
-.videoBanner{
+.videoBanner {
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
   // border: 1px solid;
-  .videoBanner__title{
-  width: fit-content;
-  margin: auto;
-  // font-size: 41px;
-  font-size: clamp(16px, 7vw, 31px);
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
-  color: #1f1f1f;
+  .videoBanner__title {
+    width: fit-content;
+    margin: auto;
+    // font-size: 41px;
+    font-size: clamp(16px, 7vw, 31px);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    color: #1f1f1f;
   }
-  .videoBanner__body{
+  .videoBanner__body {
     // font-size: 16px;
     font-size: clamp(12px, 2vw, 15px);
     line-height: 1.5;
@@ -23,19 +23,19 @@
     margin: auto;
     margin-top: 15px;
   }
-  .videoBanner__cont{
+  .videoBanner__cont {
     max-width: 1680px;
     width: 100%;
     margin: auto;
     margin-top: 40px;
     // border: 1px solid black;
   }
-  .videoBanner__videocont{
+  .videoBanner__videocont {
     width: 70%;
     margin: auto;
     // border: 1px solid green;
   }
-  .videoBanner__video{
+  .videoBanner__video {
     margin: auto;
     width: 100%;
     max-width: 650px;
@@ -43,11 +43,15 @@
     mix-blend-mode: color;
     border-radius: 12px;
     background-blend-mode: color;
-    background-image: linear-gradient(to bottom, rgba(59, 0, 173, 0.89), rgba(59, 0, 173, 0.89));
+    background-image: linear-gradient(
+      to bottom,
+      rgba(59, 0, 173, 0.89),
+      rgba(59, 0, 173, 0.89)
+    );
     display: flex;
     align-items: center;
   }
-  .videoBanner__btn{
+  .videoBanner__btn {
     margin: auto;
     width: 60px;
     height: 60px;
@@ -58,7 +62,7 @@
     align-items: center;
     cursor: pointer;
   }
-  .videoBanner__play{
+  .videoBanner__play {
     margin: auto;
     width: fit-content;
     height: fit-content;
@@ -66,15 +70,15 @@
     font-weight: 100;
     font-size: clamp(14px, 4vw, 18px);
   }
-  .videoBanner__listWrapper{
+  .videoBanner__listWrapper {
     // border: 1px solid;
     width: 90%;
     margin: auto;
-    margin-top:90px;
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
   }
-  .videoBanner__preview{
+  .videoBanner__preview {
     background-color: lightgrey;
     width: 10%;
     height: 80px;
@@ -82,11 +86,18 @@
   }
 }
 
-@media screen and (max-width:1280px) {
-  .videoBanner{
-    .videoBanner__videocont{
+@media screen and (max-width: 1280px) {
+  .videoBanner {
+    .videoBanner__videocont {
       width: 90%;
-
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .videoBanner {
+    width: 90%;
+    .videoBanner__videocont {
+      width: 100%;
     }
   }
 }

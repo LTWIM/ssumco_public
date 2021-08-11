@@ -40,7 +40,7 @@ export default function Home(props) {
   //   window.addEventListener("click",handleEventListener)
   //   window.scrollTo(0,0)
   // }
- 
+
   // const componentWillUnmount = () => {
   //   window.removeEventListener("click", handleEventListener);
   // }
@@ -196,6 +196,7 @@ export default function Home(props) {
         body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
       <div className={styles.home__icons__wrapper}>
+      <UseBackground type='3' />
         <div
           className={styles.contt__wrapper}
           id={styles.mobile__contt__wrapper}

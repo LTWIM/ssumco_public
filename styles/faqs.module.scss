@@ -18,7 +18,13 @@
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
+  margin-bottom: -70px;
   span:last-child {
     color: #3b00ad;
+  }
+}
+@media screen and (max-width: 980px) {
+  .questions__title__cont {
+    margin-bottom: 0px;
   }
 }

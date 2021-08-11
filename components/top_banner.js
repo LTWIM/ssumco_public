@@ -12,7 +12,7 @@ export default function Topbanner(props) {
     if (window.innerWidth < 540) {
       setTimeout(function () {
         window.scrollTo({ top: window.innerHeight - 75, behavior: "smooth" });
-      }, 2500);
+      }, 2200);
     }
   }, []);
 
