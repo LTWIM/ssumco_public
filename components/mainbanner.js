@@ -21,11 +21,41 @@ export default function MainBanner (props) {
             backgroundRepeat:"no-repeat"
           }}/> */}
           <div className={styles.mainvanner__element} id={styles.element_animation1}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation2}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation3}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation4}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation5}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation6}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation7}/>
+          <div className={styles.mainvanner__element} id={styles.element_animation8}/>
 
+          <div className={styles.mainbanner__icon} id={styles.icon_animation1} style={{
+            backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/chat.png")`,
+          }}/>
+          <div className={styles.mainbanner__icon} id={styles.icon_animation2}/>
+          <div className={styles.mainbanner__icon} id={styles.icon_animation3}/>
 
+          <div className={styles.mainbanner__icon} id={styles.icon_animation4} style={{
+            backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/check.png")`,
+          }}/>
+          <div className={styles.mainbanner__icon} id={styles.icon_animation5}/>
+          <div className={styles.mainbanner__icon} id={styles.icon_animation6}/>
 
-
-
+          
+          {/* circle ruler */}
+          <div style={{
+            position:'absolute',
+            border:`1px solid`, 
+            borderRadius:'50%', 
+            width:'550px',
+            height:'550px',
+            margin:'auto',
+            top:'0',
+            bottom:'0',
+            left:'0',
+            right:'0'
+            
+            }}/>
         </div>
       )
     }
@@ -67,7 +97,9 @@ export default function MainBanner (props) {
                 Read more
               </div>
             </div>
-            <div className={styles.mainbanner__photo}/>
+            <div className={styles.mainbanner__photo1}/>
+            <div className={styles.mainbanner__photo2}/>
+
           </div>
         </div>
     )
