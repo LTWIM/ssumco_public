@@ -8,26 +8,19 @@ export default function MainBanner (props) {
         <div className={styles.mainbanner__background}>
           {/* <div className={styles.mainbanner__shape1}/>
           <div className={styles.mainbanner__shape2}/> */}
-          <div className={styles.mainbanner__oval1} style={{
+          {/* <div className={styles.mainbanner__oval1} style={{
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-light.png")`,
             backgroundPosition:"center",
             backgroundSize:'contain',
             backgroundRepeat:"no-repeat",
-          }}/>
-          <div className={styles.mainbanner__oval2} style={{
+          }}/> */}
+          {/* <div className={styles.mainbanner__oval2} style={{
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-dark.png")`,
             backgroundPosition:"center",
             backgroundSize:'contain',
             backgroundRepeat:"no-repeat"
-          }}/>
-          <div className={styles.mainvanner__element} style={{top:'20px',left:'5%'}}/>
-          <div className={styles.mainvanner__element} style={{top:'120px',left:'0px' }}/>
-          <div className={styles.mainvanner__element} style={{top:'130px',left:'8%'}}/>
-          <div className={styles.mainvanner__element} style={{top:'190px',left:'1%'}}/>
-          <div className={styles.mainvanner__element} style={{top:'260px',left:'-3%'}}/>
-          <div className={styles.mainvanner__element} style={{top:'270px',left:'6%'}}/>
-          <div className={styles.mainvanner__element} style={{top:'340px',left:'3%'}}/>
-          <div className={styles.mainvanner__element} style={{top:'420px',left:'-2%'}}/>
+          }}/> */}
+          <div className={styles.mainvanner__element} id={styles.element_animation1}/>
 
 
 
@@ -60,7 +53,7 @@ export default function MainBanner (props) {
 
             {backgroundAnimation()}
           <div className={styles.mainbanner__textcont}>
-            <div style={{paddingRight:`50px`}}>
+            <div className={styles.mainbanner__text} style={{paddingRight:`50px`}}>
               <div className={styles.mainbanner__Header1}>
                 Hi!
               </div>
