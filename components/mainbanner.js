@@ -28,22 +28,41 @@ export default function MainBanner (props) {
           <div className={styles.mainvanner__element} id={styles.element_animation6}/>
           <div className={styles.mainvanner__element} id={styles.element_animation7}/>
           <div className={styles.mainvanner__element} id={styles.element_animation8}/>
+          <div className={styles.mainbanner__lefticon}>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation1} style={{
+              backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/chat.png")`,
+            }}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation2}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation3}/>
 
-          <div className={styles.mainbanner__icon} id={styles.icon_animation1} style={{
-            backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/chat.png")`,
-          }}/>
-          <div className={styles.mainbanner__icon} id={styles.icon_animation2}/>
-          <div className={styles.mainbanner__icon} id={styles.icon_animation3}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation4} style={{
+              backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/check.png")`,
+            }}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation5}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation6}/>
 
-          <div className={styles.mainbanner__icon} id={styles.icon_animation4} style={{
-            backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/check.png")`,
-          }}/>
-          <div className={styles.mainbanner__icon} id={styles.icon_animation5}/>
-          <div className={styles.mainbanner__icon} id={styles.icon_animation6}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation7} style={{
+              backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/msg.png")`,
+            }}/>
+          </div>
+          <div className={styles.mainbanner__righticon}>
 
-          
+            <div className={styles.mainbanner__icon} id={styles.icon_animation8}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation9} style={{
+              backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/check.png")`
+            }}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation10}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation11}/>
+
+            <div className={styles.mainbanner__icon} id={styles.icon_animation12} style={{
+              backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/blueMsg.png")`
+            }}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation13}/>
+            <div className={styles.mainbanner__icon} id={styles.icon_animation14}/>
+          </div>
+
           {/* circle ruler */}
-          <div style={{
+          {/* <div style={{
             position:'absolute',
             border:`1px solid`, 
             borderRadius:'50%', 
@@ -55,7 +74,7 @@ export default function MainBanner (props) {
             left:'0',
             right:'0'
             
-            }}/>
+            }}/> */}
         </div>
       )
     }

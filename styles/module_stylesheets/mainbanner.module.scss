@@ -206,6 +206,8 @@
     transform: translate(-150px, -150px);
     animation: icon1 0.5s ease-in-out forwards;
     animation-delay: 1.4s;
+    border-radius: 0;
+
     @keyframes icon1 {
       0%{
         width: 0px;
@@ -281,6 +283,8 @@
     transform: translate(-200px, 0px);
     animation: icon4 0.5s ease-in-out forwards;
     animation-delay: 1.4s;
+    border-radius: 0;
+
     @keyframes icon4 {
       0%{
         width: 0px;
@@ -355,7 +359,246 @@
       }
     }
   }
+  #icon_animation7{
+    transform: translate(0px, 200px);
+    animation: icon7 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    border-radius: 0;
 
+    @keyframes icon7 {
+      0%{
+        width: 0px;
+        height: 0px;
+
+      }
+      25%{
+        width: 50px; height: 50px;
+      }
+      27%{
+        transform: translate(0px, 200px);
+
+      }
+      100%{
+        transform: translate(-90px, 260px);
+        width: 50px; height: 50px;
+
+      }
+    }
+  }
+  #icon_animation8{
+    transform: translate(0px, 200px);
+    animation: icon8 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    @keyframes icon8 {
+      0%{
+        width: 0px;
+        height: 0px;
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      25%{
+        width: 18px; height: 18px;
+
+      }
+      50%{
+        transform: translate(0px, 200px);
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      100%{
+        width: 18px; height: 18px;
+        transform: translate(90px, 260px);
+        border: solid 1px #1f1f1f;
+      }
+    }
+  }
+  #icon_animation9{
+    transform: translate(150px, 150px);
+    animation: icon9 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    border-radius: 0;
+
+    @keyframes icon9 {
+      0%{
+        width: 0px;
+        height: 0px;
+
+      }
+      25%{
+        width: 50px; height: 50px;
+
+      }
+      50%{
+        transform: translate(150px, 150px);
+      }
+      100%{
+        width: 50px; height: 50px;
+        transform: translate(190px, 200px);
+      }
+    }
+  }
+  #icon_animation10{
+    transform: translate(150px, 150px);
+    animation: icon10 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    @keyframes icon10 {
+      0%{
+        width: 0px;
+        height: 0px;
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      25%{
+        width: 36px; height: 36px;
+
+      }
+      50%{
+        transform: translate(150px, 150px);
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      100%{
+        width: 36px; height: 36px;
+        transform: translate(250px, 120px);
+        border: solid 2px #ff5722;
+      }
+    }
+  }
+  #icon_animation11{
+    transform: translate(150px, 150px);
+    animation: icon11 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    @keyframes icon11 {
+      0%{
+        width: 0px;
+        height: 0px;
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      25%{
+        width: 12px; height: 12px;
+
+      }
+      50%{
+        transform: translate(150px, 150px);
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      100%{
+        width: 12px; height: 12px;
+        transform: translate(275px, 30px);
+        border: solid 1px #3b00ad;;
+      }
+    }
+  }
+  #icon_animation12{
+    transform: translate(185px, 0px);
+    animation: icon12 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    border-radius: 0;
+    @keyframes icon12 {
+      0%{
+        width: 0px;
+        height: 0px;
+
+      }
+      25%{
+        width: 40px; height: 40px;
+
+      }
+      50%{
+        transform: translate(185px, 0px);
+      }
+      100%{
+        width: 40px; height: 40px;
+        transform: translate(260px, -90px);
+      }
+    }
+  }
+  #icon_animation13{
+    transform: translate(185px, 0px);
+    animation: icon13 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    @keyframes icon13 {
+      0%{
+        width: 0px;
+        height: 0px;
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      25%{
+        width: 49px; height: 49px;
+
+      }
+      50%{
+        transform: translate(185px, 0px);
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      100%{
+        width: 49px; height: 49px;
+        transform: translate(190px, -200px);
+        border: solid 2px #fec55e;
+
+      }
+    }
+  }
+  #icon_animation14{
+    transform: translate(185px, 0px);
+    animation: icon14 0.5s ease-in-out forwards;
+    animation-delay: 1.4s;
+    @keyframes icon14 {
+      0%{
+        width: 0px;
+        height: 0px;
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      25%{
+        width: 18px; height: 18px;
+
+      }
+      50%{
+        transform: translate(185px, 0px);
+        border :solid 1px rgb(194, 203, 250);
+
+      }
+      100%{
+        width: 18px; height: 18px;
+        transform: translate(40px, -270px);
+        border: solid 1px #1f1f1f;
+
+      }
+    }
+  }
+  .mainbanner__lefticon{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: lefticon 1s ease-in-out forwards;
+    animation-delay: 2s;
+    @keyframes lefticon {
+      0%{}
+      100%{
+        width: 15vw;
+        margin-left:0vw;
+      }
+    }
+  }
+  .mainbanner__righticon{
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    // animation: righticon 1s ease-in-out forwards;
+    // animation-delay: 2s;
+    // @keyframes righticon {
+    //   0%{}
+    //   100%{
+    //     width: 15vw;
+    //     margin-right:0vw;
+    //   }
+    // }
+  }
   .mainbanner__background {
     position: absolute;
     width: 100%;
