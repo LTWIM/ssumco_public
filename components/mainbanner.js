@@ -20,7 +20,19 @@ export default function MainBanner (props) {
             backgroundSize:'contain',
             backgroundRepeat:"no-repeat"
           }}/>
-          <div className={styles.mainvanner__element} style={{}}/>
+          <div className={styles.mainvanner__element} style={{top:'20px',left:'5%'}}/>
+          <div className={styles.mainvanner__element} style={{top:'120px',left:'0px' }}/>
+          <div className={styles.mainvanner__element} style={{top:'130px',left:'8%'}}/>
+          <div className={styles.mainvanner__element} style={{top:'190px',left:'1%'}}/>
+          <div className={styles.mainvanner__element} style={{top:'260px',left:'-3%'}}/>
+          <div className={styles.mainvanner__element} style={{top:'270px',left:'6%'}}/>
+          <div className={styles.mainvanner__element} style={{top:'340px',left:'3%'}}/>
+          <div className={styles.mainvanner__element} style={{top:'420px',left:'-2%'}}/>
+
+
+
+
+
         </div>
       )
     }
