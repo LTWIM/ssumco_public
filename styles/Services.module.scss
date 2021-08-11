@@ -150,6 +150,29 @@
     }
   }
 }
+@media only screen and (max-width: 540px) {
+  #mobile__cards__cont {
+    .card__cont:last-child {
+      margin-bottom: 30px;
+    }
+    .card__cont {
+      padding-bottom: 0px;
+      max-height: 220px;
+    }
+  }
+}
+@media only screen and (max-width: 414px) {
+  #mobile__cards__cont {
+    .card__cont {
+      .header__cont {
+        .subTxt__cont {
+          margin-left: -74px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
 // @media only screen and (max-width: 320px) {
 //   #mobile__cards__cont {
 //     .card__cont {

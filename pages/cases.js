@@ -15,81 +15,97 @@ export default function Home() {
   ];
   let cards = [
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",
     },
     {
+      id: 1,
       img: "",
       title: "Consequat id porta Case",
       txt: "Malesuada bibendum arcu vitae elementum curabitur vitae. Quis enim lobortis scelerisque fermentum dui faucibus. In tellus integer feugiat scelerisque varius",

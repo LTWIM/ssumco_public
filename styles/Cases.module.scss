@@ -68,6 +68,9 @@
   width: 420px;
   height: 400px;
   perspective: 1000px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .card__inner__cont {
   position: relative;

@@ -80,11 +80,12 @@
     align-items: center;
     margin: auto;
     .PhotoBanner__blockcont {
+      // height: 485px;
       .PhotoBanner__header1 {
         max-width: 555px;
       }
       .PhotoBanner__blockWrapper {
-        max-width: 555px;
+        max-width: 494px;
         .PhotoBanner__block {
           padding: 20px 0px;
           font-size: clamp(14px, 4vw, 18px);
@@ -205,6 +206,7 @@
     }
   }
   .PhotoBanner__blockcont {
+    // height: 485px;
     // border: 1px solid black;
     width: fit-content;
     padding-top: 100px;
@@ -441,6 +443,12 @@
       display: flex;
       flex-direction: column;
     }
+    .PhotoBanner__cont__type1 {
+      .type4 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
     .PhotoBanner__cont__type3 {
       .PhotoBanner__header1 {
         margin-top: 30px;
@@ -458,9 +466,25 @@
     .PhotoBanner__body {
       max-width: 1000px;
     }
-    .PhotoBanner__blockcont{
-      &.type4{
+    .PhotoBanner__blockcont {
+      &.type4 {
         width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .PhotoBanner {
+    .PhotoBanner__cont__type1,
+    .PhotoBanner__cont__type2,
+    .PhotoBanner__cont__type3,
+    .PhotoBanner__cont__type4,
+    .PhotoBanner__cont__type5,
+    .PhotoBanner__cont__type6 {
+      .PhotoBanner__blockcont {
+        .PhotoBanner__blockWrapper {
+          min-width: 266px;
+        }
       }
     }
   }
