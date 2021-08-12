@@ -575,15 +575,15 @@
     position: relative;
     width: 100%;
     height: 100%;
-    animation: lefticon 1s ease-in-out forwards;
-    animation-delay: 2s;
-    @keyframes lefticon {
-      0%{}
-      100%{
-        width: 15vw;
-        margin-left:0vw;
-      }
-    }
+    // animation: lefticon 1s ease-in-out forwards;
+    // animation-delay: 2s;
+    // @keyframes lefticon {
+    //   0%{}
+    //   100%{
+    //     width: 15vw;
+    //     margin-left:0vw;
+    //   }
+    // }
   }
   .mainbanner__righticon{
     // position: relative;
