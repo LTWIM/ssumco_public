@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
 }
+.faq__questions__wrapper {
+  width: 100vw;
+}
 .contt__wrapper {
   width: 100%;
   max-width: 1680px;
@@ -25,6 +28,16 @@
 }
 @media screen and (max-width: 980px) {
   .questions__title__cont {
-    margin-bottom: 0px;
+    margin-bottom: -30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .faq__questions__wrapper {
+    margin-bottom: -140px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .contt__wrapper {
+    margin-top: -60px;
   }
 }

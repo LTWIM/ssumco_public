@@ -1,46 +1,35 @@
-import React, { createRef, useState, useRef } from "react";
+import React, {
+  createRef,
+  useState,
+  useRef,
+  useEffect,
+  useCallback,
+} from "react";
 import styles from "../styles/module_stylesheets/photobanner.module.scss";
 import { UseBackground, CreateBlock } from "./index";
 
-
 export default function PhotoBanner(props) {
   const [blockSelected, setBlockSelected] = useState(null);
+  const photoBannerRef = useRef();
 
-  let reference = Array(4)
-    .fill(0)
-    .map(()=> useRef());
-
-  const componentDidMount = () => {
-    window.addEventListener("click",handleEventListener)
-    window.scrollTo(0,0)
-  }
- 
-  const componentWillUnmount = () => {
-    window.removeEventListener("click", handleEventListener);
-  }
-
-  const getOrCreateRef = (index) => {
-    if (!reference.hasOwnProperty(index)) {
-      // reference[index] = createRef();
-      reference[index] = useRef();
-
-    }
-    return
-  };
-  const handleEventListener = (e) => {
-    if(reference.every((ref)=> !ref.current.contains(e.target))){
+  const handleEventListener = useCallback((e) => {
+    if (photoBannerRef.current && !photoBannerRef.current.contains(e.target)) {
       setBlockSelected(null);
     }
-  }
+  });
   const handleChangeOnBlock = (value) => {
-    blockSelected === value
-      ? setBlockSelected(null)
-      : setBlockSelected(value)
-  }
-  
+    blockSelected === value ? setBlockSelected(null) : setBlockSelected(value);
+  };
+  useEffect(() => {
+    window.addEventListener("click", handleEventListener);
+    return () => {
+      window.removeEventListener("click", handleEventListener);
+    };
+  }, [handleEventListener]);
+
   // const block = (content) => {
   //   return (
-  //     <div className={props.selected === props.value 
+  //     <div className={props.selected === props.value
   //       ? styles.PhotoBanner__block__active
   //       : styles.PhotoBanner__block
   //     }
@@ -85,51 +74,39 @@ export default function PhotoBanner(props) {
   const background = () => {
     switch (props.type) {
       case "1":
-        return (
-          <UseBackground type='1'/>
-        );
+        return <UseBackground type="1" />;
       case "2":
-        return (
-          <UseBackground type='2'/>
-        );
+        return <UseBackground type="2" />;
       case "3":
+        return <UseBackground type="3" />;
+      case "4":
+        return <UseBackground type="3" />;
+      case "5":
+        return <UseBackground type="3" />;
+      case "6":
         return (
-          <UseBackground type='3'/>
+          <div className={styles.PhotoBanner__background}>
+            <div
+              className={styles.PhotoBanner__vawe2}
+              style={{
+                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe2.png")`,
+              }}
+            />
+            <div
+              className={styles.PhotoBanner__vawe1}
+              style={{
+                backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe1.png")`,
+              }}
+            />
+          </div>
         );
-        case "4":
-          return(
-            <UseBackground type='3'/>
-          )
-        case "5":
-          return(
-            <UseBackground type='3'/>
-          )
-        case "6":
-          return (
-            <div className={styles.PhotoBanner__background}>
-              <div
-                className={styles.PhotoBanner__vawe2}
-                style={{
-                  backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe2.png")`,
-                }}
-              />
-              <div
-                className={styles.PhotoBanner__vawe1}
-                style={{
-                  backgroundImage: `URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/photobanner/vawe1.png")`,
-                }}
-              />
-            </div>
-          );
-        case "7":
-          break;
+      case "7":
+        break;
 
-        case "8":
-          return(
-            <UseBackground type='3'/>
-          )
-        case "9":
-          break
+      case "8":
+        return <UseBackground type="3" />;
+      case "9":
+        break;
       default:
         break;
     }
@@ -149,19 +126,21 @@ export default function PhotoBanner(props) {
         return (
           <div className={styles.PhotoBanner__blockcont}>
             <div className={styles.PhotoBanner__header1}>{props.header1}</div>
-            <div className={styles.PhotoBanner__blockWrapper}>
+            <div
+              className={styles.PhotoBanner__blockWrapper}
+              ref={photoBannerRef}
+            >
               {/* {props.contents.map((content) => block(content))} */}
 
               {props.contents.map((block, index) => (
-              <CreateBlock
-                selected={blockSelected}
-                value={index}
-                blockref={getOrCreateRef(index)}
-                type={props.type}
-                onChange={handleChangeOnBlock}
-                title = {block.title}
-                body = {block.body}
-              />
+                <CreateBlock
+                  selected={blockSelected}
+                  value={index}
+                  type={props.type}
+                  onChange={handleChangeOnBlock}
+                  title={block.title}
+                  body={block.body}
+                />
               ))}
             </div>
             <div className={styles.PhotoBanner__footer}>{props.footer}</div>
@@ -181,113 +160,132 @@ export default function PhotoBanner(props) {
       case "4":
         return (
           <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
-          <div className={styles.PhotoBanner__blockWrapper}>
-            {props.contents.map((block, index) => (
-              <CreateBlock
-                selected={blockSelected}
-                value={index}
-                blockref={getOrCreateRef(index)}
-                type={props.type}
-                onChange={handleChangeOnBlock}
-                title = {block.title}
-                body = {block.body}
-              />
-            ))}
+            <div
+              className={styles.PhotoBanner__blockWrapper}
+              ref={photoBannerRef}
+            >
+              {props.contents.map((block, index) => (
+                <CreateBlock
+                  selected={blockSelected}
+                  value={index}
+                  type={props.type}
+                  onChange={handleChangeOnBlock}
+                  title={block.title}
+                  body={block.body}
+                />
+              ))}
+            </div>
+            {props.footer && (
+              <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
+                {props.footer}
+              </div>
+            )}
           </div>
-        {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
-          {props.footer}
-        </div>}
-        </div>
         );
-      case"5":
-          return(
-            <div className={styles.PhotoBanner__textcont} style={{marginTop:'0'}}>
-              <div className={styles.PhotoBanner__header1}>{props.header1}</div>
-              <div className={styles.PhotoBanner__header2}>{props.header2}</div>
-              <div className={styles.PhotoBanner__body}>{props.body}</div>
-              <div className={styles.PhotoBanner__type5__cont}>
-                <div className={styles.PhotoBanner__type5__col}>
-                  <div className={styles.PhotoBanner__type5__num}>
-                    {props.templates}
-                  </div>
-                  <div className={styles.PhotoBanner__type5__text}>
-                    Ready to Use Templates
-                  </div>
+      case "5":
+        return (
+          <div
+            className={styles.PhotoBanner__textcont}
+            style={{ marginTop: "0" }}
+          >
+            <div className={styles.PhotoBanner__header1}>{props.header1}</div>
+            <div className={styles.PhotoBanner__header2}>{props.header2}</div>
+            <div className={styles.PhotoBanner__body}>{props.body}</div>
+            <div className={styles.PhotoBanner__type5__cont}>
+              <div className={styles.PhotoBanner__type5__col}>
+                <div className={styles.PhotoBanner__type5__num}>
+                  {props.templates}
                 </div>
-                <div className={styles.PhotoBanner__type5__divider}/>
-                <div className={styles.PhotoBanner__type5__col}>
-                  <div className={styles.PhotoBanner__type5__num}>
-                    {props.websites} m
-                  </div>
-                  <div className={styles.PhotoBanner__type5__text}>
-                    Currently Hosted and Supported Websites
-                  </div>
+                <div className={styles.PhotoBanner__type5__text}>
+                  Ready to Use Templates
+                </div>
+              </div>
+              <div className={styles.PhotoBanner__type5__divider} />
+              <div className={styles.PhotoBanner__type5__col}>
+                <div className={styles.PhotoBanner__type5__num}>
+                  {props.websites} m
+                </div>
+                <div className={styles.PhotoBanner__type5__text}>
+                  Currently Hosted and Supported Websites
                 </div>
               </div>
             </div>
-          )
-      case"6":
-        return(
+          </div>
+        );
+      case "6":
+        return (
           <div className={styles.PhotoBanner__textcont}>
             <div className={styles.PhotoBanner__header1}>{props.header1}</div>
             <div className={styles.PhotoBanner__header2}>
-                More News and Discounts
-              </div>
+              More News and Discounts
+            </div>
             <div className={styles.PhotoBanner__body}>{props.body}</div>
             <div className={styles.PhotoBanner__btn}>Read more</div>
           </div>
-        )
-      case"7":
-        return(
-          <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
-          <div className={styles.PhotoBanner__blockWrapper}>
-            {props.contents.map((block, index) => (
-              <CreateBlock
-                selected={blockSelected}
-                value={index}
-                blockref={getOrCreateRef(index)}
-                type={props.type}
-                onChange={handleChangeOnBlock}
-                title = {block.title}
-                body = {block.body}
-              />
-            ))}
+        );
+      case "7":
+        return (
+          <div
+            className={`${styles.PhotoBanner__blockcont} ${styles.type4}  ${
+              !props.footer && styles.noFooter
+            }`}
+          >
+            <div
+              className={styles.PhotoBanner__blockWrapper}
+              ref={photoBannerRef}
+            >
+              {props.contents.map((block, index) => (
+                <CreateBlock
+                  selected={blockSelected}
+                  value={index}
+                  type={props.type}
+                  onChange={handleChangeOnBlock}
+                  title={block.title}
+                  body={block.body}
+                />
+              ))}
+            </div>
+            {props.footer && (
+              <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
+                {props.footer}
+              </div>
+            )}
           </div>
-        {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
-          {props.footer}
-        </div>}
-        </div>
-        )
-        case"8":
-        return(
+        );
+      case "8":
+        return (
           <div className={`${styles.PhotoBanner__blockcont} ${styles.type4}`}>
-          <div className={styles.PhotoBanner__blockWrapper}>
-            {props.contents.map((block, index) => (
-              <CreateBlock
-                selected={blockSelected}
-                value={index}
-                blockref={getOrCreateRef(index)}
-                type={props.type}
-                onChange={handleChangeOnBlock}
-                title = {block.title}
-                body = {block.body}
-              />
-            ))}
+            <div
+              className={styles.PhotoBanner__blockWrapper}
+              ref={photoBannerRef}
+            >
+              {props.contents.map((block, index) => (
+                <CreateBlock
+                  selected={blockSelected}
+                  value={index}
+                  type={props.type}
+                  onChange={handleChangeOnBlock}
+                  title={block.title}
+                  body={block.body}
+                />
+              ))}
+            </div>
+            {props.footer && (
+              <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
+                {props.footer}
+              </div>
+            )}
           </div>
-        {props.footer && <div className={`${styles.PhotoBanner__btn} ${styles.bg}`}>
-          {props.footer}
-        </div>}
-        </div>
-        )
-        case "9":
-          return(
-            <div className={styles.PhotoBanner__textcont}>
+        );
+      case "9":
+        return (
+          <div className={styles.PhotoBanner__textcont}>
             <div className={styles.PhotoBanner__header1}>{props.header1}</div>
             <div className={styles.PhotoBanner__header2}>{props.header2}</div>
             <div className={styles.PhotoBanner__body}>{props.body}</div>
             <div className={styles.PhotoBanner__btn}>Read more</div>
           </div>
-          )
+        );
       default:
         break;
     }
@@ -313,8 +311,8 @@ export default function PhotoBanner(props) {
                     marginBottom: "0",
                   }
                 : {}
-            }>
-          </div>
+            }
+          ></div>
           {typeHandle()}
         </div>
       </div>
