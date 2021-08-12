@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Faqs.module.scss";
+import styles from "../styles/faqs.module.scss";
 import { TopBanner, QuestionForm, PhotoBanner } from "../components/index";
 
 export default function Home() {
