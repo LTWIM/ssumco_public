@@ -8,18 +8,19 @@ export default function MainBanner (props) {
         <div className={styles.mainbanner__background}>
           {/* <div className={styles.mainbanner__shape1}/>
           <div className={styles.mainbanner__shape2}/> */}
-          {/* <div className={styles.mainbanner__oval1} style={{
+          <div className={styles.mainbanner__oval1} style={{
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-light.png")`,
             backgroundPosition:"center",
             backgroundSize:'contain',
-            backgroundRepeat:"no-repeat",
-          }}/> */}
-          {/* <div className={styles.mainbanner__oval2} style={{
+            backgroundRepeat:"no-repeat",,
+            
+          }}/>
+          <div className={styles.mainbanner__oval2} style={{
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-dark.png")`,
             backgroundPosition:"center",
             backgroundSize:'contain',
             backgroundRepeat:"no-repeat"
-          }}/> */}
+          }}/>
           <div className={styles.mainvanner__element} id={styles.element_animation1}/>
           <div className={styles.mainvanner__element} id={styles.element_animation2}/>
           <div className={styles.mainvanner__element} id={styles.element_animation3}/>
@@ -56,21 +57,6 @@ export default function MainBanner (props) {
             }}/>
             <div className={styles.mainbanner__icon} id={styles.icon_animation13}/>
             <div className={styles.mainbanner__icon} id={styles.icon_animation14}/>
-
-          {/* circle ruler */}
-          {/* <div style={{
-            position:'absolute',
-            border:`1px solid`, 
-            borderRadius:'50%', 
-            width:'550px',
-            height:'550px',
-            margin:'auto',
-            top:'0',
-            bottom:'0',
-            left:'0',
-            right:'0'
-            
-            }}/> */}
         </div>
       )
     }
