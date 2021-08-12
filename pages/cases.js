@@ -6,8 +6,11 @@ import {
   WavyBanner,
 } from "../components/index";
 import styles from "../styles/Cases.module.scss";
+import { useRouter } from "next/router";
 
-export default function Home() {
+export default function Home(props) {
+  const router = useRouter();
+
   let stats = [
     { num: "350", txt: "Ready to Use Applications" },
     { num: "+ 1.9 m", txt: "Currently Hosted and Supported Websites" },
@@ -124,7 +127,13 @@ export default function Home() {
 
   const mapCard = (card) => {
     return (
-      <div className={styles.card__cont}>
+      <div
+        className={styles.card__cont}
+        onClick={(e) => {
+          e.preventDefault();
+          router.push(`/cases/${card.id}`);
+        }}
+      >
         <div className={styles.card__inner__cont}>
           <div className={styles.card__front__cont}></div>
           <div className={styles.card__back__cont}>

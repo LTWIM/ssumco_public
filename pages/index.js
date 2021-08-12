@@ -195,8 +195,9 @@ export default function Home(props) {
         header="Our previous clients"
         body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"
       />
+      <QuoteBanner contents={QuoteContents} />
       <div className={styles.home__icons__wrapper}>
-      <UseBackground type='3' />
+        <UseBackground type="3" />
         <div
           className={styles.contt__wrapper}
           id={styles.mobile__contt__wrapper}
@@ -247,7 +248,6 @@ export default function Home(props) {
         // blockref={getOrCreateRef(index)}
         // onChange={handleChangeOnBlock}
       />
-      <QuoteBanner contents={QuoteContents} />
       <PriceCardBanner
         header="Our basic SEO management"
         body="Aliquam ut porttitor leo a. Diam donec adipiscing tristique risus nec feugiat in. Dui ut ornare lectus sit. Enim sit amet venenatis urna. Enim eu turpis egestas pretium aenean"

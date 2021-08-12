@@ -1,5 +1,10 @@
 import React from "react";
-import { TopBanner, BlogCard, QuestionForm } from "../../components/index";
+import {
+  TopBanner,
+  BlogCard,
+  QuestionForm,
+  UseBackground,
+} from "../../components/index";
 import styles from "../../styles/Cases_single.module.scss";
 
 export default function Home(props) {
@@ -61,6 +66,7 @@ export default function Home(props) {
         </div>
       </div>
       <div className={styles.cases__cont} id={styles.mobile__cases__cont}>
+        <UseBackground type="3" />
         <div className={styles.title__cont}>
           <span>Recent Cases</span>
         </div>

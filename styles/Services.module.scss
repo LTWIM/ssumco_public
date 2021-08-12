@@ -48,6 +48,9 @@
           background-color: #ffffff;
           .link__cont {
             display: flex;
+            span {
+              cursor: pointer;
+            }
           }
         }
       }

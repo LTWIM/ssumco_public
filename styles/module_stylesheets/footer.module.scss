@@ -79,6 +79,9 @@
         .social__svg__outerLayer {
           width: 25px;
           height: 25px;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
@@ -94,6 +97,9 @@
         line-height: 1.5;
         font-size: clamp(12px, 2vw, 15px);
         margin-bottom: 10px;
+        &:hover{
+          cursor:pointer;
+        }
       }
     }
   }
