@@ -7,30 +7,31 @@ body {
   input {
     font-family: Lucida Sans, Helvetica, Arial, sans-serif;
   }
+  // overflow-x:hidden;
+  div{
+    max-width: calc(100vw - 15px);
+    
+  }
 }
 .page-wrapper {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
-  // overflow-x: hidden;
 }
 .page-break-point {
   // max-width: 1680px;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin-top: 70px;
+    width: 100vw;
+    max-width: calc(100vw - 13px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top:70px;
 }
 @media only screen and (max-width: 780px) {
   .page-wrapper {
     .page-break-point {
       margin-top: 60px;
     }
-  }
-}
+  }}
