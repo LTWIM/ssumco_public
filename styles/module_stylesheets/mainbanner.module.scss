@@ -21,8 +21,8 @@
     
   }
   #element_animation1{
-    animation: element1 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element1 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element1 {
       0%{
       }
@@ -43,8 +43,8 @@
     }
   }
   #element_animation2{
-    animation: element2 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element2 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element2 {
       0%{
       }
@@ -64,8 +64,8 @@
     }
   }
   #element_animation3{
-    animation: element3 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element3 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element3 {
       0%{
       }
@@ -85,8 +85,8 @@
     }
   }
   #element_animation4{
-    animation: element4 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element4 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element4 {
       0%{
       }
@@ -106,8 +106,8 @@
     }
   }
   #element_animation5{
-    animation: element5 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element5 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element5 {
       0%{
       }
@@ -127,8 +127,8 @@
     }
   }
   #element_animation6{
-    animation: element6 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element6 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element6 {
       0%{
       }
@@ -148,8 +148,8 @@
     }
   }
   #element_animation7{
-    animation: element7 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element7 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element7 {
       0%{
       }
@@ -169,8 +169,8 @@
     }
   }
   #element_animation8{
-    animation: element8 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: element8 0.5s ease-in-out 0.9s forwards;
+    
     @keyframes element8 {
       0%{
       }
@@ -204,8 +204,10 @@
   }
   #icon_animation1{
     transform: translate(-150px, -150px);
-    animation: icon1 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon1 0.5s ease-in-out  1.4s forwards,
+      icon1-position 1.5s ease-in-out 1.9s forwards;
+    
     border-radius: 0;
 
     @keyframes icon1 {
@@ -224,11 +226,32 @@
         transform: translate(-100px, -255px);
       }
     }
+    @keyframes icon1-position {
+      0%{
+        transform: translate(-100px, -255px);
+      }
+      90%{
+        top: 41%;
+        bottom: 59%;
+        left: 3%;
+        right: 97%;
+      }
+      100%{
+        top: 41%;
+        bottom: 59%;
+        left: 3%;
+        right: 97%;
+        transform: translate(0px, 0px);
+        
+      }
+    }
   }
   #icon_animation2{
     transform: translate(-150px, -150px);
-    animation: icon2 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon2 0.5s ease-in-out  1.4s forwards,
+      icon2-position 1.5s ease-in-out 1.9s forwards;
+    
     @keyframes icon2 {
       0%{
         width: 0px;
@@ -250,12 +273,33 @@
 
       }
     }
+    @keyframes icon2-position {
+      0%{
+        transform: translate(-180px, -210px);
+      }
+      90%{
+        top: 10%;
+        bottom: 90%;
+        left: 3%;
+        right: 97%;
+      }
+      100%{
+        top: 10%;
+        bottom: 90%;
+        left: 3%;
+        right: 97%;
+        transform: translate(0px, 0px);
+        
+      }
+    }
   }
 
   #icon_animation3{
     transform: translate(-150px, -150px);
-    animation: icon3 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon3 0.5s ease-in-out  1.4s forwards,
+      icon3-position 1.5s ease-in-out 1.9s forwards;
+    
     @keyframes icon3 {
       0%{
         width: 0px;
@@ -274,15 +318,36 @@
       100%{
         width: 30px; height: 30px;
         transform: translate(-245px, -130px);
-        border :solid 1px #ff3d00;
+        border :solid 1px #ff5722;
 
+      }
+    }
+    @keyframes icon3-position {
+      0%{
+        transform: translate(-245px, -130px);
+      }
+      90%{
+        top: 25%;
+        bottom: 75%;
+        left: 5%;
+        right: 95%;
+      }
+      100%{
+        top: 25%;
+        bottom: 75%;
+        left: 5%;
+        right: 95%;
+        transform: translate(0px, 0px);
+        
       }
     }
   }
   #icon_animation4{
     transform: translate(-200px, 0px);
-    animation: icon4 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon4 0.5s ease-in-out  1.4s forwards,
+      icon4-position 1.5s ease-in-out 1.9s forwards;
+    
     border-radius: 0;
 
     @keyframes icon4 {
@@ -301,14 +366,34 @@
       100%{
         transform: translate(-260px, 100px);
         width: 75px; height: 75px;
-
+      }
+    }
+    @keyframes icon4-position {
+      0%{
+        transform: translate(-260px, 100px);
+      }
+      90%{
+        top: 21%;
+        bottom: 79%;
+        left: 0%;
+        right: 100%;
+      }
+      100%{
+        top: 21%;
+        bottom: 79%;
+        left: 0%;
+        right: 100%;
+        transform: translate(0px, 0px);
+        
       }
     }
   }
   #icon_animation5{
     transform: translate(-200px, 0px);
-    animation: icon5 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon5 0.5s ease-in-out  1.4s forwards,
+      icon5-position 1.5s ease-in-out 1.9s forwards;
+    
     @keyframes icon5 {
       0%{
         width: 0px;
@@ -331,11 +416,32 @@
         border: solid 1px #3b00ad;
       }
     }
+    @keyframes icon5-position {
+      0%{
+        transform: translate(-275px, 0px);
+      }
+      90%{
+        top: 33%;
+        bottom: 67%;
+        left: 3%;
+        right: 97%;
+      }
+      100%{
+        top: 33%;
+        bottom: 67%;
+        left: 3%;
+        right: 97%;
+        transform: translate(0px, 0px);
+        
+      }
+    }
   }
   #icon_animation6{
     transform: translate(-200px, 0px);
-    animation: icon6 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon6 0.5s ease-in-out  1.4s forwards,
+      icon6-position 1.5s ease-in-out 1.9s forwards;
+    
     @keyframes icon6 {
       0%{
         width: 0px;
@@ -358,11 +464,31 @@
         border: solid 1px #3b00ad;
       }
     }
+    @keyframes icon6-position {
+      0%{
+        transform: translate(-200px, 190px);
+      }
+      90%{
+        top: 58%;
+        bottom: 42%;
+        left: 4%;
+        right: 96%;
+      }
+      100%{
+        top: 58%;
+        bottom: 42%;
+        left: 4%;
+        right: 96%;
+        transform: translate(0px, 0px);
+        
+      }
+    }
   }
   #icon_animation7{
     transform: translate(0px, 200px);
-    animation: icon7 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon7 0.5s ease-in-out  1.4s forwards,
+      icon7-position 1.5s ease-in-out 1.9s forwards;
     border-radius: 0;
 
     @keyframes icon7 {
@@ -381,14 +507,35 @@
       100%{
         transform: translate(-90px, 260px);
         width: 50px; height: 50px;
-
+      }
+    }
+    @keyframes icon7-position {
+      0%{
+        transform: translate(-90px, 260px);
+      }
+      90%{
+        top: 75%;
+        bottom: 25%;
+        left: 1%;
+        right: 99%;
+      }
+      100%{
+        top: 75%;
+        bottom: 25%;
+        left: 1%;
+        right: 99%;
+        transform: translate(0px, 0px);
+        width: 50px; height: 50px;
+        
       }
     }
   }
   #icon_animation8{
     transform: translate(0px, 200px);
-    animation: icon8 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: 
+      icon8 0.5s ease-in-out  1.4s forwards,
+      icon8-position 1.5s ease-in-out 1.9s forwards;
+    
     @keyframes icon8 {
       0%{
         width: 0px;
@@ -411,11 +558,30 @@
         border: solid 1px #1f1f1f;
       }
     }
+    @keyframes icon8-position {
+      0%{
+        transform: translate(90px, 260px);
+      }
+      90%{
+        top: 73%;
+        bottom: 27%;
+        right: 4%;
+        left: 96%;
+      }
+      100%{
+        top: 73%;
+        bottom: 27%;
+        right: 4%;
+        left: 96%;
+        transform: translate(0px, 0px);
+        width: 50px; height: 50px;
+        
+      }
+    }
   }
   #icon_animation9{
     transform: translate(150px, 150px);
-    animation: icon9 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: icon9 0.5s ease-in-out 1.4s forwards;
     border-radius: 0;
 
     @keyframes icon9 {
@@ -436,11 +602,12 @@
         transform: translate(190px, 200px);
       }
     }
+
   }
   #icon_animation10{
     transform: translate(150px, 150px);
-    animation: icon10 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: icon10 0.5s ease-in-out 1.4s  forwards;
+    
     @keyframes icon10 {
       0%{
         width: 0px;
@@ -466,8 +633,8 @@
   }
   #icon_animation11{
     transform: translate(150px, 150px);
-    animation: icon11 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: icon11 0.5s ease-in-out 1.4s  forwards;
+    
     @keyframes icon11 {
       0%{
         width: 0px;
@@ -493,8 +660,8 @@
   }
   #icon_animation12{
     transform: translate(185px, 0px);
-    animation: icon12 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: icon12 0.5s ease-in-out 1.4s  forwards;
+    
     border-radius: 0;
     @keyframes icon12 {
       0%{
@@ -517,8 +684,8 @@
   }
   #icon_animation13{
     transform: translate(185px, 0px);
-    animation: icon13 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: icon13 0.5s ease-in-out 1.4s  forwards;
+    
     @keyframes icon13 {
       0%{
         width: 0px;
@@ -545,8 +712,8 @@
   }
   #icon_animation14{
     transform: translate(185px, 0px);
-    animation: icon14 0.5s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation: icon14 0.5s ease-in-out 1.4s  forwards;
+    
     @keyframes icon14 {
       0%{
         width: 0px;
@@ -659,8 +826,9 @@
 
     animation: text-display 2s ease-in 3s forwards;
     @keyframes text-display {
-      0%{width: 40%;
-        border-bottom: 1px solid rgba(0, 0, 0, 0);}
+      0%{width: fit-content;
+        // border-bottom: 1px solid rgba(0, 0, 0, 0);
+      }
       12%{height: 45px;}
       25%{height: 45px;}
       37%{height: 170px;}
@@ -668,15 +836,15 @@
       67%{height: 310px;}
       75%{height: 310px;}
       87%{
-        height: 360px;
-        width: 40%;
-        border-bottom: 1px solid;
+        height: 380px;
+        width: fit-content;
+        // border-bottom: 1px solid;
 
       }
       100%{
-        height: 360px;
-        width: 40%;
-        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        height: 380px;
+        width: fit-content;
+        // border-bottom: 1px solid rgba(0, 0, 0, 0);
       }
     }
   }
