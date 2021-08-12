@@ -10,6 +10,7 @@ export default function CreateBlock(props) {
               ? styles.PhotoBanner__block__active
               : styles.PhotoBanner__block
           }
+          key={props.value}
           onClick={(e) => {
             e.preventDefault();
             props.onChange(props.value);
@@ -17,7 +18,7 @@ export default function CreateBlock(props) {
           ref={props.blockref}
         >
           {props.title}
-          <div className={styles.PhotoBanner__block__body} >
+          <div className={styles.PhotoBanner__block__body}>
             {props.body}
             {props.type === "4" && <span>Learn More</span>}
           </div>
@@ -26,6 +27,7 @@ export default function CreateBlock(props) {
     case "4":
       return (
         <div
+          key={props.value}
           className={
             props.selected === props.value
               ? styles.PhotoBanner__block__active
@@ -49,6 +51,7 @@ export default function CreateBlock(props) {
     case "7":
       return (
         <div
+          key={props.value}
           className={
             props.selected === props.value
               ? styles.PhotoBanner__block__type7__active
@@ -72,6 +75,7 @@ export default function CreateBlock(props) {
     case "8":
       return (
         <div
+          key={props.value}
           className={
             props.selected === props.value
               ? styles.PhotoBanner__block__type7__active
@@ -83,7 +87,7 @@ export default function CreateBlock(props) {
           }}
           ref={props.blockref}
         >
-         <span>{props.title}</span>
+          <span>{props.title}</span>
           <div className={styles.PhotoBanner__block__body}>
             {props.body}
             {props.type === "8" && (

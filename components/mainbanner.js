@@ -103,7 +103,7 @@ export default function MainBanner (props) {
                 Hi!
               </div>
               <div className={styles.mainbanner__Header2}>
-                We're just Ssum Company
+                We`&apos;`re just Ssum Company
               </div>
               <div className={styles.mainbanner__body}>
                 Sed dignissim vehicula lorem, ac vulputate leo porta sit amet. Ut commodo nisl et sem sollicitudin gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
