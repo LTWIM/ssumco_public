@@ -134,6 +134,7 @@ export default function PhotoBanner(props) {
 
               {props.contents.map((block, index) => (
                 <CreateBlock
+                  key={index}
                   selected={blockSelected}
                   value={index}
                   type={props.type}
