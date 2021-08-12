@@ -15,6 +15,7 @@ import {
   keyboard,
   smartPhone,
   check,
+  svgSeo,
 } from "../components/svg";
 import {
   MainBanner,
@@ -83,18 +84,18 @@ export default function Home(props) {
   const cards = [
     {
       title: "Web Content Management",
-      txt: "Donec gravida est ut velit fringilla, et venenatis nisi euismod. Aenean est turpis, rhoncus quis scelerisque",
+      txt: "Online presence is a must in the current economy, work with us to build an impactful presence online.",
       svg: pad("", "", ""),
     },
     {
-      title: "Digital Asset Management",
-      txt: "Donec gravida est ut velit fringilla, et venenatis nisi euismod. Aenean est turpis, rhoncus quis scelerisque ac, eleifend quis lorem",
+      title: "Application development",
+      txt: "Whether it's automation for your business operations, or bringing that idea that's been sitting on the back of your head, we can help you bring it to life.",
       svg: desktop("", "", ""),
     },
     {
-      title: "Headless CMS",
-      txt: "Donec gravida est ut velit fringilla, et venenatis nisi euismod. Aenean est turpis, rhoncus quis",
-      svg: drone("", "", ""),
+      title: "SEO management",
+      txt: "What good is a website if there's not traffic? Our SEO team member will work with you to stay current with the search trends and put int the best effort to bring exposure to your online presence.",
+      svg: svgSeo("", "", ""),
     },
   ];
   const QuoteContents = [
@@ -183,7 +184,7 @@ export default function Home(props) {
       <MainBanner animation={true} />
       <div className={styles.cards__wrapper}>
         {" "}
-        <Card title="Create and Track Content" cards={cards} txt="" />
+        <Card title="Bring your idea to life, take your business online!" cards={cards} txt="" />
       </div>
       <PhotoBanner
         type="1"
