@@ -12,8 +12,7 @@ export default function MainBanner (props) {
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-light.png")`,
             backgroundPosition:"center",
             backgroundSize:'contain',
-            backgroundRepeat:"no-repeat",,
-            
+            backgroundRepeat:"no-repeat",
           }}/>
           <div className={styles.mainbanner__oval2} style={{
             backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/mainbanner/oval-dark.png")`,
@@ -84,7 +83,7 @@ export default function MainBanner (props) {
 
             {backgroundAnimation()}
           <div className={styles.mainbanner__textcont}>
-            <div className={styles.mainbanner__text} style={{paddingRight:`50px`}}>
+            <div className={styles.mainbanner__text} >
               <div className={styles.mainbanner__Header1}>
                 Hi!
               </div>
