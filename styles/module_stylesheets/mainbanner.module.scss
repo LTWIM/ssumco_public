@@ -581,7 +581,9 @@
   }
   #icon_animation9{
     transform: translate(150px, 150px);
-    animation: icon9 0.5s ease-in-out 1.4s forwards;
+    animation: 
+      icon9 0.5s ease-in-out 1.4s forwards,
+      icon9-position 1.5s ease-in-out 1.9s forwards;
     border-radius: 0;
 
     @keyframes icon9 {
@@ -602,11 +604,33 @@
         transform: translate(190px, 200px);
       }
     }
+    @keyframes icon9-position {
+      0%{
+        transform: translate(190px, 200px);
+      }
+      90%{
+        top: 90%;
+        bottom: 10%;
+        right: 6%;
+        left: 94%;
+      }
+      100%{
+        top: 90%;
+        bottom: 10%;
+        right: 6%;
+        left: 94%;
+        transform: translate(0px, 0px);
+        width: 50px; height: 50px;
+        
+      }
+    }
 
   }
   #icon_animation10{
     transform: translate(150px, 150px);
-    animation: icon10 0.5s ease-in-out 1.4s  forwards;
+    animation: 
+      icon10 0.5s ease-in-out 1.4s  forwards,
+      icon10-position 1.5s ease-in-out 1.9s forwards;
     
     @keyframes icon10 {
       0%{
@@ -630,10 +654,30 @@
         border: solid 2px #ff5722;
       }
     }
+    @keyframes icon10-position {
+      0%{
+        transform: translate(250px, 120px);
+      }
+      90%{
+        top: 60%;
+        bottom: 40%;
+        right: 6%;
+        left: 94%;
+      }
+      100%{
+        top: 60%;
+        bottom: 40%;
+        right: 6%;
+        left: 94%;
+        transform: translate(0px, 0px);
+      }
+    }
   }
   #icon_animation11{
     transform: translate(150px, 150px);
-    animation: icon11 0.5s ease-in-out 1.4s  forwards;
+    animation: 
+      icon11 0.5s ease-in-out 1.4s  forwards,
+      icon11-position 1.5s ease-in-out 1.9s forwards;
     
     @keyframes icon11 {
       0%{
@@ -657,10 +701,30 @@
         border: solid 1px #3b00ad;;
       }
     }
+    @keyframes icon11-position {
+      0%{
+        transform: translate(275px, 30px);
+      }
+      90%{
+        top: 55%;
+        bottom: 45%;
+        right: 2%;
+        left: 98%;
+      }
+      100%{
+        top: 55%;
+        bottom: 45%;
+        right: 2%;
+        left: 98%;
+        transform: translate(0px, 0px);
+      }
+    }
   }
   #icon_animation12{
     transform: translate(185px, 0px);
-    animation: icon12 0.5s ease-in-out 1.4s  forwards;
+    animation: 
+      icon12 0.5s ease-in-out 1.4s  forwards,
+      icon12-position 1.5s ease-in-out 1.9s forwards;
     
     border-radius: 0;
     @keyframes icon12 {
@@ -681,10 +745,30 @@
         transform: translate(260px, -90px);
       }
     }
+    @keyframes icon12-position {
+      0%{
+        transform: translate(260px, -90px);
+      }
+      90%{
+        top: 51%;
+        bottom: 49%;
+        right: 6%;
+        left: 94%;
+      }
+      100%{
+        top: 51%;
+        bottom: 49%;
+        right: 6%;
+        left: 94%;
+        transform: translate(0px, 0px);
+      }
+    }
   }
   #icon_animation13{
     transform: translate(185px, 0px);
-    animation: icon13 0.5s ease-in-out 1.4s  forwards;
+    animation: 
+      icon13 0.5s ease-in-out 1.4s  forwards,
+      icon13-position 1.5s ease-in-out 1.9s forwards;
     
     @keyframes icon13 {
       0%{
@@ -703,16 +787,36 @@
 
       }
       100%{
-        width: 49px; height: 49px;
         transform: translate(190px, -200px);
         border: solid 2px #fec55e;
+        width: 49px; height: 49px;
 
+      }
+    }
+    @keyframes icon13-position {
+      0%{
+        transform: translate(190px, -200px);
+      }
+      90%{
+        top: 20%;
+        bottom: 49%;
+        right: 4%;
+        left: 96%;
+      }
+      100%{
+        top: 20%;
+        bottom: 49%;
+        right: 4%;
+        left: 96%;
+        transform: translate(0px, 0px);
       }
     }
   }
   #icon_animation14{
     transform: translate(185px, 0px);
-    animation: icon14 0.5s ease-in-out 1.4s  forwards;
+    animation: 
+      icon14 0.5s ease-in-out 1.4s  forwards,
+      icon14-position 1.5s ease-in-out 1.9s forwards;
     
     @keyframes icon14 {
       0%{
@@ -735,6 +839,24 @@
         transform: translate(40px, -270px);
         border: solid 1px #1f1f1f;
 
+      }
+    }
+    @keyframes icon14-position {
+      0%{
+        transform: translate(40px, -270px);
+      }
+      90%{
+        top: 30%;
+        bottom: 70%;
+        right: 7%;
+        left: 93%;
+      }
+      100%{
+        top: 30%;
+        bottom: 70%;
+        right: 7%;
+        left: 93%;
+        transform: translate(0px, 0px);
       }
     }
   }
