@@ -195,7 +195,7 @@ export default function Home() {
           {features.map((feature, idx) => mapList(feature, idx))}
         </div>
       </div>
-      <QuoteBanner contents={QuoteContents} />
+      <QuoteBanner contents={QuoteContents} backgroundColor="#f9faff" />
       <div className={styles.imgs__cont}>
         <div className={styles.img__cont}></div>
         <div className={styles.img__cont}></div>

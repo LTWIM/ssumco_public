@@ -120,7 +120,7 @@ export default function Home() {
         type="6"
         header1="Join Our Community"
         body="Aenean elementum, quam in commodo accumsan, neque felis fringilla quam, iaculis euismod purus lorem sagittis turpis. Quisque ut ultricies ex. Fusce dictum consequat ipsum et efficitur. Morbi vitae nibh vitae est venenatis elementum vel ut orci"
-      />
+      />z`
       <VideoBanner
         header="Attention to Every Client’s Succes"
         body="Integer mauris ipsum, consequat tincidunt orci eu, consectetur tempus est. Sed posuere sem a convallis maximus. Curabitur consequat dignissim nisl, at efficitur justo"

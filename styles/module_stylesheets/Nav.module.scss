@@ -1,4 +1,4 @@
-.Nav{
+.Nav {
   a {
     color: black;
     text-decoration: none;
@@ -23,7 +23,7 @@
   .Nav__pageCont {
     // border: 1px solid;
     height: 100%;
-    width: fit-content;
+    width: 57px;
     margin-right: 8px;
     box-sizing: border-box;
     display: flex;
@@ -53,7 +53,7 @@
   width: 100vw;
   height: 70px;
   // border: 1px solid;
-  box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
   margin: auto;
@@ -101,11 +101,11 @@
     background-color: #ff3d00;
   }
 }
-.Mobile__Nav{
+.Mobile__Nav {
   width: 100vw;
   height: 60px;
   // border: 1px solid;
-  box-shadow: 0 0 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
   margin: auto;
@@ -119,12 +119,12 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  .Mobile__Nav__Facebook{
+  .Mobile__Nav__Facebook {
     margin-top: 3px;
     margin-right: 3px;
   }
 }
-.Hamburger_cont{
+.Hamburger_cont {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -133,20 +133,20 @@
   margin-bottom: auto;
   justify-content: space-between;
   cursor: pointer;
-  .Hamburger_bar{
+  .Hamburger_bar {
     width: 100%;
     height: 6px;
     background-color: black;
     // border-radius: 5px;
   }
-  .Hamburger_bar_mid{
+  .Hamburger_bar_mid {
     width: 100%;
     height: 6px;
-    background-color: rgb(249,39,115);
+    background-color: rgb(249, 39, 115);
     // border-radius: 5px;
   }
 }
-.mobileMenu{
+.mobileMenu {
   position: fixed;
   top: 0;
   width: 80%;
@@ -155,23 +155,23 @@
   height: 100vh;
   background-color: white;
   z-index: 1000;
-  box-shadow: 0 0 13px 13px rgba(0,0,0,0.1);
+  box-shadow: 0 0 13px 13px rgba(0, 0, 0, 0.1);
   transition: left 0.5s;
   display: flex;
   flex-direction: column;
-  .mobileMenu__close{
+  .mobileMenu__close {
     position: absolute;
     width: 50px;
     height: 50px;
     // border: 1px solid black;
     right: 10px;
-    top:10px;
+    top: 10px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .mobileMenu__cont{
+  .mobileMenu__cont {
     // border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -180,22 +180,52 @@
     margin: auto;
   }
 }
-
-@media screen and (max-width:780px) {
-  .Desktop__Nav{
+.Nav__pageCont {
+  .Nav__page {
+    &.active {
+      a {
+        color: #3b00ad;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Desktop__Nav__wrapper {
+    justify-content: space-between;
+    .Nav__logoCont {
+      margin: auto;
+      margin-left: 0;
+      .Nav__logo {
+        margin-right: 30px;
+      }
+    }
+    .Desktop__Nav__pageWrapper {
+      margin: auto;
+      margin-right: 0;
+      .Desktop__Nav__pageSection {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .Desktop__Nav {
     display: none;
   }
-  .Nav{
-    .Nav__logoCont{
+  .Nav {
+    .Nav__logoCont {
       width: fit-content;
     }
-    .Nav__pageCont{
+    .Nav__pageCont {
       width: 100%;
       border-bottom: 2px solid rgba(111, 100, 255, 0.1);
-
+      &.active {
+        border-bottom: 2px solid rgba(111, 100, 255, 0.5);
+      }
     }
   }
-  .Mobile__Nav{
+  .Mobile__Nav {
     display: flex;
   }
 }

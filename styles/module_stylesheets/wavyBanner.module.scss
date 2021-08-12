@@ -12,19 +12,19 @@
   // border: 1px solid red;
   position: relative;
 
-  .wave__left{
+  .wave__left {
     position: absolute;
-    background-image: linear-gradient(to right, rgb(55,108,251), #273fac);
-    height:100%;
+    background-image: linear-gradient(to right, rgb(55, 108, 251), #273fac);
+    height: 100%;
     width: 50vw;
     top: 0px;
     left: 0px;
     border-top-right-radius: 5%;
     z-index: 0;
   }
-  .wave__left::before{
+  .wave__left::before {
     content: "";
-    background-image: linear-gradient(to right, rgb(55,108,251), #273fac);
+    background-image: linear-gradient(to right, rgb(55, 108, 251), #273fac);
     width: 50vw;
     height: 70px;
     border-top-left-radius: 50%;
@@ -33,7 +33,7 @@
     left: 0;
     position: absolute;
   }
-  .wave__left::after{
+  .wave__left::after {
     content: "";
     // background-image: linear-gradient(to right, rgb(55,108,251), #273fac);
     background-color: white;
@@ -44,20 +44,19 @@
     bottom: -35px;
     position: absolute;
     left: 0;
-
   }
-  .wave__right{
+  .wave__right {
     position: absolute;
-    background-image: linear-gradient(to right, #273fac,#1f126a);
-    height:100%;
+    background-image: linear-gradient(to right, #273fac, #1f126a);
+    height: 100%;
     width: 50vw;
     top: 8px;
     right: 0px;
     border-bottom-left-radius: 5%;
     z-index: 0;
   }
-  .wave__right::before{
-    content:"";
+  .wave__right::before {
+    content: "";
     right: 0;
     background-color: white;
     width: 50vw;
@@ -67,9 +66,9 @@
     top: -35px;
     position: absolute;
   }
-  .wave__right::after{
-    content:"";
-    background-image: linear-gradient(to right, #273fac,#1f126a);
+  .wave__right::after {
+    content: "";
+    background-image: linear-gradient(to right, #273fac, #1f126a);
     width: 50vw;
     height: 70px;
     border-bottom-left-radius: 100%;
@@ -77,9 +76,8 @@
     bottom: -35px;
     position: absolute;
     right: 0px;
-
   }
-  
+
   .contt__wrapper {
     max-width: 1176px;
     width: 100%;
@@ -88,7 +86,7 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      
+
       .title__cont {
         font-size: clamp(25px, 7vw, 41px);
         font-weight: bold;
@@ -107,15 +105,17 @@
         color: #ff3d00;
         z-index: 3;
         font-weight: bold;
+        &:hover {
+          cursor: pointer;
+        }
       }
       .contt__cont {
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
         margin-bottom: 60px;
-        z-index: 3; 
+        z-index: 3;
 
-        
         div {
           background-color: white;
           width: 18%;
@@ -129,12 +129,12 @@
     }
     &.row {
       justify-content: space-around;
-      
+
       .contt__cont {
         display: flex;
         flex-direction: column;
         width: 49%;
-        z-index: 3; 
+        z-index: 3;
         .title__cont {
           font-size: clamp(14px, 4vw, 18px);
           font-weight: bold;
@@ -150,6 +150,9 @@
           font-size: clamp(12px, 2vw, 15px);
           font-weight: bold;
           color: #ffffff;
+          &:hover {
+            cursor: pointer;
+          }
         }
         div {
           margin-bottom: 20px;

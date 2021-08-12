@@ -25,9 +25,13 @@ export default function BlogCard(props) {
       txt: "Curabitur cursus turpis magna, sit amet consequat leo suscipit eu. Aenean eu lectus quam. Vestibulum ante",
     },
   ];
-  const mapCards = (card) => {
+  const mapCards = (card, index) => {
     return (
-      <div className={styles.card__cont} id={styles.mobile__card__cont}>
+      <div
+        className={styles.card__cont}
+        id={styles.mobile__card__cont}
+        key={index}
+      >
         <div className={styles.img__cont}></div>
         <div className={styles.contt__cont}>
           <div className={styles.date__cont}>
@@ -51,7 +55,7 @@ export default function BlogCard(props) {
         <span>Tips and Tricks from our Blog</span>
       </div>
       <div className={styles.cards__cont}>
-        {cards.map((card) => mapCards(card))}
+        {cards.map((card,index) => mapCards(card, index))}
       </div>
     </div>
   );
