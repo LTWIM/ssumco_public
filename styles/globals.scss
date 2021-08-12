@@ -3,19 +3,27 @@ body {
   span, text, div, button, input {
   font-family:Lucida Sans, Helvetica, Arial, sans-serif;
   }
+  // overflow-x:hidden;
+  div{
+    max-width: calc(100vw - 15px);
+    
+  }
 }
 .page-wrapper {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  
   .page-break-point {
     // max-width: 1680px;
     width: 100vw;
-    height: 100vh;
+    max-width: calc(100vw - 13px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin-top:70px;
+    
   }
 }

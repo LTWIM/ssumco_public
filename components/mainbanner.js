@@ -28,7 +28,6 @@ export default function MainBanner (props) {
           <div className={styles.mainvanner__element} id={styles.element_animation6}/>
           <div className={styles.mainvanner__element} id={styles.element_animation7}/>
           <div className={styles.mainvanner__element} id={styles.element_animation8}/>
-          <div className={styles.mainbanner__lefticon}>
             <div className={styles.mainbanner__icon} id={styles.icon_animation1} style={{
               backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/chat.png")`,
             }}/>
@@ -44,8 +43,6 @@ export default function MainBanner (props) {
             <div className={styles.mainbanner__icon} id={styles.icon_animation7} style={{
               backgroundImage:`URL("https://jkconstruction.s3.us-west-1.amazonaws.com/ssumCo/modules/icons/msg.png")`,
             }}/>
-          </div>
-          <div className={styles.mainbanner__righticon}>
 
             <div className={styles.mainbanner__icon} id={styles.icon_animation8}/>
             <div className={styles.mainbanner__icon} id={styles.icon_animation9} style={{
@@ -59,7 +56,6 @@ export default function MainBanner (props) {
             }}/>
             <div className={styles.mainbanner__icon} id={styles.icon_animation13}/>
             <div className={styles.mainbanner__icon} id={styles.icon_animation14}/>
-          </div>
 
           {/* circle ruler */}
           {/* <div style={{
