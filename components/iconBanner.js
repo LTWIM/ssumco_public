@@ -6,8 +6,8 @@ export default function IconBanner(props) {
   const displayCard = () => {
     return (
       <div className={styles.iconBanner__cardcont}>
-        {props.cardinfo.map((card) => (
-          <div className={styles.iconBanner__Card}>
+        {props.cardinfo.map((card,index) => (
+          <div className={styles.iconBanner__Card} key={index}>
             <IconCard
               title={card.title}
               body={card.body}
