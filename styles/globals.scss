@@ -8,17 +8,18 @@ body {
     font-family: Lucida Sans, Helvetica, Arial, sans-serif;
   }
   // overflow-x:hidden;
-  div{
-    max-width: calc(100vw - 15px);
+  // div{
+  //   max-width: calc(100vw - 15px);
     
-  }
+  // }
 }
 .page-wrapper {
-  width: 100vw;
+  // width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
 }
 .page-break-point {
   // max-width: 1680px;
@@ -34,4 +35,5 @@ body {
     .page-break-point {
       margin-top: 60px;
     }
-  }}
+  }
+}
